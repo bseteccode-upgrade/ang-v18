@@ -1,0 +1,90 @@
+<!-- <div>
+  <div class="detailedBlock">
+    <a class="arrowClose" (click)="onCancel()"><span class="material-icons">
+      close
+    </span>
+  </a>
+    <div class="detailed-center">
+      <div class="detailedBox">
+        <ul class="title_top">
+          <li>
+            <img src="assets/images/linkedin-square.png" />
+          </li>
+
+          <li>
+            <div class="popup_title">{{'title_first_step_linkedin_share' | translate}}</div>
+          </li>
+          </ul>
+        <div class="detailedCertificate">
+          <img id="{{'detail' + badgeDetail.id}}"
+            src="{{badgeDetail.uploads ? badgeDetail.uploads : 'assets/images/awaiting.gif'}}" />
+        </div>
+
+        <div>
+          <h4>{{badgeDetail.title}} - {{this.apiService.user.first_name}} {{this.apiService.user.last_name}} -
+            {{badgeDetail.organization}} - {{'blockchained_by' | translate}} {{appName}}</h4>
+          <p>{{appSite}}</p>
+        </div>
+
+        <div>
+          <div class="linkedin-savebtn">
+            <button class="social-share-linkedin" mat-button
+              (click)="socialShare(badgeDetail.linkedin_social_share_url)"
+              type="button">{{'i_want_to_post_on_linkedin' | translate}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div> -->
+
+
+<div class="">
+
+  <div class="detailedBlock">
+    <a class="arrowClose" (click)="onCancel()"><span class="material-icons">
+      close
+    </span>
+  </a>
+  
+    <ul class="linkedin-list">
+                <li>
+                  <div class="linedin-left">
+                    <div class="certificateTop">                                            
+                      <div class="detailedCertificate">
+                        <img id="{{'detail' + badgeDetail.id}}"
+                          src="{{badgeDetail.uploads ? badgeDetail.uploads : 'assets/images/awaiting.gif'}}" />
+                      </div>
+                    </div>
+
+                    <div class="certificateBottom">
+                      <div class="certificate-dark">                                      
+                        <div>
+                          <h4>{{badgeDetail.title}} - {{this.apiService.user.first_name}} {{this.apiService.user.last_name}} -
+                            {{badgeDetail.organization}} - {{'blockchained_by' | translate}} {{appName}}</h4>
+                          <p>{{appSite}}</p>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+                </li>
+
+                <li>
+                  <div class="linkedin-right">
+                    <img src="assets/images/linkedin.png" alt="linkedin logo" class="logo-image">
+          
+                    <div class="right-title">
+                        <h3>{{'right_title_first_step' | translate}} <span>linkedIn</span></h3>
+                      <p>{{'job_search' | translate}}</p>
+                    </div>                   
+        
+                    <div class="linkedin-savebtn">
+                      <button class="social-share-linkedin" mat-button
+                        (click)="socialShare(badgeDetail.linkedin_social_share_url)"
+                        type="button">{{'i_want_to_post_on_linkedin' | translate}}</button>
+                    </div>
+                  </div>
+                </li>
+    </ul>
+</div>

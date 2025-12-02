@@ -1,0 +1,98 @@
+form ~ div.listData {width:100%;display:inline-block;}
+form ~ div.listData h4{font-size:16px;padding:5px;text-align:center;text-transform: capitalize}
+form ~ div.listData ul{display:block;padding-left: 0;width: 50%;margin:0 auto}
+form ~ div.listData{width:100%;display:inline-block}
+form ~ div.listData ul li{display: block;padding-left:0;padding:5px;font-size:16px;}
+form ~ div.listData ul li table tr td:first-child {min-width:170px}
+form ~ div.listData ul li table tr td:nth-child(2){padding:0 5px}
+form ~ div.listData ul li table tr td{vertical-align: top;}
+form ~ div.listData ul li:nth-child(odd){background-color:#ececec;}
+form ~ div.listData ul li:nth-child(even){background-color:#f5f5f5;}
+.alert-message{color:#F44336}
+.alert-message i{font-size:16px;position:relative;top:1px;padding-right:5px}
+.invisible-input-cont input {
+   width: 0px;
+   height: 0px;
+}
+
+:host ::ng-deep .ql-snow .ql-tooltip.ql-editing{left:10px!important;}
+
+:host ::ng-deep .form-group .mat-checkbox{margin-right:12px;}
+:host ::ng-deep .ql-toolbar.ql-snow button.ql-bold,
+:host ::ng-deep .ql-toolbar.ql-snow button.ql-italic{display:block}
+
+:host ::ng-deep .ql-snow .ql-tooltip.ql-flip{left:10px!important;top:10px!important;}
+
+:host ::ng-deep .ql-toolbar.ql-snow button.ql-underline,:host ::ng-deep .ql-toolbar.ql-snow button.ql-strike{display:none}
+
+:host ::ng-deep .ql-toolbar.ql-snow .ql-formats:first-child,
+:host ::ng-deep .ql-toolbar.ql-snow .ql-formats:last-child,
+:host ::ng-deep .ql-toolbar.ql-snow .ql-formats:nth-child(13),:host ::ng-deep .ql-toolbar.ql-snow .ql-formats:nth-last-child(2) {display:inline-block;}
+:host ::ng-deep .ql-toolbar.ql-snow .ql-formats{
+   display: none;
+}
+
+:host ::ng-deep span.ql-placeholder.ql-picker, :host ::ng-deep span.ql-placeholder.ql-picker.ql-expanded {
+   width: 180px;
+   background-color: #1e232b;
+   height: 30px;
+   padding: 4px;
+   border-radius: 2px;
+   margin: 10px 5px;
+}
+
+:host ::ng-deep span.ql-placeholder.ql-picker span.ql-picker-label.ql-active {
+   color: #fff;
+}
+
+
+:host ::ng-deep .ql-snow .ql-placeholder.ql-picker.ql-expanded .ql-picker-label .ql-stroke,
+:host ::ng-deep .ql-snow.ql-toolbar .ql-placeholder .ql-picker-label.ql-active .ql-stroke {
+   stroke: #fff;
+}
+
+
+:host ::ng-deep .ql-toolbar.ql-snow + .ql-container.ql-snow {
+   border-top:0;
+   resize:vertical;
+   overflow-x:hidden;
+   overflow-y:auto;
+   position:relative;
+}
+
+:host ::ng-deep .hidebasictools .angular-editor-toolbar .angular-editor-toolbar-set{border:none!important}
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Undo"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Redo"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Underline"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Strikethrough"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Subscript"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Superscript"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Indent"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Outdent"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Unordered List"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Ordered List"],
+:host ::ng-deep .hidebasictools .select-heading,
+:host ::ng-deep .hidebasictools .select-font,
+:host ::ng-deep .hidebasictools .select-font-size,
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Insert Link"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Unlink"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Clear Formatting"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="HTML Code"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Insert Image"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Insert Video"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Horizontal Line"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Justify Left"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Justify Right"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Justify Center"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Justify Full"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Text Color"],
+:host ::ng-deep .hidebasictools .angular-editor-button[title="Background Color"] {
+   display: none !important;
+}
+
+@media(max-width:767px)
+{
+form ~ div.listData ul{width:650px}
+form ~ div.listData ul li table tr td:first-child {min-width:170px;width:170px;max-width:170px}
+form ~ div.listData ul li table{width:650px;max-width:650px;}
+}
