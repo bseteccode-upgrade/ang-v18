@@ -4,12 +4,15 @@
 
 export const environment = {
   production: false,
-  project_name: 'Vottun',
+  project_name: 'Eduvot',
   project_site: 'https://vottun.com/',
   white_logo: 'assets/images/logo.png',
   header_logo: 'assets/images/logo-header.png',
   progressGif: 'assets/images/progress.gif',
-  url : 'https://test.vottun.com/api/',
+  url : 'http://127.0.0.1:8000/api/',
+  // url : 'http://192.168.1.18:8000/api/',
+  // url : 'http://192.168.1.84:8000/api/',
+  // url : 'https://test.vottun.com/api/',
   // url: 'https://certtun.vottun.com/api/',
   // url : 'http://192.168.1.20:8000/api/',
   baseUrl : 'https://test.vottun.com',

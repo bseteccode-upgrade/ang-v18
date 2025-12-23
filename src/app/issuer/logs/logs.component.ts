@@ -224,9 +224,11 @@ export class ExampleHttpDao {
       })
     };
     const pageno = page + 1;
-    const href = env.baseUrl;
+    const href = env.url;
+    console.log(href,"href");
+    
     const requestUrl =
-      `${href}/api/certificates/deleted-logs-list/?page=${pageno}&search=${search}&reason_type=${reasonType}&reason=${reason}`;
+      `${href}certificates/deleted-logs-list/?page=${pageno}&search=${search}&reason_type=${reasonType}&reason=${reason}`;
     return this.http.get<LogApi>(requestUrl, httpOption);
   }
 }

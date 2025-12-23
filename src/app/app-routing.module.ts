@@ -38,9 +38,9 @@ const routes: Routes = [
   { path: 'autologin/:token', loadChildren: () =>
     import('./autologin/autologin.module').then(m => m.AutologinModule) },
   // { path: 'autologin/:token', component: AutologinComponent },
-  // { path: 'signup', component: SignupComponent },
-  { path: 'signup', loadChildren: () =>
-    import('./signup/signup.module').then(m => m.SignupModule) },
+  { path: 'signup', component: SignupComponent },
+  // { path: 'signup', loadChildren: () =>
+  //   import('./signup/signup.module').then(m => m.SignupModule) },
   { path: 'register', loadChildren: () =>
     import('./register/register.module').then(m => m.RegisterModule) },
   // { path: 'register', component: RegisterComponent },

@@ -32,11 +32,12 @@ export class TeamService {
         'x-registertype': localStorage.getItem('userTypeOriginal')
       })
     };
-    if (all) {
-      return this.http.get(env.url + `product/workflow/list/all/`, httpOption);
-    } else {
-      return this.http.get(env.url + `product/workflow/list/?${searchData}`, httpOption);
-    }
+    return [];
+    // if (all) {
+    //   return this.http.get(env.url + `product/workflow/list/all/`, httpOption);
+    // } else {
+    //   return this.http.get(env.url + `product/workflow/list/?${searchData}`, httpOption);
+    // }
   }
 
   getProductList() {
@@ -47,7 +48,7 @@ export class TeamService {
         'x-registertype': localStorage.getItem('userTypeOriginal')
       })
     };
-    return this.http.get(env.url + `product/list/`, httpOption);
+    // return this.http.get(env.url + `product/list/`, httpOption);
   }
 
   getWFUserListAssigned(wfid, step) {

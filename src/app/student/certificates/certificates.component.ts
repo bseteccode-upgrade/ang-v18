@@ -114,12 +114,27 @@ export class CertificatesComponent implements OnInit {
           return obj.is_certificate === 'False'
         })
         this.firstBadge = this.badge[0];
+        console.log(this.firstBadge,this.badge,"this.firstBadge");
+        
+        // this.x = new Date(this.firstCer.created)
+        // this.y = new Date(this.firstBadge.created)
+        // this.z = this.x > this.y ? this.firstCer : this.firstBadge;
 
-        this.x = new Date(this.firstCer.created)
-        console.log("cer time.....", this.firstCer.created)
-        this.y = new Date(this.firstBadge.created)
-        console.log("badge time.....", this.firstBadge.created)
-        this.z = this.x > this.y ? this.firstCer : this.firstBadge;
+        if (this.firstCer && this.firstBadge) {
+          const cerDate = new Date(this.firstCer.created);
+          const badgeDate = new Date(this.firstBadge.created);
+
+          this.z = cerDate > badgeDate ? this.firstCer : this.firstBadge;
+
+        } else if (this.firstCer) {
+          this.z = this.firstCer;
+
+        } else if (this.firstBadge) {
+          this.z = this.firstBadge;
+
+        } else {
+          this.z = null;
+        }
 
         if (this.certificates.length > 0 && this.apiService.user.profile_details.is_student_shared && localStorage.getItem('firstTimeShare') == 'false') {
           localStorage.setItem('firstTimeShare', 'true')

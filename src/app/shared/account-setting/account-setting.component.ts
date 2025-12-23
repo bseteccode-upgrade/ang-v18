@@ -443,25 +443,25 @@ export class AccountSettingComponent implements DoCheck, OnInit, OnDestroy {
   }
 
   getWorkflowList() {
-    this.getWorkflowListSubscribtion = this.team.getWFTeamList([], true).subscribe(data => {
-      this.resWorkflow = data;
-      if (this.resWorkflow && this.resWorkflow.results.length != 0) {
-        this.workflowlists = this.resWorkflow.results;
-      } else {
-        this.workflowlists = [];
-      }
-    });
+    // this.getWorkflowListSubscribtion = this.team.getWFTeamList([], true).subscribe(data => {
+    //   this.resWorkflow = data;
+    //   if (this.resWorkflow && this.resWorkflow.results.length != 0) {
+    //     this.workflowlists = this.resWorkflow.results;
+    //   } else {
+    //     this.workflowlists = [];
+    //   }
+    // });
   }
 
   getProductList() {
-    this.getProductListSubscribtion = this.team.getProductList().subscribe(data => {
-      this.resProduct = data;
-      if (this.resProduct && this.resProduct.length != 0) {
-        this.productlists = this.resProduct;
-      } else {
-        this.productlists = [];
-      }
-    });
+    // this.getProductListSubscribtion = this.team.getProductList().subscribe(data => {
+    //   this.resProduct = data;
+    //   if (this.resProduct && this.resProduct.length != 0) {
+    //     this.productlists = this.resProduct;
+    //   } else {
+    //     this.productlists = [];
+    //   }
+    // });
   }
 
   langHttpcall() {
@@ -472,23 +472,23 @@ export class AccountSettingComponent implements DoCheck, OnInit, OnDestroy {
         'x-registertype': localStorage.getItem('userTypeOriginal')
       })
     };
-    this.http.get(env.url + `product/language-translation/${this.defaultlang}/`, httpOption).subscribe(res => {
-      this.langObj = res;
-      this.langList = Object.keys(res).map(key => (
-        {
-          key: key,
-          workflow: res[key].workflow_id,
-          workflow_name: res[key].workflow_name,
-          product_id: res[key].product_id,
-          step: res[key].step,
-          label: res[key].label,
-          value: res[key]
-        })
-      );
-      this.dataSource = new MatTableDataSource<any>(this.langList);
-      this.dataSource.filterPredicate = this.createFilter();
-      this.dataSource.paginator = this.paginator;
-    });
+    // this.http.get(env.url + `product/language-translation/${this.defaultlang}/`, httpOption).subscribe(res => {
+    //   this.langObj = res;
+    //   this.langList = Object.keys(res).map(key => (
+    //     {
+    //       key: key,
+    //       workflow: res[key].workflow_id,
+    //       workflow_name: res[key].workflow_name,
+    //       product_id: res[key].product_id,
+    //       step: res[key].step,
+    //       label: res[key].label,
+    //       value: res[key]
+    //     })
+    //   );
+    //   this.dataSource = new MatTableDataSource<any>(this.langList);
+    //   this.dataSource.filterPredicate = this.createFilter();
+    //   this.dataSource.paginator = this.paginator;
+    // });
   }
 
   // pageChange(e) {
@@ -848,9 +848,9 @@ export class AccountSettingComponent implements DoCheck, OnInit, OnDestroy {
         'x-registertype': localStorage.getItem('userTypeOriginal')
       })
     };
-    this.http.put(env.url + `product/language-translation/${this.defaultlang}/`, this.langObj, httpOption).subscribe(res => {
-      this.common.openSnackBar('lang_updated', 'Close');
-    });
+    // this.http.put(env.url + `product/language-translation/${this.defaultlang}/`, this.langObj, httpOption).subscribe(res => {
+    //   this.common.openSnackBar('lang_updated', 'Close');
+    // });
   }
 
   getProfile() {
@@ -1678,12 +1678,12 @@ export class AccountSettingComponent implements DoCheck, OnInit, OnDestroy {
     if (this.getOrgDocListSubscribtion) {
       this.getOrgDocListSubscribtion.unsubscribe();
     }
-    if (this.getWorkflowListSubscribtion) {
-      this.getWorkflowListSubscribtion.unsubscribe();
-    }
-    if (this.getProductListSubscribtion) {
-      this.getProductListSubscribtion.unsubscribe();
-    }
+    // if (this.getWorkflowListSubscribtion) {
+    //   this.getWorkflowListSubscribtion.unsubscribe();
+    // }
+    // if (this.getProductListSubscribtion) {
+    //   this.getProductListSubscribtion.unsubscribe();
+    // }
     if (this.getEducationListSubscribtion) {
       this.getEducationListSubscribtion.unsubscribe();
     }

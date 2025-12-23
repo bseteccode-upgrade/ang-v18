@@ -53,7 +53,7 @@ export class SideNavComponent implements OnInit {
       gridWidth: '0',
       alwaysVisible: true
     };
-    this.productService.productMatrix();
+    // this.productService.productMatrix();
   }
 
   ngOnInit() {

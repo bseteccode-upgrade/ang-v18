@@ -82,7 +82,7 @@ export class SupplychainlogsComponent implements OnInit {
       this.common.openSnackBar('dont_have_privillege', 'Close');
       this.router.navigate(['/signin']);
     }
-    this.productService.productMatrix();
+    // this.productService.productMatrix();
     this.getProductList();
   }
 

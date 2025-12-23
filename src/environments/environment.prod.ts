@@ -4,7 +4,7 @@ export const environment = {
   // project_site: 'https://certtun.com/',
   // white_logo: 'assets/images/certtun-logo.png',
   // progressGif: 'assets/images/certtun-progress.gif',
-  project_name: 'Vottun',
+  project_name: 'Eduvot',
   project_site: 'https://vottun.com/',
   white_logo: 'assets/images/logo.png',
   header_logo: 'assets/images/logo-header.png',

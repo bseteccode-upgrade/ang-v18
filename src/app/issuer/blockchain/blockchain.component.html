@@ -99,7 +99,7 @@
 
             <mat-form-field appearance="outline" class="autocomplete">
               <mat-label>{{'title' | translate}}</mat-label>
-              <input formControlName="title" (input)="getinputTitle($event.target.value)" [formControl]="titleControl"
+              <input formControlName="title" (input)="getinputTitle($event.target.value)" 
                 autocomplete="off" placeholder="{{'title' | translate}}" matInput [matAutocomplete]="auto_title">
               <mat-autocomplete #auto_title="matAutocomplete" (optionSelected)="titleInput = $event.option.value">
                 <mat-option *ngFor="let option of filterTitle | async" [value]="option.title">
@@ -117,7 +117,7 @@
 
             <mat-form-field appearance="outline" class="autocomplete">
               <mat-label>{{'certificate_code' | translate}}</mat-label>
-              <input formControlName="code" (input)="getinputCode($event.target.value)" [formControl]="codeControl"
+              <input formControlName="code" (input)="getinputCode($event.target.value)" 
                 autocomplete="off" placeholder="{{'certificate_code' | translate}}" matInput
                 [matAutocomplete]="auto_code">
               <mat-autocomplete #auto_code="matAutocomplete" (optionSelected)="codeInput = $event.option.value">
@@ -137,7 +137,7 @@
             <mat-form-field appearance="outline" class="autocomplete">
               <mat-label>{{'student_id' | translate}}</mat-label>
               <input (input)="getinputStudentId($event.target.value)" formControlName="student_id"
-                [formControl]="filterStudentIdOptions" placeholder="{{'student_id' | translate}}" autocomplete="off"
+                 placeholder="{{'student_id' | translate}}" autocomplete="off"
                 matInput [matAutocomplete]="auto_student_id">
               <mat-autocomplete #auto_student_id="matAutocomplete"
                 (optionSelected)="studentIdInput = $event.option.value">
@@ -157,7 +157,7 @@
             <mat-form-field appearance="outline" class="autocomplete">
               <mat-label>{{'email' | translate}}</mat-label>
               <input (input)="getinputemail($event.target.value)" formControlName="email"
-                (input)="getinputemail($event.target.value)" [formControl]="emailControl" autocomplete="off"
+                (input)="getinputemail($event.target.value)"  autocomplete="off"
                 placeholder="{{'email' | translate}}" matInput [matAutocomplete]="auto_email">
               <mat-autocomplete #auto_email="matAutocomplete" (optionSelected)="emailInput = $event.option.value">
                 <mat-option *ngFor="let option of filterEmail | async" [value]="option.email">
@@ -176,7 +176,7 @@
             <mat-form-field appearance="outline" class="autocomplete">
               <mat-label>{{'first_name' | translate}}</mat-label>
               <input formControlName="first_name" (input)="getinputfirstname($event.target.value)"
-                [formControl]="firstNameControl" placeholder="{{'first_name' | translate}}" autocomplete="off" matInput
+                 placeholder="{{'first_name' | translate}}" autocomplete="off" matInput
                 [matAutocomplete]="auto_first_name">
               <mat-autocomplete #auto_first_name="matAutocomplete"
                 (optionSelected)="firstNameInput = $event.option.value">
@@ -196,7 +196,7 @@
             <mat-form-field appearance="outline" class="autocomplete">
               <mat-label>{{'last_name' | translate}}</mat-label>
               <input formControlName="last_name" (input)="getinputlastname($event.target.value)"
-                [formControl]="lastNameControl" placeholder="{{'last_name' | translate}}" autocomplete="off" matInput
+                 placeholder="{{'last_name' | translate}}" autocomplete="off" matInput
                 [matAutocomplete]="auto_last_name">
               <mat-autocomplete #auto_last_name="matAutocomplete"
                 (optionSelected)="lastNameInput = $event.option.value">
@@ -225,7 +225,7 @@
 
             <mat-form-field appearance="outline" class="autocomplete">
               <input formControlName="group_name" (input)="getinputgroup($event.target.value)"
-                [formControl]="groupNameControl" autocomplete="off" placeholder="{{'group' | translate}}" matInput
+                 autocomplete="off" placeholder="{{'group' | translate}}" matInput
                 [matAutocomplete]="auto_group_name">
               <mat-autocomplete #auto_group_name="matAutocomplete"
                 (optionSelected)="groupNameInput = $event.option.value">
