@@ -18,13 +18,14 @@
         </li>
         <li>
           <h1>
-            <a *ngIf="!apiService.user.top_right_logo" routerLink="/">
+            <!-- routerLink="/" -->
+            <a *ngIf="!apiService.user.top_right_logo" >
               <div class="vottun-logo">
                 <!-- <span class="vottun-image" *ngIf="apiService.user.vouttun_logo"></span> -->
                 <img [src]="pagelogo" *ngIf="apiService.user.vouttun_logo">
               </div>
             </a>
-            <a *ngIf="apiService.user.top_right_logo && apiService.user.vouttun_logo" routerLink="/">
+            <a *ngIf="apiService.user.top_right_logo && apiService.user.vouttun_logo">
               <div class="vottun-logo header">
                 <span><img src="{{apiService.user.top_right_logo}}" class="img-responsive"></span>
               </div>
