@@ -6,7 +6,7 @@
             class="headTooltip"><i class="material-icons"> help_outline</i></span></h3>
       </div>
       <div class="pull-right">
-        <button id="back_to_student_list" mat-button routerLink="/students">
+        <button id="back_to_student_list" mat-mdc-button routerLink="/students">
           <i class="fa fa-hand-o-left fa-1x" style="font-size:20px;"></i>
           {{'back_to_student_list' | translate}}</button>
       </div>
@@ -215,7 +215,7 @@
           <div class="col-sm-10">
             <div class="form-group">
               <button type="button" *ngIf="process" class="btn btn-primary">{{'processing' | translate}}...</button>
-              <button type="submit" *ngIf="!process" mat-button
+              <button type="submit" *ngIf="!process" mat-mdc-button
                 class="btn btn-form-save">{{'save_button' | translate}}</button>
             </div>
           </div>
@@ -233,7 +233,7 @@
     <p>{{'student_already_exist' | translate}}</p>
 
     <div class="infoTooltip-btn">
-      <button type="button" (click)="ngxSmartModalService.getModal('studexist').close()" mat-button
+      <button type="button" (click)="ngxSmartModalService.getModal('studexist').close()" mat-mdc-button
         class="btn btn-form-save">{{'ok' | translate}}</button>
     </div>
   </div>

@@ -6,8 +6,8 @@
 :host ::ng-deep .blockchain-details { padding:22px 10px 15px; }
 
 :host ::ng-deep .delete-input .mat-form-field-appearance-outline .mat-form-field-infix { padding:3px 0}
-:host ::ng-deep .view-evidence-btn.mat-button { margin:10px 0px;text-transform: capitalize}
-:host ::ng-deep a.view-evidence-btn.mat-button {width:auto;min-width:auto;margin:10px;text-transform: capitalize}
+:host ::ng-deep .view-evidence-btn.mat-mdc-button { margin:10px 0px;text-transform: capitalize}
+:host ::ng-deep a.view-evidence-btn.mat-mdc-button {width:auto;min-width:auto;margin:10px;text-transform: capitalize}
 
 .main-block{width:100%; margin:20px 0}
 .head-block{width:100%; background-color:#3381bf; padding:10px; text-align: left}
@@ -47,7 +47,7 @@ ul.student-list li span { color:#262d37;font-size: 14px;word-break: break-word}
 :host ::ng-deep .select_all_container .mat-checkbox-inner-container{width:24px;height:24px}
 :host ::ng-deep .select_all_container .mat-checkbox-layout .mat-checkbox-label{font-size:18px}
 .select_all_container button.mat-mini-fab.select_all_delete{margin:10px;background:#F44336;font-size:22px;line-height:16px}
-.select_all_container button.mat-mini-fab .mat-button-wrapper{padding:0 0 }
+.select_all_container button.mat-mini-fab .mat-mdc-button-wrapper{padding:0 0 }
 .email-popup .view-evidence-title h4 { text-align: center; color:#1e232b; font-size: 22px; text-transform: capitalize; font-weight: bold; color: #1e232b; text-shadow: none; }
 
 
@@ -75,7 +75,7 @@ ul.student-list li span { color:#262d37;font-size: 14px;word-break: break-word}
 
 @media (max-width:991px)
 {
-:host ::ng-deep .scheduler-border .achievement-btn .filter-btn.mat-button { width:100%;}
+:host ::ng-deep .scheduler-border .achievement-btn .filter-btn.mat-mdc-button { width:100%;}
 :host ::ng-deep .no-float.issuer-section { width: 100%; display: inline-block; }
 :host ::ng-deep .certificate-view-model.badgewindow .nsm-dialog-animation-fade.nsm-dialog.nsm-dialog-open { min-width: 50%; width: 65%; }
 :host ::ng-deep .certificate-view-model.badgewindow .nsm-dialog-animation-fade.nsm-dialog.nsm-dialog-open .nsm-dialog-btn-close { right: 0px; top: 0px; }
@@ -105,5 +105,5 @@ ul.student-list li span { color:#262d37;font-size: 14px;word-break: break-word}
 .issuer-section .badge-link {margin: 0px 0px 20px; }
 .badge-certificate-title h3 { font-size: 18px;}
 .issuer-section { padding-left:0px; padding-right:0px; }
-:host ::ng-deep a.view-evidence-btn.mat-button span{word-break: break-word;display: inline-block;width: 100%;white-space: pre-line;line-height: normal;}
+:host ::ng-deep a.view-evidence-btn.mat-mdc-button span{word-break: break-word;display: inline-block;width: 100%;white-space: pre-line;line-height: normal;}
 }

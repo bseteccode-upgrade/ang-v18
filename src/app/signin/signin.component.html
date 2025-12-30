@@ -1,19 +1,21 @@
 <section class="signup-block">
   <div class="container">
-    <div class="col-md-8 col-sm-12 col-md-offset-2 signin-section">
+    <div class="signin-section">
 
       <div class="signin-container">
         <ul class="sign-container">
           <li>
-            <div class="img-container">
-              <img src="{{pagelogo}}">
+        <div class="signup-block-two">
+            <div class="login_actions">
+                <a>Login</a>
+                <a>Register</a>
             </div>
-          </li>
+          <div class="signup-form">
+            <div class="img-container">
+              <img src="../../assets/images/logo.png">
+            </div>
 
-          <li>
-            <div class="signup-block-two">
-              <div class="signup-form">
-                <h3>{{'login' | translate}}</h3>
+                <!-- <h3>{{'login' | translate}}</h3> -->
 
                 <form class="form-horizontal" [formGroup]="loginForm" (ngSubmit)="userLogin(loginForm.value)">
                   <div class="form-group">
@@ -52,26 +54,21 @@
                       {{errorMsg | translate}}
                     </div>
                   </div>
-                  <div class="">
+                  <div class="login_btns">
                     <div class="col-sm-12">
                       <button *ngIf="!disableReg" type="submit"
                         class="btn btn-signin-form">{{'enter_account' | translate}}</button>
                       <button *ngIf="disableReg" class="btn btn-signin-form"
                         disabled>{{'acc_login' | translate}}...</button>
-                      <br>
-                      <br>
                     </div>
                   </div>
                 </form>
-              </div>
-              <div class="form-group signup-button">
-              </div>
-              <div class="col-md-12 sign-footer">
-                <div class="col-md-12">
-                  <div class="vottun-footer">
-                    <p><a [href]="siteName" target="_blank">{{'blockchained_by' | translate}} {{appName}}</a></p>
+              
+              <div class="sign-footer">
+                  <div class="edu-footer">
+                    <a [href]="" target="_blank">{{'blockchained_by' | translate}} {{appName}}</a>
                   </div>
-                </div>
+              </div>
               </div>
             </div>
           </li>
@@ -88,7 +85,7 @@
   <h4>{{'header_admin_user_login' | translate}}</h4>
   <p>{{'info_about_admin_backdoor_login' | translate}}</p>
   <div class="emailVerify_btn">
-    <button mat-button class="wrong_ok"
+    <button mat-mdc-button class="wrong_ok"
       (click)="ngxSmartModalService.getModal('fromadmin').close()">{{'login' | translate}}</button>
   </div>
 </ngx-smart-modal>
@@ -136,7 +133,7 @@
     </div>
 
     <div class="emailVerify_btn">
-      <button mat-button class="wrong_ok"
+      <button mat-mdc-button class="wrong_ok"
         (click)="ngxSmartModalService.getModal('workwrongurl').close()">{{'ok' | translate}}</button>
     </div>
   </ngx-smart-modal>

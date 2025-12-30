@@ -1,6 +1,6 @@
 :host ::ng-deep button.certificate-btn.mat-mini-fab.mat-accent{background-color:#1e232b;width:30px;height:30px}
 :host ::ng-deep button.certificate-btn.mat-mini-fab.mat-accent i{font-size:18px}
-:host ::ng-deep button.certificate-btn.mat-mini-fab .mat-button-wrapper{
+:host ::ng-deep button.certificate-btn.mat-mini-fab .mat-mdc-button-wrapper{
     line-height: 18px;
     padding: 0 0;
     position: relative;

@@ -6,7 +6,7 @@
             class="headTooltip"><i class="material-icons"> help_outline</i></span></h3>
       </div>
       <div class="pull-right">
-        <button id="back_to_achievement" mat-button (click)="redirectToPreviousPage()">
+        <button id="back_to_achievement" mat-mdc-button (click)="redirectToPreviousPage()">
           <i class="fa fa-hand-o-left fa-1x" style="font-size:20px;"></i> {{'back_to_achievement' | translate}}</button>
       </div>
     </div>
@@ -65,9 +65,9 @@
 
                           <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="group-block">
-                              <button mat-button class="group-btn"
+                              <button mat-mdc-button class="group-btn"
                                 (click)="onSearchCourse(onSearchCertCourse.value)">{{'go' | translate}}</button>
-                              <button mat-button class="group-btn"
+                              <button mat-mdc-button class="group-btn"
                                 (click)="resetSearchCourse()">{{'reset' | translate}}</button>
                             </div>
                           </div>
@@ -203,7 +203,7 @@
                 </div>
                 <div class="col-sm-12">
                   <div class="alert alert-danger" *ngIf="submitted"> {{'valid_inputs' | translate}} </div>
-                  <button type="submit" mat-button matStepperNext class="step-next backtostep2redirect"
+                  <button type="submit" mat-mdc-button matStepperNext class="step-next backtostep2redirect"
                     [disabled]="disableFirstNext"
                     (click)="submitted = firstFormGroup.invalid;">{{'next' | translate}}</button>
                 </div>
@@ -251,7 +251,7 @@
                             </mat-form-field>
                           </li>
 
-                          <li><button type="button" mat-button class="group-btn" [disabled]="isLoadingStudSearch"
+                          <li><button type="button" mat-mdc-button class="group-btn" [disabled]="isLoadingStudSearch"
                               (click)="onSearchStud(searchStudForm.value, 'search')"><i
                                 class="material-icons">search</i></button></li>
                         </ul>
@@ -300,10 +300,10 @@
 
                           <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="group-block">
-                              <button type="button" mat-button class="group-btn" [disabled]="isLoadingStudSearch"
+                              <button type="button" mat-mdc-button class="group-btn" [disabled]="isLoadingStudSearch"
                                 (click)="addGroupForm(searchGroupStud.value)">{{'go'
                                 | translate}}</button>
-                              <button type="button" mat-button class="group-btn" [disabled]="isLoadingStudSearch"
+                              <button type="button" mat-mdc-button class="group-btn" [disabled]="isLoadingStudSearch"
                                 (click)="resetGroupForm()">{{'reset'
                                 | translate}}</button>
                             </div>
@@ -394,7 +394,7 @@
                     <div class="selected_certificate">
                       <h4 class="control-label">*{{'info_about_relate_cert_selection' | translate}}</h4>
                     </div>
-                    <button mat-button class="step-back"
+                    <button mat-mdc-button class="step-back"
                       (click)="ngxSmartModalService.getModal('relatedCertPopup').close();">{{'ok' | translate}}</button>
                   </div>
                 </ngx-smart-modal>
@@ -402,10 +402,10 @@
                 <div class="col-sm-12">
                   <div class="step-buttons">
                     <div class="alert alert-danger" *ngIf="submitted"> {{'valid_inputs' | translate}} </div>
-                    <button mat-button matStepperPrevious class="step-back"
+                    <button mat-mdc-button matStepperPrevious class="step-back"
                       (click)="submitted = firstFormGroup.invalid; onStep2Back();">{{'back'
                       | translate}}</button>
-                    <button mat-button matStepperNext class="step-next" [disabled]="disablestep2button"
+                    <button mat-mdc-button matStepperNext class="step-next" [disabled]="disablestep2button"
                       (click)="submitted = secondFormGroup.invalid">{{'next'
                       | translate}}</button>
                   </div>
@@ -738,16 +738,16 @@
                 <div class="col-sm-12">
                   <div class="form-group new_assign_btn">
                     <button *ngIf="process" class="btn btn-primary">{{processingtxt | translate}}</button>
-                    <button *ngIf="!process" mat-button matStepperPrevious class="step-back backtostep2 pull-left"
+                    <button *ngIf="!process" mat-mdc-button matStepperPrevious class="step-back backtostep2 pull-left"
                       (click)="submitted = secondFormGroup.invalid;backtostep2Select();">{{'back' | translate}}</button>
                     <button [disabled]="disablestep2button"
                       *ngIf="walletDetails?.count?.remaining_wallet >= 10"
-                      type="click" mat-button class="btn btn-form-save btn_center"
+                      type="click" mat-mdc-button class="btn btn-form-save btn_center"
                       (click)="submitted = threeFormGroup.invalid; confirmationPost(threeFormGroup.value, true)"
                       matTooltip="{{'post_to_blockchain' | translate}}">{{'post_to_blockchain' | translate}}</button>
                     <button [disabled]="disablestep2button"
                       *ngIf="!isSelectCert && walletDetails?.count?.remaining_wallet >= 1"
-                      style="background-color: gray;" type="click" mat-button class="btn btn-form-save  pull-right"
+                      style="background-color: gray;" type="click" mat-mdc-button class="btn btn-form-save  pull-right"
                       (click)="submitted = threeFormGroup.invalid; submitAssignForm(threeFormGroup.value, false)"
                       matTooltip="{{'post_digital_credential' | translate}}">{{'post_digital_credential' | translate}}</button>
                   </div>
@@ -791,7 +791,7 @@
         </div>
       </div>
       <div class="button-container">
-        <button mat-button class="back go-dash" routerLink="/issuecertificate"
+        <button mat-mdc-button class="back go-dash" routerLink="/issuecertificate"
           (click)="ngxSmartModalService.getModal('errorMultiUpload').close()">{{'go_to_cert_list' | translate}}</button>
       </div>
     </ngx-smart-modal>
@@ -829,7 +829,7 @@
         </div>
       </div>
       <div class="button-container">
-        <button mat-button class="back go-dash" routerLink="/issuecertificate"
+        <button mat-mdc-button class="back go-dash" routerLink="/issuecertificate"
           (click)="ngxSmartModalService.getModal('errorMultiUpload').close()">{{'go_to_cert_list' | translate}}</button>
       </div>
     </ngx-smart-modal>

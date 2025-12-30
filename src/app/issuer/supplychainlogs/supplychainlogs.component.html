@@ -6,7 +6,7 @@
               class="material-icons"> help_outline</i></span></h3>
       </div>
       <div class="pull-right">
-        <button mat-button class="activity_btn" routerLink="/activity"
+        <button mat-mdc-button class="activity_btn" routerLink="/activity"
           *ngIf="apiService.userType !== '3' && apiService.userType !== '9' && apiService.pages.issue_certificate">{{'add_activities' | translate}}
           <i class="fa fa-plus-circle"></i>
         </button>
@@ -28,12 +28,12 @@
           <div class="col-lg-7 col-md-12 col-sm-12">
             <div class="user-btn-block">
               <ul class="button-list">
-                <li><button type="submit" class="filter-btn search" mat-button
+                <li><button type="submit" class="filter-btn search" mat-mdc-button
                     [disabled]="process">{{'search' | translate}}</button></li>
-                <li><button type="reset" class="filter-btn reset" mat-button
+                <li><button type="reset" class="filter-btn reset" mat-mdc-button
                     (click)="advanceSearch = true; getProductList({},true);searchForm.reset();resetForm()">{{'advanced_search' | translate}}</button>
                 </li>
-                <li><button type="reset" class="filter-btn reset" mat-button [disabled]="process"
+                <li><button type="reset" class="filter-btn reset" mat-mdc-button [disabled]="process"
                     (click)="getProductList({},true);searchForm.reset();resetForm()">{{'reset' | translate}}</button>
                 </li>
               </ul>
@@ -144,15 +144,15 @@
             <div class="form-group">
               <div class="activity">
                 <ul class="button-list">
-                  <li><button type="submit" class="filter-btn search" mat-button
+                  <li><button type="submit" class="filter-btn search" mat-mdc-button
                       [disabled]="process">{{'search' | translate}}</button></li>
 
-                  <li><button type="reset" class="filter-btn reset" mat-button
+                  <li><button type="reset" class="filter-btn reset" mat-mdc-button
                       (click)="getProductList({},true);searchForm.reset();resetForm()"
                       [disabled]="process">{{'reset' | translate}}</button>
                   </li>
 
-                  <li><button type="reset" class="filter-btn reset" mat-button
+                  <li><button type="reset" class="filter-btn reset" mat-mdc-button
                       (click)="advanceSearch = false;getProductList({},true); searchForm.reset()">{{'close' | translate}}</button>
                   </li>
                 </ul>

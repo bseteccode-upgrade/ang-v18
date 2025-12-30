@@ -5,7 +5,7 @@
         <h3>Custom Feature <span matTooltip="{{'phi_cust_feature' | translate}}" class="headTooltip"><i class="material-icons"> help_outline</i></span></h3>
       </div>
       <div class="pull-right">
-        <button mat-button routerLink="/students">
+        <button mat-mdc-button routerLink="/students">
           <i class="fa fa-hand-o-left fa-1x" style="font-size:20px;"></i> {{'back_to_student_list' | translate}}</button>
       </div>
     </div>
@@ -23,8 +23,8 @@
 
           <div class="col-lg-6 col-md-8 col-sm-12">
             <div class="user-btn-block">
-              <button type="submit" class="filter-btn search" mat-button>{{'search' | translate}}</button>
-              <button type="reset" class="filter-btn reset" mat-button>{{'reset' | translate}}</button>
+              <button type="submit" class="filter-btn search" mat-mdc-button>{{'search' | translate}}</button>
+              <button type="reset" class="filter-btn reset" mat-mdc-button>{{'reset' | translate}}</button>
             </div>
           </div>
         </form>
@@ -226,7 +226,7 @@
             <div class="col-sm-10">
               <div class="form-group">
                 <button type="button" *ngIf="process" class="btn btn-primary">{{'processing' | translate}}...</button>
-                <button type="submit" *ngIf="!process" mat-button class="btn btn-form-save">{{'save_button' | translate}}</button>
+                <button type="submit" *ngIf="!process" mat-mdc-button class="btn btn-form-save">{{'save_button' | translate}}</button>
               </div>
             </div>
           </form>

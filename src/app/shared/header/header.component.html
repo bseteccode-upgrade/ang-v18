@@ -35,7 +35,7 @@
         <li *ngIf="apiService.userType !== '6' && !this.apiService.user.restrict_language_code">
           <div class="theme-palette">
             <div class="lang">
-              <button mat-button [matMenuTriggerFor]="menulang">
+              <button mat-mdc-button [matMenuTriggerFor]="menulang">
                 {{selectedLang}}
                 <span class="caret"></span>
               </button>

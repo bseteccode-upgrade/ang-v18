@@ -6,9 +6,9 @@
             class="headTooltip"><i class="material-icons"> help_outline</i></span></h3>
       </div>
       <div class="pull-right">
-        <button style="margin: 5px" mat-button (click)="downloadCSV()"> <i class="fa fa-cloud-download"></i>
+        <button style="margin: 5px" mat-mdc-button (click)="downloadCSV()"> <i class="fa fa-cloud-download"></i>
           {{'export' | translate}} </button>
-        <button mat-button routerLink="/issuecertificate" class="upload-back-btn"> <i class="fa fa-hand-o-left fa-1x"
+        <button mat-mdc-button routerLink="/issuecertificate" class="upload-back-btn"> <i class="fa fa-hand-o-left fa-1x"
             style="font-size:20px;"></i> {{'back_to_achievements' | translate}} </button>
       </div>
     </div>
@@ -26,10 +26,10 @@
 
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="user-btn-block">
-              <button type="submit" class="filter-btn search" mat-button>{{'search' | translate}}</button>
-              <button type="reset" class="filter-btn search" mat-button
+              <button type="submit" class="filter-btn search" mat-mdc-button>{{'search' | translate}}</button>
+              <button type="reset" class="filter-btn search" mat-mdc-button
                 (click)="advanceSearch = true">{{'advanced_search' | translate}}</button>
-              <button type="reset" class="filter-btn reset" mat-button
+              <button type="reset" class="filter-btn reset" mat-mdc-button
                 (click)="getIssuersCertificateListsExport([], true)">{{'reset' | translate}}</button>
             </div>
           </div>
@@ -151,10 +151,10 @@
 
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="achievement-btn">
-              <button type="submit" class="filter-btn" mat-button>{{'search' | translate}}</button>
-              <button type="reset" class="filter-btn" mat-button
+              <button type="submit" class="filter-btn" mat-mdc-button>{{'search' | translate}}</button>
+              <button type="reset" class="filter-btn" mat-mdc-button
                 (click)="getIssuersCertificateListsExport()">{{'reset' | translate}}</button>
-              <button type="reset" class="filter-btn" mat-button
+              <button type="reset" class="filter-btn" mat-mdc-button
                 (click)="advanceSearch = false">{{'close' | translate}}</button>
             </div>
           </div>

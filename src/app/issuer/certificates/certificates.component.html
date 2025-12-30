@@ -6,7 +6,7 @@
           <h3>{{'certificates' | translate}} <span matTooltip="{{'phi_cert_list' | translate}}" class="headTooltip"><i class="material-icons"> help_outline</i></span></h3>
         </div>
         <div class="pull-right">
-          <button id="certificateadd" mat-button routerLink="/certificateadd">
+          <button id="certificateadd" mat-mdc-button routerLink="/certificateadd">
             <i class="fa fa-hand-o-right fa-1x" style="font-size:20px;"></i> {{'add_certificate' | translate}}
           </button>
         </div>
@@ -24,9 +24,9 @@
 
             <div class="col-lg-6 col-md-8 col-sm-12">
               <div class="user-btn-block">
-                <button type="submit" class="filter-btn search" mat-button>{{'search' | translate}}</button>
-                <button type="submit" class="filter-btn search" mat-button (click)="advanceSearch = true">{{'advanced_search' | translate}}</button>
-                <button type="reset" class="filter-btn reset" mat-button (click)="resetSearchForm()">{{'reset' | translate}}</button>
+                <button type="submit" class="filter-btn search" mat-mdc-button>{{'search' | translate}}</button>
+                <button type="submit" class="filter-btn search" mat-mdc-button (click)="advanceSearch = true">{{'advanced_search' | translate}}</button>
+                <button type="reset" class="filter-btn reset" mat-mdc-button (click)="resetSearchForm()">{{'reset' | translate}}</button>
               </div>
             </div>
           </form>
@@ -87,9 +87,9 @@
 
             <div class="col-md-6 col-sm-12">
               <div class="user-btn-block">
-                <button type="submit" class="filter-btn search" mat-button>{{'search' | translate}}</button>
-                <button type="reset" class="filter-btn reset" mat-button (click)="resetSearchForm()">{{'reset' | translate}}</button>
-                <button type="reset" class="filter-btn reset" mat-button (click)="advanceSearch = false; searchForm.reset(); resetSearchForm()">{{'close' | translate}}</button>
+                <button type="submit" class="filter-btn search" mat-mdc-button>{{'search' | translate}}</button>
+                <button type="reset" class="filter-btn reset" mat-mdc-button (click)="resetSearchForm()">{{'reset' | translate}}</button>
+                <button type="reset" class="filter-btn reset" mat-mdc-button (click)="advanceSearch = false; searchForm.reset(); resetSearchForm()">{{'close' | translate}}</button>
               </div>
             </div>
           </form>
@@ -189,8 +189,8 @@
           </div>
         </fieldset>
         <div class="form-group" style="float: right">
-          <button type="submit" [disabled]="checkSubmit" mat-button class="password-submit" style="margin-right:10px">{{'yes' | translate}}</button>
-          <button type="button" mat-button class="password-submit" (click)="myModal.close()">{{'no' | translate}}</button>
+          <button type="submit" [disabled]="checkSubmit" mat-mdc-button class="password-submit" style="margin-right:10px">{{'yes' | translate}}</button>
+          <button type="button" mat-mdc-button class="password-submit" (click)="myModal.close()">{{'no' | translate}}</button>
         </div>
         </form>
       </div>

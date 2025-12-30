@@ -76,8 +76,8 @@ ul.badge-list li img {margin:0px 5px; object-fit: contain;}
 ul.badge-btn-list { margin-bottom:0px; padding-left:0px; float: right; }
 ul.badge-btn-list li { height:50px; display: inline-block;vertical-align: middle;list-style-type: none; }
 .upload_badge { position: relative; top:6px; }
-button.btn.btn-form-save.mat-button { background-color: #34495e; }
-button.btn.btn-form-save.mat-button:hover { background-color: #34495e; }
+button.btn.btn-form-save.mat-mdc-button { background-color: #34495e; }
+button.btn.btn-form-save.mat-mdc-button:hover { background-color: #34495e; }
 :host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb { background-color: #21d6cd !important; border: 5px solid #ffffff; bottom: 2px; position: relative; }
 :host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar { background-color: #21d6cd !important; border: 2px solid #fff; }
 :host ::ng-deep .mat-slide-toggle-content { color:#fff; }

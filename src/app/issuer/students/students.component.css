@@ -5,7 +5,7 @@
 .notify-info p { width: 350px; padding: 15px; background-color: #f20; color: #fff; position: absolute; margin: auto; left: 0; right: 0; text-align: center; top:19%;}
 .student_notify { width:100%; text-align: center; display: inline-block; }
 .student_notify p {font-size: 16px;}
-.student_notify .password-submit.mat-button { text-transform: capitalize; }
+.student_notify .password-submit.mat-mdc-button { text-transform: capitalize; }
 
 @media (min-width:992px) and (max-width:1280px)
 {

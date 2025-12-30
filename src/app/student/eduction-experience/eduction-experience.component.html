@@ -168,9 +168,9 @@
 
           <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="user-btn-block">
-              <button *ngIf="data.action_type == 'add'" mat-button class="close-btn">{{ 'add' | translate}}</button>
-              <button *ngIf="data.action_type != 'add'" mat-button class="close-btn">{{ 'edit' | translate}}</button>
-              <button type="button" (click)="closePopup()" mat-button class="close-btn">{{'close' | translate}}</button>
+              <button *ngIf="data.action_type == 'add'" mat-mdc-button class="close-btn">{{ 'add' | translate}}</button>
+              <button *ngIf="data.action_type != 'add'" mat-mdc-button class="close-btn">{{ 'edit' | translate}}</button>
+              <button type="button" (click)="closePopup()" mat-mdc-button class="close-btn">{{'close' | translate}}</button>
             </div>
           </div>
         </form>

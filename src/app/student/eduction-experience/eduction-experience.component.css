@@ -19,7 +19,7 @@
     text-transform: capitalize;
 }
 .badge-certificate-section{margin-bottom:0}
-button.close-btn.mat-button { background-color: #1e232b; color: #fff; margin:auto 10px}
+button.close-btn.mat-mdc-button { background-color: #1e232b; color: #fff; margin:auto 10px}
 h1.mat-dialog-title { text-transform:capitalize; border-bottom: 1px solid #ddd; padding-bottom: 10px}
 mat-dialog-content h4 { text-align:center;text-overflow:ellipsis;overflow:hidden;width:100%}
 .table-responsive .table>tbody>tr>td span{text-transform:capitalize}

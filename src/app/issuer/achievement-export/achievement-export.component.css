@@ -11,11 +11,11 @@ mat-select { border: none;}
 :host ::ng-deep .eng_group .blockchain-submain a { top:15px; }
 :host ::ng-deep .eng_group .blockchain-main a img { padding:0px 10px;}
 :host ::ng-deep .certify_name { width:85px;}
-:host ::ng-deep .badge-delete.mat-button { margin:10px 0px;}
+:host ::ng-deep .badge-delete.mat-mdc-button { margin:10px 0px;}
 :host ::ng-deep .delete-input .mat-form-field-appearance-outline .mat-form-field-infix { padding:3px 0px;}
 :host ::ng-deep .achievement-btn { margin-bottom:20px; }
 :host ::ng-deep .user-btn-block { margin-bottom:20px; }
-.scheduler-border .achievement-btn .filter-btn.mat-button { margin:5px; }
+.scheduler-border .achievement-btn .filter-btn.mat-mdc-button { margin:5px; }
 .delete-input .text-danger.text-left.small { position: absolute; bottom: 2px; }
 .main-block { width:100%; margin:20px 0px; }
 .head-block { width:100%; background-color: #3381bf; padding:10px; text-align: left; }
@@ -40,7 +40,7 @@ ul.student-list li { display: inline-block; width:48.9%; padding:0px 0px;}
 ul.student-list li p { color:#006cb5; font-size: 14px; }
 ul.student-list li span { color:#262d37;font-size: 14px;}
 .student-btn { width:100%; text-align: center; display: inline-block; padding:10px 0px;}
-.mat-button.btn-info { background-color: #ea6557; border-color: #ea6557; color: #fff;}
+.mat-mdc-button.btn-info { background-color: #ea6557; border-color: #ea6557; color: #fff;}
 .delete_select { height:60px; position: relative;line-height:60px;}
 
 @media (min-width:991px) and (max-width: 1200px)
@@ -64,7 +64,7 @@ ul.student-list li span { color:#262d37;font-size: 14px;}
 
 @media (max-width:853px)
 {
-.scheduler-border .achievement-btn .filter-btn.mat-button { width:100%;}
+.scheduler-border .achievement-btn .filter-btn.mat-mdc-button { width:100%;}
 }
 
 @media (max-width: 640px)
@@ -77,5 +77,5 @@ ul.student-list li span { color:#262d37;font-size: 14px;}
 {
 .badge-block.right-side.issue_dateblock{width: 182px;max-width:100%;min-width:100%;}
 .badge-block.right-side.issue_dateblock h4{font-size: 20px;}
-.scheduler-border .achievement-btn .filter-btn.mat-button  { width:100%; }
+.scheduler-border .achievement-btn .filter-btn.mat-mdc-button  { width:100%; }
 }

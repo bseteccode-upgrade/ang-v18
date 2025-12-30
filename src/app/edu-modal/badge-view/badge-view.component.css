@@ -28,8 +28,8 @@
 hr{margin-top:10px;margin-bottom:10px;}
 .badgeFooter{width:100%;display:inline-block;text-align:right;}
 .badgeFooter img{width:140px;padding:15px;}
-button.mat-button.badge-delete{margin:10px 5px;border-radius:4px;background:#E80B0B;color:#ffffff;}
-button.mat-button.badge-delete.expired-revoke{margin:10px 5px;border-radius:4px;background:#1976B7;color:#ffffff;text-transform:capitalize;}
+button.mat-mdc-button.badge-delete{margin:10px 5px;border-radius:4px;background:#E80B0B;color:#ffffff;}
+button.mat-mdc-button.badge-delete.expired-revoke{margin:10px 5px;border-radius:4px;background:#1976B7;color:#ffffff;text-transform:capitalize;}
 .badgeDetails{position:relative;}
 .arrowClose{position:absolute;right:-5px;z-index:9999;}
 .detailedSharing{padding:0 0;}

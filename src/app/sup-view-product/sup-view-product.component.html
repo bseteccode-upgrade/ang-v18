@@ -16,7 +16,7 @@
           <div class="col-md-5 col-sm-12">
             <div class="back_btn">
               <div class="lang_main">
-                <button [style.background-color]="reportPageContent.search_bottun_color" mat-button [matMenuTriggerFor]="menulang" class="dropdown_select">
+                <button [style.background-color]="reportPageContent.search_bottun_color" mat-mdc-button [matMenuTriggerFor]="menulang" class="dropdown_select">
                   {{selectedLang}}
                   <span class="caret"></span>
                 </button>
@@ -63,7 +63,7 @@
                 <div class="col-md-2 col-sm-12">
                   <div class="user-btn-block">
                     <button type="submit" class="filter-btn search" [style.background-color]="reportPageContent.search_bottun_color"
-                      style="width:100%;" mat-button>{{'search' | translate}}</button>
+                      style="width:100%;" mat-mdc-button>{{'search' | translate}}</button>
                   </div>
                 </div>
               </form>

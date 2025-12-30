@@ -6,7 +6,7 @@
         <ul class="sign-container">
           <li>
             <div class="img-container">
-              <img src="{{pagelogo}}">
+              <img src="../../assets/images/logo.png">
             </div>
           </li>
 
@@ -37,7 +37,7 @@
   <h4>{{'header_admin_user_login' | translate}}</h4>
   <p>{{'info_about_admin_backdoor_login' | translate}}</p>
   <div class="emailVerify_btn">
-    <button mat-button class="wrong_ok"
+    <button mat-mdc-button class="wrong_ok"
       (click)="ngxSmartModalService.getModal('fromadmin').close()">{{'login' | translate}}</button>
   </div>
 </ngx-smart-modal>
@@ -57,7 +57,7 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="col-lg-6 col-md-6 col-sm-12" *ngFor="let registerDetails of myModal.getData()">
-                <button id="publisherLogin" mat-button (click)="onCheckWho(registerDetails)"
+                <button id="publisherLogin" mat-mdc-button (click)="onCheckWho(registerDetails)"
                   class="signin-popup-btn">{{register_list[registerDetails] | translate}}</button>
               </div>
             </div>
@@ -83,7 +83,7 @@
     </div>
 
     <div class="emailVerify_btn">
-      <button mat-button class="wrong_ok"
+      <button mat-mdc-button class="wrong_ok"
         (click)="ngxSmartModalService.getModal('workwrongurl').close()">{{'ok' | translate}}</button>
     </div>
   </ngx-smart-modal>

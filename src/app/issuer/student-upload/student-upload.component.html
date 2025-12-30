@@ -6,12 +6,12 @@
             class="headTooltip"><i class="material-icons"> help_outline</i></span></h3>
       </div>
       <div class="pull-right">
-        <a class="export-btn" mat-button (click)="downloadSampleExcel()">{{'download_csv_template' | translate}}
+        <a class="export-btn" mat-mdc-button (click)="downloadSampleExcel()">{{'download_csv_template' | translate}}
           <span>
             <i class="fa fa-share-square-o"></i>
           </span>
         </a>
-        <button mat-button routerLink="/students" class="upload-back-btn">
+        <button mat-mdc-button routerLink="/students" class="upload-back-btn">
           <i class="fa fa-hand-o-left fa-1x" style="font-size:20px;"></i>
           {{'back_to_student_list' | translate}}</button>
       </div>
@@ -28,12 +28,12 @@
                 <div class="upload-box">
                   <img src="assets/images/bulk-upload.png">
                 </div>
-                <button mat-button class="browse-file"
+                <button mat-mdc-button class="browse-file"
                   (click)="fileinput.click()">{{'browse_file' | translate}}</button>
                 <input type="file" #fileinput accept=".csv" style="display: none;" (change)="upload($event)">
               </mat-form-field>
               <div>
-                <button mat-button matStepperNext class="green">{{'next' | translate}}</button>
+                <button mat-mdc-button matStepperNext class="green">{{'next' | translate}}</button>
               </div>
             </div>
           </div>
@@ -68,11 +68,11 @@
           <ng-template matStepLabel>{{'upload_students' | translate}}</ng-template>
 
           <div class="step-secound">
-            <button mat-button matStepperPrevious class="back" (click)="stepper.selectedIndex = 0;">{{'back' |
+            <button mat-mdc-button matStepperPrevious class="back" (click)="stepper.selectedIndex = 0;">{{'back' |
               translate}}</button>
-            <button mat-button class="red"
+            <button mat-mdc-button class="red"
               (click)="stepper.selectedIndex = 0;reset();">{{'clear_all' | translate}}</button>
-            <button mat-button matStepperNext class="green" (click)="bulkCreate(stepper)">{{'next' |
+            <button mat-mdc-button matStepperNext class="green" (click)="bulkCreate(stepper)">{{'next' |
               translate}}</button>
           </div>
 
@@ -125,11 +125,11 @@
             </div>
           </div>
           <div class="step-secound">
-            <button mat-button matStepperPrevious class="back" (click)="stepper.selectedIndex = 0;">{{'back' |
+            <button mat-mdc-button matStepperPrevious class="back" (click)="stepper.selectedIndex = 0;">{{'back' |
               translate}}</button>
-            <button mat-button class="red"
+            <button mat-mdc-button class="red"
               (click)="stepper.selectedIndex = 0;reset();">{{'clear_all' | translate}}</button>
-            <button mat-button matStepperNext class="green" (click)="bulkCreate(stepper)">{{'next' |
+            <button mat-mdc-button matStepperNext class="green" (click)="bulkCreate(stepper)">{{'next' |
               translate}}</button>
           </div>
         </form>
@@ -141,8 +141,8 @@
           <i class="fa fa-check-circle-o fa-lg"></i>
           <h3>{{'upload_successful' | translate}}</h3>
           <div class="">
-            <button mat-button class="go-dash" routerLink="/students">{{'go_to_student_list' | translate}}</button>
-            <button mat-button class="add-more"
+            <button mat-mdc-button class="go-dash" routerLink="/students">{{'go_to_student_list' | translate}}</button>
+            <button mat-mdc-button class="add-more"
               (click)="stepper.selectedIndex = 0;reset();">{{'add_more' | translate}}</button>
           </div>
         </div>
@@ -167,8 +167,8 @@
             </div>
           </div>
           <div class="button-container">
-            <button mat-button class="back go-dash" routerLink="/students">{{'go_to_student_list' | translate}}</button>
-            <button mat-button class="back add-more" (click)="stepper.selectedIndex = 0;reset();">{{'add_more' |
+            <button mat-mdc-button class="back go-dash" routerLink="/students">{{'go_to_student_list' | translate}}</button>
+            <button mat-mdc-button class="back add-more" (click)="stepper.selectedIndex = 0;reset();">{{'add_more' |
               translate}}</button>
           </div>
         </div>

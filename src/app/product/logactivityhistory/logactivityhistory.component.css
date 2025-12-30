@@ -1,4 +1,4 @@
-button.close-btn.mat-button { background-color: #1e232b; color: #fff; display: table; margin: auto; }
+button.close-btn.mat-mdc-button { background-color: #1e232b; color: #fff; display: table; margin: auto; }
 h1.mat-dialog-title { text-transform:capitalize; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
 mat-dialog-content h4 { text-align:center}
 .table-responsive .table>tbody>tr>td span{text-transform:capitalize}

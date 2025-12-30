@@ -13,19 +13,19 @@
 .badge-detail-separate .badge-details-block { margin-bottom:0px; position: relative; display: inline-block;}
 .badge-left .badge-block { text-align: center; }
 } */
-:host ::ng-deep .view-evidence-btn.mat-button{min-width:auto;width:auto;}
+:host ::ng-deep .view-evidence-btn.mat-mdc-button{min-width:auto;width:auto;}
 .infoTooltip { width:100%; display: inline-block; position: relative;min-height:200px;}
 .infoTooltip button { margin:10px;}
 .infoTooltip p { padding-bottom:50px;}
 .infoTooltip-btn { width:100%; text-align: center; display: inline-block;position: absolute;bottom: 0;}
 .linkedin-btn { margin:0;}
 .linkedin-block .sb-button {/*margin: .2125em;*/}
-.email-btn.mat-button, .linkedin-btn, .download-btn.mat-button, .SocialIcons .sb-wrapper, .SocialIcons .sb-button { height:100%;margin: 0;border-radius: 0;}
+.email-btn.mat-mdc-button, .linkedin-btn, .download-btn.mat-mdc-button, .SocialIcons .sb-wrapper, .SocialIcons .sb-button { height:100%;margin: 0;border-radius: 0;}
 :host ::ng-deep .sb-default .sb-wrapper.sb-facebook, :host ::ng-deep .sb-default .sb-wrapper.sb-twitter { height: 100%;border-radius: 0;}
 .sb-button { margin:0 10px 10px 0;}
 .share-popup .SocialIcons {display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex; flex-wrap: wrap;padding: 2% 0;}
 .share-popup .SocialIcons .btn-text { width:85%;display: inline-block;word-break: break-word;white-space: pre-line;line-height: normal;padding: 10px;text-align: left;}
-.email-btn.mat-button .fa, .download-btn.mat-button .fa, .linkedin-btn.mat-button .fa { position: relative; left:auto; top:auto;}
+.email-btn.mat-mdc-button .fa, .download-btn.mat-mdc-button .fa, .linkedin-btn.mat-mdc-button .fa { position: relative; left:auto; top:auto;}
 :host ::ng-deep button.sb-wrapper.sb-linkedin.sb-show-icon.sb-show-text { background-color:#006fa6; color:#fff;height:100%; }
 :host ::ng-deep button.sb-wrapper.sb-linkedin .sb-text { width:100%; display: inline-block; text-align: left;font-weight: normal;padding: 2% 0;}
 .SocialIcons .col-md-6 { min-height: 46px;max-height:100%;margin-bottom:10px;}
@@ -67,7 +67,7 @@ ul.toggle-view .toggle-container { position: relative; top:0;right:0;margin:0 10
 .shield_img { width:100%; text-align: right; display: inline-block;}
 .shield_img img { width:25px; height: auto;position: absolute;right: 30px;bottom: 15px;}
 .back_btn { width:100%; display: inline-block; text-align: right; }
-.back.mat-button { background-color: #3381bf; color:#fff; }
+.back.mat-mdc-button { background-color: #3381bf; color:#fff; }
 .main-block { width:100%; margin:20px 0;}
 .head-block { width:100%; background-color: #3381bf; padding:10px; }
 .head-block h3 { color:#fff; font-family: 'Roboto-Regular'; font-size:16px;}
@@ -116,7 +116,7 @@ a.cerificate-click { position: relative; display: inline-block; width: 100%; hei
 .eng_group p span{max-height:52px;height:52px;}
 .block-right p{margin-bottom:0;}
 .block-right .icon { font-size:28px; padding:0;}
-:host ::ng-deep .badge-delete.mat-button { margin:10px 0;}
+:host ::ng-deep .badge-delete.mat-mdc-button { margin:10px 0;}
 :host ::ng-deep .delete-input .mat-form-field-appearance-outline .mat-form-field-infix { padding:3px 0;}
 .delete-input .text-danger.text-left.small { position: absolute; bottom: 2px; }
 :host ::ng-deep .certificate-view-model.badgewindow .nsm-dialog-animation-fade.nsm-dialog.nsm-dialog-open { min-width: 38%; width: 25%; }

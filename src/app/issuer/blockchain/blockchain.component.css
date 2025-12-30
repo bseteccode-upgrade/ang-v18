@@ -2,8 +2,8 @@ mat-select {border: none}
 .center-image img.testsam  ~ .label-display { display: none; }
 .center-image img.testsam  ~ .label-display img { display: none; }
 .testsam ~ .label-display, .testsam ~ .label-display img { display: none; }
-.refresh-btn.mat-button { margin:5px; text-transform: capitalize; background-color:#262d37; color:#fff; width:auto; }
-button.resend-btn.mat-button {color: #fff;background-color: #29b6d8;border-color: #29b6d8;margin: 10px 25px;}
+.refresh-btn.mat-mdc-button { margin:5px; text-transform: capitalize; background-color:#262d37; color:#fff; width:auto; }
+button.resend-btn.mat-mdc-button {color: #fff;background-color: #29b6d8;border-color: #29b6d8;margin: 10px 25px;}
 .search-results-stud {padding:15px 0;max-height:770px;border-right:1px solid transparent;display: inline-block;position: relative;width:100%;overflow: auto;}
 .center-image img.cls-expired ~ .label-display img.cls-expired { display: block; }
 .center-image img.img-responsive.cls-expired ~ .label-display img.cls-expired { display: block; }
@@ -45,11 +45,11 @@ button.resend-btn.mat-button {color: #fff;background-color: #29b6d8;border-color
 :host ::ng-deep .eng_group .blockchain-submain a { top:15px; }
 :host ::ng-deep .eng_group .blockchain-main a img { padding:0px 10px;}
 :host ::ng-deep .certify_name { width:100%;word-break: break-word;height:43px}
-.badge-delete.expired-revoke.mat-button { background-color:#262d37; }
-:host ::ng-deep .badge-delete.mat-button { margin:10px 5px;}
+.badge-delete.expired-revoke.mat-mdc-button { background-color:#262d37; }
+:host ::ng-deep .badge-delete.mat-mdc-button { margin:10px 5px;}
 :host ::ng-deep .delete-input .mat-form-field-appearance-outline .mat-form-field-infix { padding:3px 0px;}
-:host ::ng-deep .view-evidence-btn.mat-button { margin:10px 0px;text-transform: capitalize;}
-:host ::ng-deep a.view-evidence-btn.mat-button {width:auto;min-width:auto;margin:10px;text-transform: capitalize}
+:host ::ng-deep .view-evidence-btn.mat-mdc-button { margin:10px 0px;text-transform: capitalize;}
+:host ::ng-deep a.view-evidence-btn.mat-mdc-button {width:auto;min-width:auto;margin:10px;text-transform: capitalize}
 .delete-input .text-danger.text-left.small { position: absolute; bottom: 2px; }
 .main-block { width:100%; margin:20px 0px; }
 .head-block { width:100%; background-color: #3381bf; padding:10px; text-align: left; }
@@ -75,7 +75,7 @@ ul.student-list li { display: inline-block; width:48.9%; padding:0px 0; vertical
 ul.student-list li p { color:#006cb5; font-size: 14px; margin:5px 0;}
 ul.student-list li span { color:#262d37;font-size: 14px;word-break: break-word}
 .student-btn { width:100%; text-align: center; display: inline-block; padding:10px 0px;}
-.mat-button.btn-info { background-color: #ea6557; border-color: #ea6557; color: #fff;}
+.mat-mdc-button.btn-info { background-color: #ea6557; border-color: #ea6557; color: #fff;}
 :host ::ng-deep .certificate-view-model.badgewindow .nsm-dialog-animation-fade.nsm-dialog.nsm-dialog-open { min-width: 38%; width: 25%; }
 :host ::ng-deep .certificate-view-model.badgewindow .nsm-dialog-animation-fade.nsm-dialog.nsm-dialog-open .nsm-dialog-btn-close { right: 0px; top: 30px; }
 .student_message { width:100%; display: inline-block; text-align: center; }
@@ -148,7 +148,7 @@ ul.student-list li span { color:#262d37;font-size: 14px;word-break: break-word}
 :host ::ng-deep .select_all_container .mat-checkbox-inner-container{width:24px;height:24px}
 :host ::ng-deep .select_all_container .mat-checkbox-layout .mat-checkbox-label{font-size:18px}
 .select_all_container button.mat-mini-fab.select_all_delete{margin:10px;background:#F44336;font-size:22px;line-height:16px}
-.select_all_container button.mat-mini-fab .mat-button-wrapper{padding:0 0 }
+.select_all_container button.mat-mini-fab .mat-mdc-button-wrapper{padding:0 0 }
 .eng_group .select_checkbox{width:100%;text-align:right;padding:5px 15px 10px 15px}
 :host ::ng-deep .eng_group:hover .select_checkbox .mat-checkbox-frame{border-color: rgb(241 241 241)}
 
@@ -179,7 +179,7 @@ ul.student-list li span { color:#262d37;font-size: 14px;word-break: break-word}
 
 @media (max-width:991px)
 {
-:host ::ng-deep .scheduler-border .achievement-btn .filter-btn.mat-button { width:100%;}
+:host ::ng-deep .scheduler-border .achievement-btn .filter-btn.mat-mdc-button { width:100%;}
 :host ::ng-deep .no-float.issuer-section { width: 100%; display: inline-block; }
 :host ::ng-deep .certificate-view-model.badgewindow .nsm-dialog-animation-fade.nsm-dialog.nsm-dialog-open { min-width: 50%; width: 65%; }
 :host ::ng-deep .certificate-view-model.badgewindow .nsm-dialog-animation-fade.nsm-dialog.nsm-dialog-open .nsm-dialog-btn-close { right: 0px; top: 0px; }
@@ -209,5 +209,5 @@ ul.student-list li span { color:#262d37;font-size: 14px;word-break: break-word}
 .issuer-section .badge-link {margin: 0px 0px 20px; }
 .badge-certificate-title h3 { font-size: 18px;}
 .issuer-section { padding-left:0px; padding-right:0px; }
-:host ::ng-deep a.view-evidence-btn.mat-button span{word-break: break-word;display: inline-block;width: 100%;white-space: pre-line;line-height: normal;}
+:host ::ng-deep a.view-evidence-btn.mat-mdc-button span{word-break: break-word;display: inline-block;width: 100%;white-space: pre-line;line-height: normal;}
 }

@@ -86,7 +86,7 @@
                   </div>
 
                   <div class="form-group" *ngIf="apiService.userType === '1'">
-                    <button class="btn btn-primary" mat-button routerLink="/multipleemail">{{'change_mail_address'
+                    <button class="btn btn-primary" mat-mdc-button routerLink="/multipleemail">{{'change_mail_address'
                       | translate}}</button>
                   </div>
 
@@ -273,7 +273,7 @@
                 <div class="col-md-10 col-sm-12">
                   <div class="form-group">
                     <button *ngIf="processUserInfo" class="btn btn-primary">{{'processing' | translate}}...</button>
-                    <button *ngIf="!processUserInfo" mat-button type="submit" class="btn btn-form-save">{{'save_button'
+                    <button *ngIf="!processUserInfo" mat-mdc-button type="submit" class="btn btn-form-save">{{'save_button'
                       | translate}}</button>
                   </div>
                 </div>
@@ -468,7 +468,7 @@
                 <div class="col-md-12 col-sm-12">
                   <div class="form-group">
                     <button *ngIf="process" class="btn btn-primary">{{'processing' | translate}}...</button>
-                    <button *ngIf="!process" mat-button type="submit" class="btn btn-form-save">{{'save_button' |
+                    <button *ngIf="!process" mat-mdc-button type="submit" class="btn btn-form-save">{{'save_button' |
                       translate}}</button>
                   </div>
                 </div>
@@ -532,7 +532,7 @@
 
                     <li>
                       <div class="sandbox-btn">
-                        <button type="button" mat-button class="red"
+                        <button type="button" mat-mdc-button class="red"
                           (click)="submitOrgDoc()">{{'save_key' | translate}}</button>
                       </div>
                     </li>
@@ -833,7 +833,7 @@
                   <div *ngIf="apiService.userType !== '8' && apiService.userType !== '4'"
                     class="col-lg-4 col-md-12 col-sm-12">
                     <div class="">
-                      <button type="submit" mat-button class="red">{{'save_key' | translate}}</button>
+                      <button type="submit" mat-mdc-button class="red">{{'save_key' | translate}}</button>
                     </div>
                   </div>
                 </form>
@@ -949,7 +949,7 @@
               <div
                 *ngIf="apiService.userType === '8' || apiService.userType === '3' || apiService.userType === '2' || (apiService.userType === '4' && apiService.pages.admin_prv)"
                 class="col-lg-6 col-md-6 col-sm-12">
-                <button mat-button class="red">{{'save_key' | translate}}</button>
+                <button mat-mdc-button class="red">{{'save_key' | translate}}</button>
               </div>
             </form>
           </fieldset>
@@ -1030,7 +1030,7 @@
             <div
               *ngIf="apiService.userType === '8' || apiService.userType === '3' || apiService.userType === '2' || (apiService.userType === '4' && apiService.pages.admin_prv)"
               class="col-lg-12 col-md-12 col-sm-12">
-              <button mat-button class="red">{{'save_key' | translate}}</button>
+              <button mat-mdc-button class="red">{{'save_key' | translate}}</button>
             </div>
           </form>
           </fieldset> 
@@ -1088,7 +1088,7 @@
 
               <div class="col-lg-4 col-md-4 col-sm-12 col-set-height">
                 <div class="sandbox-btn">
-                  <button mat-button class="red">{{'save_key' | translate}}</button>
+                  <button mat-mdc-button class="red">{{'save_key' | translate}}</button>
                 </div>
               </div>
             </form>
@@ -1165,7 +1165,7 @@
                 *ngIf="apiService.userType === '8' || apiService.userType === '3' || apiService.userType === '2' || (apiService.userType === '4' && apiService.pages.admin_prv)"
                 class="col-lg-4 col-md-4 col-sm-12 col-set-height">
                 <div class="sandbox-btn">
-                  <button mat-button class="red">{{'save_key' | translate}}</button>
+                  <button mat-mdc-button class="red">{{'save_key' | translate}}</button>
                 </div>
               </div>
             </form>
@@ -1196,7 +1196,7 @@
                     </li>
                     <li>
                       <div class="editor-copy">
-                        <button (cbOnSuccess)="onCopiedSuccess()" mat-button class="red"
+                        <button (cbOnSuccess)="onCopiedSuccess()" mat-mdc-button class="red"
                           [ngxClipboard]="inputTarget">{{'copy' | translate}}</button>
                       </div>
                     </li>
@@ -1321,9 +1321,9 @@
 
                       <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="achievement-btn">
-                          <!-- <button type="button" (click)="searchLangTable(searchFormLangid.value)" class="filter-btn" mat-button>{{'search' | translate}}</button> -->
+                          <!-- <button type="button" (click)="searchLangTable(searchFormLangid.value)" class="filter-btn" mat-mdc-button>{{'search' | translate}}</button> -->
                           <button type="reset" class="filter-btn" (click)="resetFilters(true)"
-                            mat-button>{{'reset' | translate}}</button>
+                            mat-mdc-button>{{'reset' | translate}}</button>
                         </div>
                       </div>
                     </div>
@@ -1562,7 +1562,7 @@
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="form-group save_btn_container">
-                      <button type="submit" mat-button class="red">{{'save_key' | translate}}</button>
+                      <button type="submit" mat-mdc-button class="red">{{'save_key' | translate}}</button>
                     </div>
                   </div>
                 </form>
@@ -1582,8 +1582,8 @@
     </div>
     <div class="model-view-evidence">
       <h3> {{'continous_upload_not_possible' | translate}} </h3>
-      <a mat-button (click)="onClickOk()" class="view-evidence-btn green">{{'ok' | translate}}</a>
-      <a mat-button (click)="onClosePopup()" class="view-evidence-btn green">{{'cancel' | translate}}</a>
+      <a mat-mdc-button (click)="onClickOk()" class="view-evidence-btn green">{{'ok' | translate}}</a>
+      <a mat-mdc-button (click)="onClosePopup()" class="view-evidence-btn green">{{'cancel' | translate}}</a>
     </div>
   </div>
 </ngx-smart-modal>
@@ -1595,7 +1595,7 @@
     </div>
     <div class="model-view-evidence">
       <h3> {{'sandbox_testmode_notification' | translate}} </h3>
-      <a mat-button (click)="sandBoxClickOk()" class="view-evidence-btn green">{{'ok' | translate}}</a>
+      <a mat-mdc-button (click)="sandBoxClickOk()" class="view-evidence-btn green">{{'ok' | translate}}</a>
     </div>
   </div>
 </ngx-smart-modal>

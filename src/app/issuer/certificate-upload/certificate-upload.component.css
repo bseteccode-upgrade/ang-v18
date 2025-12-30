@@ -15,7 +15,7 @@ ul.report-email li { display: inline-block;list-style-type: none;width: 50%;padd
 
 @media (max-width:991px)
 {
-:host ::ng-deep a.export-btn.mat-button { margin-bottom:10px; right:0px; margin-right:10px; }
+:host ::ng-deep a.export-btn.mat-mdc-button { margin-bottom:10px; right:0px; margin-right:10px; }
 :host ::ng-deep .start_wrapper .panel-heading .pull-right button { margin-right:10px; }
 .bulk-upload .panel-heading .pull-right { text-align: center; }
 }

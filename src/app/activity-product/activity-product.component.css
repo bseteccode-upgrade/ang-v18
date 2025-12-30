@@ -51,8 +51,8 @@ ul.bar-code li { display: inline-block; color:#1e232b; font-size: 14px;}
 .main-timeline .profile .profile_right { display: inline-block; text-align: right; width:50%;}
 .product_details h2 { color:#1e232b; }
 .hpanel { margin-bottom:0px;}
-.separate_btn.mat-button { width:100%; color:#fff; background-color: #29b6d8; border-color: #29b6d8; font-size: 14px; padding: 0px 15px; margin:5px 0px; }
-.back-activity-btn.mat-button { color:#fff; background-color: #29b6d8; border-color: #29b6d8; font-size: 14px; padding: 0px 15px; }
+.separate_btn.mat-mdc-button { width:100%; color:#fff; background-color: #29b6d8; border-color: #29b6d8; font-size: 14px; padding: 0px 15px; margin:5px 0px; }
+.back-activity-btn.mat-mdc-button { color:#fff; background-color: #29b6d8; border-color: #29b6d8; font-size: 14px; padding: 0px 15px; }
 .product_details .pull-left h2{ color: #1e232b; font-family: 'Roboto-Medium' }
 .main-timeline .profile:before{ content: ""; border-top: 35px solid #c43050; border-left: 35px solid transparent; position: absolute; bottom: -35px; left: 0; }
 .main-timeline .timeline-content{ padding: 25px 12px; margin: 0 45px 0 35px; background: #f2f2f2;     box-shadow: 0px 0px 20px 1px rgba(79,79,79,0.77); -webkit-box-shadow: 0px 0px 20px 1px rgba(79,79,79,0.77); -moz-box-shadow: 0px 0px 20px 1px rgba(79,79,79,0.77); -o-box-shadow: 0px 0px 20px 1px rgba(79,79,79,0.77); }

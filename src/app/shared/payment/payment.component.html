@@ -199,9 +199,9 @@
                             <div class="pricing-details">
                             </div>
                             <div class="buynow">
-                                <button mat-button *ngIf="!process" (click)="initializePayment();">{{'buy_now' |
+                                <button mat-mdc-button *ngIf="!process" (click)="initializePayment();">{{'buy_now' |
                                     translate}}</button>
-                                <button mat-button *ngIf="process" class="plan-btn" disabled style="color:#fff">{{'processing'
+                                <button mat-mdc-button *ngIf="process" class="plan-btn" disabled style="color:#fff">{{'processing'
                                     | translate}}...</button>
                             </div>
 
@@ -238,18 +238,18 @@
                     <div #cardElement id="card-element" class="field payment-box"></div>
 
                     <div class="payment-btn" *ngIf="process">
-                        <div class="make-payment-section"><button mat-button class="plan-btn" disabled
+                        <div class="make-payment-section"><button mat-mdc-button class="plan-btn" disabled
                                 style="color:#fff">{{'processing'
                                 | translate}}...</button></div>
                     </div>
 
                     <div class="payment-btn">
                         <div class="make-payment-section" *ngIf="!process">
-                            <button type="submit" id="submit-button" mat-button class="plan-btn">{{'make_payment_caps'
+                            <button type="submit" id="submit-button" mat-mdc-button class="plan-btn">{{'make_payment_caps'
                                 | translate}}</button>
                         </div>
                         <div class="make-payment-section" *ngIf="!process">
-                            <button type="button" mat-button class="plan-btn" (click)="closeMyModelPopup()">{{'cancel'
+                            <button type="button" mat-mdc-button class="plan-btn" (click)="closeMyModelPopup()">{{'cancel'
                                 | translate}}</button>
                         </div>
                     </div>
@@ -296,16 +296,16 @@
             </div>
             <div *ngIf="0 >= originalAmount && !initialPay">
                 <div class="payment-btn" *ngIf="process">
-                    <div class="make-payment-section"><button mat-button class="plan-btn" disabled style="color:#fff">{{'processing'
+                    <div class="make-payment-section"><button mat-mdc-button class="plan-btn" disabled style="color:#fff">{{'processing'
                             | translate}}...</button></div>
                 </div>
 
                 <div class="payment-btn" *ngIf="!process">
-                    <div class="make-payment-section"><button type="button" mat-button class="plan-btn"
+                    <div class="make-payment-section"><button type="button" mat-mdc-button class="plan-btn"
                             (click)="withOutStripSubmit()">{{'make_payment_caps'
                             | translate}}</button></div>
 
-                    <div class="make-payment-section" *ngIf="!process"><button type="button" mat-button class="plan-btn"
+                    <div class="make-payment-section" *ngIf="!process"><button type="button" mat-mdc-button class="plan-btn"
                             (click)="closeOtherPopup()">{{'cancel'
                             | translate}}</button></div>
                 </div>
@@ -349,7 +349,7 @@
             <div>
                 <div class="payment-btn">
                     <div class="make-payment-section">
-                        <button type="button" mat-button class="plan-btn" (click)="closeSuccessPopup()">{{'ok' |
+                        <button type="button" mat-mdc-button class="plan-btn" (click)="closeSuccessPopup()">{{'ok' |
                             translate}}</button>
                     </div>
                 </div>
@@ -366,7 +366,7 @@
         </div>
         <div class="model-view-evidence">
             <h3> {{'verify_user_content' | translate}} </h3>
-            <button type="button" mat-button (click)="onClosePopupVerify()"
+            <button type="button" mat-mdc-button (click)="onClosePopupVerify()"
                 class="view-evidence-btn green">{{'ok' | translate}}</button>
         </div>
     </div>

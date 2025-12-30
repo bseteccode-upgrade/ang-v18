@@ -6,15 +6,17 @@ section.start_wrapper.change-pwd{width:100%;display:inline-block}
 :host ::ng-deep .start_wrapper .panel-heading .pull-right button { background-color: transparent; padding:0 0;box-shadow:none;}
 :host ::ng-deep .start_wrapper .panel-heading .pull-right button span { color:#1e232b;}
 .total-count-block h4{font-size:15px}
-.total-count-block h3{font-size:48px}
-.total-student{background-color:#d79800;padding:15px 15px 0 15px}
-.total-addnew{background-color:#7c17fa;padding:15px 15px 0 15px}
-.total-certificate{background-color:#e20404;padding:15px 15px 0 15px}
-.total-achievement{background-color:#1792fa;padding:15px 15px 0 15px}
+.total-count-block h3{font-size:32px}
+.total-student{background:rgba(255, 255, 255, 0.02);border:1px solid rgba(255, 255, 255, 0.16);backdrop-filter: blur(15.9px);border-radius: 10px;padding:25px 15px 10px 15px;border-radius:10px;border:1px solid hsl(0deg 0% 100% / 20%)}
+.total-addnew{background:rgba(255, 255, 255, 0.02);border:1px solid rgba(255, 255, 255, 0.16);backdrop-filter: blur(15.9px);border-radius: 10px;padding:25px 15px 10px 15px;border-radius:10px;border:1px solid hsl(0deg 0% 100% / 20%)}
+.total-certificate{background:rgba(255, 255, 255, 0.02);border:1px solid rgba(255, 255, 255, 0.16);backdrop-filter: blur(15.9px);border-radius: 10px;padding:25px 15px 10px 15px;border-radius:10px;border:1px solid hsl(0deg 0% 100% / 20%)}
+.total-achievement{background:rgba(255, 255, 255, 0.02);border:1px solid rgba(255, 255, 255, 0.16);backdrop-filter: blur(15.9px);border-radius: 10px;padding:25px 15px 10px 15px;border-radius:10px;border:1px solid hsl(0deg 0% 100% / 20%)}
 
 
-.total-student.share{background-color:#ff6384}
-.total-addnew.download{background-color:#36a2eb}
-.total-certificate.login{background-color:#ffce56}
-.total-achievement.review{background-color:#c1c1c1}
-.total-right i{font-size:48px;color:#ffffff}
+
+
+.total-student.share{background-color:#0D0D0D}
+.total-addnew.download{background-color:#0D0D0D}
+.total-certificate.login{background-color:#0D0D0D}
+.total-achievement.review{background-color:#0D0D0D}
+.total-left i{font-size:48px;color:#00F6FF}

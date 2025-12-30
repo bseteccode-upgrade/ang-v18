@@ -36,11 +36,11 @@
                   </div>
 
                   <div class="col-sm-12">
-                    <!-- <button type="button" (click)="discriptionContent(firstFormGroup.controls['description']);ngxSmartModalService.getModal('DescriptionPopup').close()" mat-button
+                    <!-- <button type="button" (click)="discriptionContent(firstFormGroup.controls['description']);ngxSmartModalService.getModal('DescriptionPopup').close()" mat-mdc-button
                       class="btn btn-form-save">{{'ok' | translate}}</button> -->
                     <button type="button"
                       (click)="discriptionContent(firstFormGroup.controls['description']);ngxSmartModalService.getModal('DescriptionPopup').close()"
-                      mat-button class="btn btn-form-save">{{'ok' | translate}}</button>
+                      mat-mdc-button class="btn btn-form-save">{{'ok' | translate}}</button>
                   </div>
                 </ngx-smart-modal>
 
@@ -57,7 +57,7 @@
                   </div>
 
                   <div class="col-sm-12">
-                    <button type="button" (click)="ngxSmartModalService.getModal('CriteriaPopup').close()" mat-button
+                    <button type="button" (click)="ngxSmartModalService.getModal('CriteriaPopup').close()" mat-mdc-button
                       class="btn btn-form-save">{{'ok' | translate}}</button>
                   </div>
                 </ngx-smart-modal>
@@ -443,21 +443,21 @@
                             <button *ngIf="process" class="btn btn-primary">{{'processing' |
                               translate}}...</button>
 
-                            <button *ngIf="!process" mat-button id="back_to_courses" routerLink="/usercertificate"
+                            <button *ngIf="!process" mat-mdc-button id="back_to_courses" routerLink="/usercertificate"
                               class="green cancel-btn">{{'color_pic_cancel'
                               | translate}}</button>
 
-                            <button *ngIf="!process" type="submit" mat-button class="btn btn-form-save"
+                            <button *ngIf="!process" type="submit" mat-mdc-button class="btn btn-form-save"
                               (click)="submitted = firstFormGroup.invalid; submitForm(certificateModel, false)">{{'save_button'
                               | translate}}</button>
 
                             <button
                               *ngIf="( !process && certificateModel.is_active && apiService.pages.issue_certificate ) || ( !process && apiService.matrixData.remaining_wallet >= 10 && certificateModel.is_active && apiService.pages.issue_certificate )"
-                              type="submit" mat-button class="btn publish blue mat-button"
+                              type="submit" mat-mdc-button class="btn publish blue mat-mdc-button"
                               (click)="submitted = firstFormGroup.invalid; submitForm(certificateModel, true)">{{'publish'
                               | translate}}</button>
 
-                            <button *ngIf="!emptyCourse && !process" type="submit" class="publish-btn" mat-button
+                            <button *ngIf="!emptyCourse && !process" type="submit" class="publish-btn" mat-mdc-button
                               matStepperNext class="step-next" (click)="submitted = firstFormGroup.invalid">
                               <span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span> {{'next' |
                               translate}}
@@ -584,15 +584,15 @@
                 <div class="col-sm-12">
                   <div class="form-group">
                     <button *ngIf="process" class="btn btn-primary">{{'processing' | translate}}...</button>
-                    <button *ngIf="!process" mat-button matStepperPrevious class="step-back"
+                    <button *ngIf="!process" mat-mdc-button matStepperPrevious class="step-back"
                       (click)="submitted = firstFormGroup.invalid">{{'back'
                       | translate}}</button>
                     <button
                       *ngIf="( testMode && !process && certificateModel.is_active && apiService.pages.issue_certificate ) || ( !process && apiService.matrixData.remaining_wallet >= 10 && certificateModel.is_active && apiService.pages.issue_certificate )"
-                      type="submit" mat-button class="btn publish green mat-button"
+                      type="submit" mat-mdc-button class="btn publish green mat-mdc-button"
                       (click)="submitted = firstFormGroup.invalid; submitForm(certificateModel, true)">{{'publish'
                       | translate}}</button>
-                    <button *ngIf="!process" type="submit" mat-button class="btn btn-form-save"
+                    <button *ngIf="!process" type="submit" mat-mdc-button class="btn btn-form-save"
                       (click)="submitted = firstFormGroup.invalid; submitForm(certificateModel, false)">{{'save_button'
                       | translate}}</button>
                   </div>
@@ -628,9 +628,9 @@
       </div>
       <div class="form-group color-picker-btn">
         <button *ngIf="imageCreateProcess" class="btn btn-primary">{{'processing' | translate}}...</button>
-        <button *ngIf="!imageCreateProcess" type="button" mat-button class="password-submit" style="margin-right:10px"
+        <button *ngIf="!imageCreateProcess" type="button" mat-mdc-button class="password-submit" style="margin-right:10px"
           (click)="onColorPickImgCreate()">{{'submit' | translate}}</button>
-        <button *ngIf="!imageCreateProcess" mat-button class="password-submit"
+        <button *ngIf="!imageCreateProcess" mat-mdc-button class="password-submit"
           (click)="colorPickPopup.close()">{{'color_pic_cancel'
           | translate}}</button>
       </div>

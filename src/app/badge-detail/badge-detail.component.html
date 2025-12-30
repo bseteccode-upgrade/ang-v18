@@ -13,7 +13,7 @@
     <div class="detailedMobileContainer">
       <div class="detailedMobileSub" *ngIf="!badgeDetail.restrict_language_code">
         <div class="pull-left">
-          <button mat-button [matMenuTriggerFor]="menu">
+          <button mat-mdc-button [matMenuTriggerFor]="menu">
             <img src="assets/images/translation.png" /> {{selectedLang | translate}}</button>
           <mat-menu #menu="matMenu">
             <button mat-menu-item *ngFor="let lang of languages" (click)="selectLang(lang)"
@@ -22,7 +22,7 @@
         </div>
 
         <!-- <div class="pull-right">
-        <button mat-button class="exitBtn"><img src="assets/images/exit.png"/> Exit</button>
+        <button mat-mdc-button class="exitBtn"><img src="assets/images/exit.png"/> Exit</button>
       </div> -->
       </div>
 
@@ -172,7 +172,7 @@
       <li>
         <div class="detailed-right">
           <div class="pull-right">
-            <!-- <button mat-button class="exitBtn"><img src="assets/images/exit.png"/> Exit</button> -->
+            <!-- <button mat-mdc-button class="exitBtn"><img src="assets/images/exit.png"/> Exit</button> -->
 
             <a class="arrowClose" (click)="toggleClose($event)"><span class="material-icons">
                 arrow_forward_ios
@@ -367,7 +367,7 @@
 
           <div class="pull-right" *ngIf="!badgeDetail.restrict_language_code">
             <div class="lang_main">
-              <button mat-button [matMenuTriggerFor]="menulang" class="dropdown_select">
+              <button mat-mdc-button [matMenuTriggerFor]="menulang" class="dropdown_select">
                 {{selectedLang}}
                 <span class="caret"></span>
               </button>
@@ -533,7 +533,7 @@
                 </div>
 
                 <div class="col-md-6 col-sm-12" [hidden]="!badgeDetail.is_apple_wallet">
-                  <button mat-button class="download-btn blue" (click)="addMobileWallet(badgeDetail.id)">
+                  <button mat-mdc-button class="download-btn blue" (click)="addMobileWallet(badgeDetail.id)">
                     <i class="fa fa-code"></i> <span class="btn-text">{{'add_mobile_wallet' |
                       translate}}</span></button>
                 </div>
@@ -623,13 +623,13 @@
       <div *ngFor="let evidencelist of myModal2.getData(); let i = index" class="model-view-evidence">
         <a *ngIf="evidencelist.evid && evidencelist.evid !== 'None' && i < (myModal2.getData().length - 1)"
           href="{{evidencelist.evid}}" class="view-evidence-btn"
-          matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-button
+          matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-mdc-button
           target="_blank">
           <i class="fa fa-eye"></i> {{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}
         </a>
         <a *ngIf="evidencelist.blockchainType !== 'oracle' && evidencelist.evid && evidencelist.evid !== 'None' && i === (myModal2.getData().length - 1)"
           href="{{evidencelist.evid}}" class="view-evidence-btn"
-          matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-button
+          matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-mdc-button
           target="_blank">
           <span *ngIf="evidencelist.transaction"><i class="fa fa-eye"></i> {{'view_blockchain' | translate}}</span>
           <span *ngIf="!evidencelist.transaction"><i class="fa fa-eye"></i>{{(evidencelist.label)? evidencelist.label :
@@ -645,13 +645,13 @@
       </div>
       <div *ngIf="myModal2.getData()" class="model-view-evidence">
         <a *ngIf="finalCertiIpfsUri !== null && finalCertiIpfsUri !== 'None'" [href]="finalCertiIpfsUri"
-          class="view-evidence-btn" matTooltip="{{ 'ipfs_image' | translate }}" mat-button target="_blank">
+          class="view-evidence-btn" matTooltip="{{ 'ipfs_image' | translate }}" mat-mdc-button target="_blank">
           <i class="fa fa-eye"></i> {{ 'ipfs_image' | translate }}
         </a>
       </div>
       <div *ngIf="myModal2.getData()" class="model-view-evidence">
         <a *ngIf="finalMetadataIpfsUri !== null && finalMetadataIpfsUri !== 'None'" [href]="finalMetadataIpfsUri"
-          class="view-evidence-btn" matTooltip="{{ 'ipfs_meta_uri' | translate }}" mat-button target="_blank">
+          class="view-evidence-btn" matTooltip="{{ 'ipfs_meta_uri' | translate }}" mat-mdc-button target="_blank">
           <i class="fa fa-eye"></i> {{ 'ipfs_meta_uri' | translate }}
         </a>
       </div>
@@ -839,7 +839,7 @@
       </div>
       <br>
       <button class="btn btn-primary" *ngIf="emailProcess"> {{'processing' | translate}}... </button>
-      <button mat-button class="email-submit" *ngIf="!emailProcess"
+      <button mat-mdc-button class="email-submit" *ngIf="!emailProcess"
         (click)="submitted = true; shareEmail(badgeDetail.id, email)">{{'submit'
         | translate}}</button>
     </div>
@@ -854,16 +854,16 @@
     <div class="col-md-12 col-sm-12">
       {{'choose_from_options' | translate}}
       <div class="embed-btn-block">
-        <button mat-button class="embed-btn" [ngClass]="{active: activeTab === 'gmail'}"
+        <button mat-mdc-button class="embed-btn" [ngClass]="{active: activeTab === 'gmail'}"
           (click)="activeTab = 'gmail'">{{'gmail_signature'
           | translate}}</button>
-        <button mat-button class="embed-btn" [ngClass]="{active: activeTab === 'outlook'}"
+        <button mat-mdc-button class="embed-btn" [ngClass]="{active: activeTab === 'outlook'}"
           (click)="activeTab = 'outlook'">{{'outlook_signature'
           | translate}}</button>
-        <button mat-button class="embed-btn" [ngClass]="{active: activeTab === 'embedimg'}"
+        <button mat-mdc-button class="embed-btn" [ngClass]="{active: activeTab === 'embedimg'}"
           (click)="activeTab = 'embedimg'">{{'embed_image'
           | translate}}</button>
-        <button mat-button class="embed-btn" [ngClass]="{active: activeTab === 'embedfullpage'}"
+        <button mat-mdc-button class="embed-btn" [ngClass]="{active: activeTab === 'embedfullpage'}"
           (click)="activeTab = 'embedfullpage'">{{'embed_fullpage'
           | translate}}</button>
       </div>
@@ -1105,7 +1105,7 @@
       </div>
 
       <div class="col-md-12 col-sm-12 linkedin-savebtn form-group"><br>
-        <a mat-button class="btn btn-form-save" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME"
+        <a mat-mdc-button class="btn btn-form-save" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME"
           rel="nofollow" target="_blank">{{'open_linkedin' | translate}}</a>
       </div>
     </div>
@@ -1134,7 +1134,7 @@
       </div>
 
       <div class="col-md-12 col-sm-12 linkedin-savebtn form-group"><br>
-        <button class="social-share-linkedin" mat-button
+        <button class="social-share-linkedin" mat-mdc-button
           (click)="socialShare('linkedin', badgeDetail.linkedin_social_share_url, badgeDetail.linkedin_content )"
           type="button"> <i class="fa fa-linkedin"></i> {{'linkedin' | translate}}</button>
       </div>

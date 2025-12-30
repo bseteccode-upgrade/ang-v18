@@ -13,7 +13,7 @@ section.start_wrapper.issue-certificate-list .panel-heading{padding:0 0 20px 0}
 ul.product_detail_list { padding-left:0px; margin-bottom:0px;}
 ul.product_detail_list li { font-size:14px; display: inline-block;font-weight: 600; color:#1e232b;}
 ul.product_detail_list li:first-child {padding-right:5px}
-.scheduler-border .filter-btn.mat-button { width:100%;}
+.scheduler-border .filter-btn.mat-mdc-button { width:100%;}
 ul.activity-head-details { padding-left:0; margin-bottom:0; text-align: center;}
 ul.activity-head-details li { min-width:190px;max-width:100%;display: inline-block;vertical-align: middle; }
 ul.activity-head-details li img { padding-right:0;max-height:320px}
@@ -65,8 +65,8 @@ ul.bar-code li { display: inline-block; color:#1e232b; font-size: 14px;}
 img.cmpny-logo { max-height:50px; }
 .view_search { display: inline-block; padding:15px 0; margin-right:10px; }    
 .view_search a { background-color:#1e232b; padding:5px 10px; color:#fff; border-radius: 2px; font-weight: 400; }
-.separate_btn.mat-button { width:100%; color:#fff; background-color: #29b6d8; border-color: #29b6d8; font-size: 14px; padding: 0px 15px; }
-.back-activity-btn.mat-button { color:#fff; background-color: #29b6d8; border-color: #29b6d8; font-size: 14px; padding: 0px 15px; margin-bottom:10px;}
+.separate_btn.mat-mdc-button { width:100%; color:#fff; background-color: #29b6d8; border-color: #29b6d8; font-size: 14px; padding: 0px 15px; }
+.back-activity-btn.mat-mdc-button { color:#fff; background-color: #29b6d8; border-color: #29b6d8; font-size: 14px; padding: 0px 15px; margin-bottom:10px;}
 .product_details .pull-left h2{ color: #1e232b; font-family: 'Roboto-Medium' }
 
 /* .main-timeline .timeline{margin:0!important;padding-top:60px;} */

@@ -1,5 +1,5 @@
 .no-record { text-align: center; margin-bottom:10px;}
-.add-btn.mat-button { color:#fff; background-color: #29b6d8; border-color: #29b6d8; font-size: 14px; padding: 0px 15px; margin-right:20px; }
+.add-btn.mat-mdc-button { color:#fff; background-color: #29b6d8; border-color: #29b6d8; font-size: 14px; padding: 0px 15px; margin-right:20px; }
 .badge-details-modelpopup.student-detail-popup { margin:20px 0px; }
 .student-info { margin:20px 0px; position: relative; width:100%; display: inline-block;}
 .student-header { width:100%; text-align: center; display: inline-block; }

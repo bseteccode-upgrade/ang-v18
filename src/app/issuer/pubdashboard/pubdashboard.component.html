@@ -2,11 +2,11 @@
   <div class="col-md-3 col-sm-12">
     <div class="total-student">
       <div class="total-left">
-        <h4>{{'total_students' | translate}}</h4>
-        <h3>{{apiService.matrixData.student_count}}</h3>
+        <span class="side-icon icon-student"></span>        
       </div>
       <div class="total-right">
-        <span class="side-icon icon-student"></span>
+        <h4>{{'total_students' | translate}}</h4>
+        <h3>{{apiService.matrixData.student_count}}</h3>
       </div>
     </div>
   </div>
@@ -15,11 +15,12 @@
   <div class="col-md-3 col-sm-12">
     <div class="total-addnew">
       <div class="total-left">
+        <span class="side-icon icon-course"></span>
+      </div>
+
+      <div class="total-right">
         <h4>{{'total_courses' | translate}}</h4>
         <h3>{{apiService.matrixData.course_count}}</h3>
-      </div>
-      <div class="total-right">
-        <span class="side-icon icon-course"></span>
       </div>
     </div>
   </div>
@@ -27,11 +28,12 @@
   <div class="col-md-3 col-sm-12">
     <div class="total-certificate">
       <div class="total-left">
+        <span class="side-icon icon-certificate"></span>
+      </div>
+      
+      <div class="total-right">
         <h4>{{'total_certificates' | translate}}</h4>
         <h3>{{apiService.matrixData.certificate_count}}</h3>
-      </div>
-      <div class="total-right">
-        <span class="side-icon icon-certificate"></span>
       </div>
     </div>
   </div>
@@ -39,13 +41,14 @@
   <div class="col-md-3 col-sm-12">
     <div class="total-achievement">
       <div class="total-left">
+        <span class="side-icon icon-issue-certificate"></span>
+      </div>
+
+      <div class="total-right">
         <h4>{{'total_achievements' | translate}}</h4>
         <h3>{{ apiService.matrixData.total_achievements }}</h3>
       </div>
-      <div class="total-right">
-        <span class="side-icon icon-issue-certificate"></span>
-      </div>
-    </div>
+          </div>
   </div>
 </div>
 
@@ -53,13 +56,12 @@
   <div class="col-md-3 col-sm-12">
     <div class="total-student share">
       <div class="total-left">
-        <h4>{{'total_share' | translate}}</h4>
-        <h3>{{apiService.matrixData.social_count}}</h3>
-      </div>
-
-      <div class="total-right">
         <i class="material-icons">folder_shared</i>
       </div>
+      <div class="total-right">
+        <h4>{{'total_share' | translate}}</h4>
+        <h3>{{apiService.matrixData.social_count}}</h3>
+      </div>      
     </div>
   </div>
 
@@ -67,12 +69,12 @@
   <div class="col-md-3 col-sm-12">
     <div class="total-addnew download">
       <div class="total-left">
-        <h4>{{'total_download' | translate}}</h4>
-        <h3>{{apiService.matrixData.download_count}}</h3>
+        <i class="material-icons">cloud_download</i>
       </div>
 
       <div class="total-right">
-        <i class="material-icons">cloud_download</i>
+        <h4>{{'total_download' | translate}}</h4>
+        <h3>{{apiService.matrixData.download_count}}</h3>
       </div>
     </div>
   </div>
@@ -80,12 +82,12 @@
   <div class="col-md-3 col-sm-12">
     <div class="total-certificate login">
       <div class="total-left">
-        <h4>{{'total_logged_in' | translate}}</h4>
-        <h3>{{apiService.matrixData.login_count}}</h3>
+        <i class="material-icons">login</i>
       </div>
 
       <div class="total-right">
-        <i class="material-icons">login</i>
+        <h4>{{'total_logged_in' | translate}}</h4>
+        <h3>{{apiService.matrixData.login_count}}</h3>
       </div>
     </div>
   </div>
@@ -93,12 +95,12 @@
   <div class="col-md-3 col-sm-12">
     <div class="total-achievement review">
       <div class="total-left">
-        <h4>{{'total_user_reviewed' | translate}}</h4>
-        <h3>{{apiService.matrixData.embed_count}}</h3>
+        <i class="material-icons">preview</i>
       </div>
 
       <div class="total-right">
-        <i class="material-icons">preview</i>
+        <h4>{{'total_user_reviewed' | translate}}</h4>
+        <h3>{{apiService.matrixData.embed_count}}</h3>
       </div>
     </div>
   </div>

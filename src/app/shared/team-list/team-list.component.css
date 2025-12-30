@@ -2,7 +2,7 @@
 :host ::ng-deep .delete-input .mat-form-field-appearance-outline .mat-form-field-infix { padding:3px 0px;}
 .delete-input .text-danger.text-left.small { position: absolute; bottom: 2px; }
 a.workflow_id { color:#337ab7; font-size: 14px; text-decoration: underline; } 
-.mat-button.send_btn { background-color:#29b6d8; color:#fff; }
+.mat-mdc-button.send_btn { background-color:#29b6d8; color:#fff; }
 /* box start */
 .content-height { display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex; }
 .box-container { width:100%; position: relative; display: inline-block; margin-bottom:20px; }
@@ -12,8 +12,8 @@ a.workflow_id { color:#337ab7; font-size: 14px; text-decoration: underline; }
 .box-details h3 { font-size: 16px; font-weight: bold; color:#000000;width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
 .box-details h4 { font-size: 14px; font-weight: normal; color:#232531;width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
 .side-btn { float: right;}
-.menu-icon.mat-button { color:#b2b2b2;min-width: auto;line-height: 10px;padding: 0;position: absolute;right:10px;top:5px; }
-.menu-icon.mat-button .material-icons { font-size:30px; }
+.menu-icon.mat-mdc-button { color:#b2b2b2;min-width: auto;line-height: 10px;padding: 0;position: absolute;right:10px;top:5px; }
+.menu-icon.mat-mdc-button .material-icons { font-size:30px; }
 
 
 ul.member-list { width:100%; padding-left:0;margin-bottom:0;}
