@@ -49,9 +49,9 @@ const routes: Routes = [
   { path: 'reset', loadChildren: () =>
     import('./reset-pwd/reset-pwd.module').then(m => m.ResetPwdModule) },
   // { path: 'reset', component: ResetPwdComponent },
-  { path: 'forgot-pwd', loadChildren: () =>
-    import('./forgot-pwd/forgot-pwd.module').then(m => m.ForgotPwdModule) },
-  // { path: 'forgot-pwd', component: ForgotPwdComponent },
+  // { path: 'forgot-pwd', loadChildren: () =>
+  //   import('./forgot-pwd/forgot-pwd.module').then(m => m.ForgotPwdModule) },
+  { path: 'forgot-pwd', component: ForgotPwdComponent },
   { path: 'badgedetail', loadChildren: () =>
     import('./badge-detail/badge-detail.module').then(m => m.BadgeDetailModule) },
   // { path: 'badgedetail', component: BadgeDetailComponent },

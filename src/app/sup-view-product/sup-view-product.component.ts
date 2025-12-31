@@ -108,7 +108,7 @@ export class SupViewProductComponent implements OnInit, AfterViewInit {
 
   myInit() {
     this.apiService.changeTitle('Vottun');
-    this.document.getElementById('appFavicon').setAttribute('href', 'assets/images/vottun-favicon.ico');
+    this.document.getElementById('appFavicon').setAttribute('href', 'assets/images/eduvot-favicon.svg');
     localStorage.removeItem('fromqrscanned');
     this.offset = new Date().getTimezoneOffset();
     this.initial = true;
@@ -259,7 +259,7 @@ export class SupViewProductComponent implements OnInit, AfterViewInit {
       this.logo_url = 'assets/images/logo-blue.png';
       this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#fff';
       this.apiService.changeTitle('Vottun');
-      this.document.getElementById('appFavicon').setAttribute('href', 'assets/images/vottun-favicon.ico');
+      this.document.getElementById('appFavicon').setAttribute('href', 'assets/images/eduvot-favicon.svg');
     });
   }
 

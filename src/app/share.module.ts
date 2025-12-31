@@ -107,7 +107,7 @@ import { AccountSettingComponent } from './shared/account-setting/account-settin
     SideNavComponent,
     PaymentComponent,
     AccountSettingComponent,
-    // RouterModule,
+    RouterModule,
     
     FormsModule,
     ReactiveFormsModule,
