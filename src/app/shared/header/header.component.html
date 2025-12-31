@@ -1,11 +1,11 @@
 <div id="header" class="main_header_substream">
   <a *ngIf="!apiService.user.top_right_logo" >
-              <div class="vottun-logo">
+              <div class="eduvot-logo">
                 <img [src]="pagelogo" *ngIf="apiService.user.vouttun_logo">
               </div>
             </a>
             <a *ngIf="apiService.user.top_right_logo && apiService.user.vouttun_logo">
-              <div class="vottun-logo header">
+              <div class="eduvot-logo header">
                 <span><img src="{{apiService.user.top_right_logo}}" class="img-responsive"></span>
               </div>
             </a>
@@ -30,12 +30,12 @@
           <h1>
             <!-- routerLink="/" -->
             <!-- <a *ngIf="!apiService.user.top_right_logo" >
-              <div class="vottun-logo">
+              <div class="eduvot-logo">
                 <img [src]="pagelogo" *ngIf="apiService.user.vouttun_logo">
               </div>
             </a>
             <a *ngIf="apiService.user.top_right_logo && apiService.user.vouttun_logo">
-              <div class="vottun-logo header">
+              <div class="eduvot-logo header">
                 <span><img src="{{apiService.user.top_right_logo}}" class="img-responsive"></span>
               </div>
             </a> -->

@@ -183,10 +183,10 @@ dp-date-picker.dp-material .dp-input-container input.dp-picker-input {width:100%
 .profile-picture .img-circle.m-b {border: 2px solid #70757b;width:50px;height:50px; border-radius: 3px; margin:0;display: inline-block;}
 .logodash h1 {line-height: normal; margin: 0; padding: 13px 43px 24px;}
 .logodash h1 a img { width:230px; }
-.logodash h1 a .vottun-logo.header img { width:112px; height:58px; object-fit: contain; }
+.logodash h1 a .eduvot-logo.header img { width:112px; height:58px; object-fit: contain; }
 .logodash h1 a span.vottun-image { min-width:185px; width:100%; max-width:185px; height: 54px; display: inline-block; position: relative;background-position: right !important;}
-.logodash h1 a .vottun-logo { position: absolute; right: 80px;top: 16px;max-width:185px; }
-.logodash h1 a .vottun-logo.header { position: absolute; right: 140px;top: unset;max-width:112px; height:58px; object-fit: contain; }
+.logodash h1 a .eduvot-logo { position: absolute; right: 80px;top: 16px;max-width:185px; }
+.logodash h1 a .eduvot-logo.header { position: absolute; right: 140px;top: unset;max-width:112px; height:58px; object-fit: contain; }
 .menuslides .profile-picture {padding: 20px 35px; text-align: left;}
 .menuslides #side-menu li{ height:62px;border-top:none;border-bottom:none;}
 .menuslides #side-menu li.active  {background-color: #1e232b;}
@@ -664,7 +664,7 @@ ul.nav-right li { display: inline-block;}
 .start_wrapper .mat-radio-button.mat-accent .mat-radio-inner-circle { background-color: #29b6d8;}
 body.fixed-navbar.sidebar-scroll.togglesidebar .bg-shade { background-color: rgba(0, 0, 0, 0.61); position: absolute; top: 0px; bottom: 0px; height: 100%; width: 100%; display: inline-block; z-index: 999; }
 .start_wrapper .panel-heading .pull-right.close-icons { cursor: pointer;}
-.vottun-logo-block { text-align: center; top:15px; position: relative;}
+.eduvot-logo-block { text-align: center; top:15px; position: relative;}
 .post-block { position: absolute; display: inline-block; right:0px; top:0px; }
 .post-block a { color:#fff; background-color:#d55d00; width:100%; height:100%; padding:5px 10px; font-weight: normal;font-size: 14px;border: 0px solid #000;border-radius: 4px;}
 .post-block a:hover {background-color:#29b6d8; }
@@ -877,7 +877,7 @@ ul.wallet-list li:first-child:after { content:':'; float:right; position: relati
 .account-lang { padding-right:15px; position: relative; }
 .start_wrapper.account-setting .panel-heading .pull-right .account-lang { float: left !important;}
 .start_wrapper.account-setting .panel-heading .pull-right .account-lang .dropdown-menu { min-width:auto; }
-.vottun-logo-block .account-lang ul.dropdown-menu.show { min-width:auto; }
+.eduvot-logo-block .account-lang ul.dropdown-menu.show { min-width:auto; }
 .mat-mdc-button[disabled][disabled] { cursor: not-allowed; }
 .cke_chrome { display: none !important;} 
 .list_delete_icon { color: #fff; position: absolute; top: -5px; right: -5px; font-size: 16px; z-index: 9999; cursor: pointer; background-color: rgba(255, 0, 0, 0.50); width: 25px; height: 25px; border-radius: 25px; z-index: 9999;cursor: pointer; padding: 2px 0px; }
@@ -1221,7 +1221,7 @@ ul.access-menu li {  width: 50%; }
 .pie-chart-block { margin:10px 0px; height: auto; }
 .student-head-block { margin:10px 0px; text-align: center; }
 .logodash h1 a img {width:140px; top:10px; position: relative;}
-.logodash h1 a .vottun-logo.header img { top:0;}
+.logodash h1 a .eduvot-logo.header img { top:0;}
 .logodash h1 a span.vottun-image {width:140px; top:0; position: relative;}
 .issuer-logo img { width:150px;}
 .achievement-btn .filter-btn.mat-mdc-button { width:100%; margin:10px 0px;}
@@ -1330,7 +1330,7 @@ body.dialog-open .acheivement-popup.detailModelBox{min-height:90%}
 @media (min-width:481px) and (max-width:560px)
 {
 .logodash h1 a img { width:140px; top: 12px; position: relative;}
-.logodash h1 a .vottun-logo.header img { top:5px; }
+.logodash h1 a .eduvot-logo.header img { top:5px; }
 .logodash h1 a span.vottun-image { width:140px; top: 0; position: relative;}
 .logodash h1 { padding:10px 10px 25px; }
 .add-student-form { margin:0 10px;padding:0 0;}
@@ -1550,7 +1550,7 @@ ul.access-menu li { width:100%;}
   .icon-track:before {
     content: "\e919";
   }
-  .icon-vottun-logo:before {
+  .icon-eduvot-logo:before {
     content: "\e91a";
   }
   

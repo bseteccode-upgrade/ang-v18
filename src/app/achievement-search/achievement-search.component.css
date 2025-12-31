@@ -1,6 +1,6 @@
 :host ::ng-deep .view-evidence-btn.mat-mdc-button{/*min-width:auto;width:auto;*/}
 .certificate-container { display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex; flex-wrap: wrap;}
-:host ::ng-deep .logodash h1 a .vottun-logo {right:20px; } 
+:host ::ng-deep .logodash h1 a .eduvot-logo {right:20px; } 
 :host ::ng-deep #header.main_header_substream { position: relative; }
 :host ::ng-deep button.sb-wrapper.sb-linkedin.sb-show-icon.sb-show-text { background-color:#006fa6; color:#fff; }
 :host ::ng-deep button.sb-wrapper.sb-linkedin .sb-text { width:100%; display: inline-block; text-align: left;font-weight: normal;}
@@ -250,7 +250,7 @@ button.mat-mini-fab.mat-accent {
 ul.student-detail-list li { font-family: 'Roboto-Regular'; width:43%; } 
 :host ::ng-deep .main_header_substream #logo.light-version { display: block; width:100%; text-align: center;}
 :host ::ng-deep #header.main_header_substream { height:160px; }
-:host ::ng-deep .logodash h1 a .vottun-logo { position: relative; width:100%; top:0px; }
+:host ::ng-deep .logodash h1 a .eduvot-logo { position: relative; width:100%; top:0px; }
 .detail_box[_ngcontent-c1] .middle-side[_ngcontent-c1]{width:78%}
 .contact-email-btn.mat-mdc-button { font-size: 1.1em!important;}
 ul.profile_main_list li:first-child,ul.profile_main_list li:last-child{width:100%;text-align:center}
@@ -285,6 +285,6 @@ ul.student-detail-list li { font-family: 'Roboto-Regular'; width:50%; }
 :host ::ng-deep .logodash ul li { width:100%; }
 :host ::ng-deep .logodash h1 { width:100%; text-align: center; display: inline-block; }
 :host ::ng-deep .logodash h1 a { width:100%; text-align: center; display: inline-block; }
-:host ::ng-deep .logodash h1 a .vottun-logo { position: relative; width:100%; text-align: center; display: inline-block; }
+:host ::ng-deep .logodash h1 a .eduvot-logo { position: relative; width:100%; text-align: center; display: inline-block; }
 :host ::ng-deep .main_header_substream #logo.light-version { height: auto;}
 }
