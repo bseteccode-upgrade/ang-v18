@@ -122,11 +122,11 @@
     <h4 *ngIf="userexists.getData()?.list_actual?.length === 0">
       {{'you_are_registered_all_user_please_login' | translate}}</h4>
     <button *ngIf="userexists.getData()?.list_actual?.length !== 0" (click)="userexists.close(); closeTheApproch();"
-      mat-mdc-button class="green">{{'no' | translate}}</button>
+      mat-button class="green">{{'no' | translate}}</button>
     <button *ngIf="userexists.getData()?.list_actual?.length !== 0" (click)="userexists.close(); okTheApproch();"
-      mat-mdc-button class="green">{{'yes' | translate}}</button>
+      mat-button class="green">{{'yes' | translate}}</button>
     <button *ngIf="userexists.getData()?.list_actual?.length === 0" (click)="userexists.close(); closeEmailVerify();"
-      mat-mdc-button class="green">{{'login' | translate}}</button>
+      mat-button class="green">{{'login' | translate}}</button>
   </div>
 </ngx-smart-modal>
 <ngx-smart-modal #emailverifypopup closable='false'

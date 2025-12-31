@@ -28,7 +28,7 @@
         <div class="panel-body">
           <div class="col-md-12 col-sm-12">
             <div class="back_btn">
-              <button mat-mdc-button class="back" (click)="redirectToStudList()"><i class="fa fa-hand-o-left fa-1x"
+              <button mat-button class="back" (click)="redirectToStudList()"><i class="fa fa-hand-o-left fa-1x"
                   style="font-size:20px;"></i>
                 {{'back_to_studlist' | translate}} </button>
             </div>
@@ -279,13 +279,13 @@
         <a *ngIf="evidencelist.evid && evidencelist.evid !== 'None' && i < (myModal2.getData().length - 1)"
           href="{{evidencelist.evid}}" class="view-evidence-btn"
           matTooltip="{{(evidencelist.label && evidencelist.label.length != 1)? evidencelist.label : 'view_evidence' | translate}}"
-          mat-mdc-button target="_blank">
+          mat-button target="_blank">
           <i class="fa fa-eye"></i> {{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}
         </a>
         <a *ngIf="evidencelist.blockchainType !== 'oracle' && evidencelist.evid && evidencelist.evid !== 'None' && i === (myModal2.getData().length - 1)"
           href="{{evidencelist.evid}}" class="view-evidence-btn"
           matTooltip="{{(evidencelist.label && evidencelist.label.length != 1)? evidencelist.label : 'view_evidence' | translate}}"
-          mat-mdc-button target="_blank">
+          mat-button target="_blank">
           <span *ngIf="evidencelist.transaction"><i class="fa fa-eye"></i> {{'view_blockchain' | translate}}</span>
           <span *ngIf="!evidencelist.transaction"><i class="fa fa-eye"></i>{{(evidencelist.label)? evidencelist.label :
             'view_evidence' | translate}}</span>
@@ -300,13 +300,13 @@
       </div>
       <div *ngIf="myModal2.getData()" class="model-view-evidence">
         <a *ngIf="finalCertiIpfsUri !== null && finalCertiIpfsUri !== 'None'" [href]="finalCertiIpfsUri"
-          class="view-evidence-btn" matTooltip="{{ 'ipfs_image' | translate }}" mat-mdc-button target="_blank">
+          class="view-evidence-btn" matTooltip="{{ 'ipfs_image' | translate }}" mat-button target="_blank">
           <i class="fa fa-eye"></i> {{ 'ipfs_image' | translate }}
         </a>
       </div>
       <div *ngIf="myModal2.getData()" class="model-view-evidence">
         <a *ngIf="finalMetadataIpfsUri !== null && finalMetadataIpfsUri !== 'None'" [href]="finalMetadataIpfsUri"
-          class="view-evidence-btn" matTooltip="{{ 'ipfs_meta_uri' | translate }}" mat-mdc-button target="_blank">
+          class="view-evidence-btn" matTooltip="{{ 'ipfs_meta_uri' | translate }}" mat-button target="_blank">
           <i class="fa fa-eye"></i> {{ 'ipfs_meta_uri' | translate }}
         </a>
       </div>
@@ -348,9 +348,9 @@
         </div>
       </fieldset>
       <div class="form-group" style="float: right">
-        <button type="submit" mat-mdc-button class="password-submit"
+        <button type="submit" mat-button class="password-submit"
           style="margin-right:10px">{{'yes' | translate}}</button>
-        <button type="button" mat-mdc-button class="password-submit"
+        <button type="button" mat-button class="password-submit"
           (click)="myModal3.close()">{{'no' | translate}}</button>
       </div>
     </form>
@@ -674,14 +674,14 @@
         </div>
 
         <!-- <div class="col-md-6 col-sm-12">
-              <a mat-mdc-button class="linkedin-btn" (click)="ngxSmartModalService.getModal('linkedinModal').open();">
+              <a mat-button class="linkedin-btn" (click)="ngxSmartModalService.getModal('linkedinModal').open();">
                 <i class="fa fa-linkedin"></i>
                 <span class="btn-text">{{'linkedin' | translate}}</span>
               </a>
             </div> -->
 
         <div class="col-md-6 col-sm-12">
-          <a mat-mdc-button class="linkedin-btn social-share-linkedin"
+          <a mat-button class="linkedin-btn social-share-linkedin"
             (click)="ngxSmartModalService.getModal('linkedinShare').open();">
             <i class="fa fa-linkedin"></i>
             <span class="btn-text">{{'linkedin' | translate}}</span>
@@ -702,19 +702,19 @@
                 [url]="selectedCertificate.social_share_url" class="linkedin-btn"></share-button> -->
         </div>
         <div class="col-md-6 col-sm-12">
-          <button mat-mdc-button class="email-btn" (click)="ngxSmartModalService.getModal('EmailModal').open();"><i
+          <button mat-button class="email-btn" (click)="ngxSmartModalService.getModal('EmailModal').open();"><i
               class="fa fa-envelope"></i>{{'email_credential' | translate}}</button>
         </div>
         <div class="col-md-6 col-sm-12" *ngIf="selectedCertificate.pdf_uploads">
-          <a (click)="downloadPdf(selectedCertificate.pdf_uploads)" mat-mdc-button class="download-btn"><i
+          <a (click)="downloadPdf(selectedCertificate.pdf_uploads)" mat-button class="download-btn"><i
               class="fa fa-download"></i>{{'download_pdf' | translate}}</a>
         </div>
         <div class="col-md-6 col-sm-12" *ngIf="selectedCertificate.badge">
-          <a [href]="selectedCertificate.badge" target="_blank" mat-mdc-button class="download-btn"><i
+          <a [href]="selectedCertificate.badge" target="_blank" mat-button class="download-btn"><i
               class="fa fa-download"></i>{{'download_badge' | translate}}</a>
         </div>
         <div class="col-md-6 col-sm-12">
-          <a mat-mdc-button class="download-btn"
+          <a mat-button class="download-btn"
             (click)="ngxSmartModalService.setModalData( ShareModal.getData() , 'embedModal');ngxSmartModalService.getModal('embedModal').open();"><i
               class="fa fa-code"></i>{{'embed_credential' | translate}}</a>
         </div>
@@ -743,7 +743,7 @@
       </div>
       <br>
       <button class="btn btn-primary" *ngIf="emailProcess"> {{'processing' | translate}}... </button>
-      <button mat-mdc-button class="email-submit" *ngIf="!emailProcess"
+      <button mat-button class="email-submit" *ngIf="!emailProcess"
         (click)="submitted = true; shareEmail(selectedCertificate.id, email)">{{'submit' | translate}}</button>
     </div>
   </ngx-smart-modal>
@@ -758,13 +758,13 @@
     <div class="col-md-12 col-sm-12">
       {{'choose_from_options' | translate}}
       <div class="embed-btn-block">
-        <button mat-mdc-button class="embed-btn" [ngClass]="{active: activeTab === 'gmail'}" (click)="activeTab = 'gmail'">
+        <button mat-button class="embed-btn" [ngClass]="{active: activeTab === 'gmail'}" (click)="activeTab = 'gmail'">
           {{'gmail_signature' | translate}}</button>
-        <button mat-mdc-button class="embed-btn" [ngClass]="{active: activeTab === 'outlook'}"
+        <button mat-button class="embed-btn" [ngClass]="{active: activeTab === 'outlook'}"
           (click)="activeTab = 'outlook'">{{'outlook_signature' | translate}}</button>
-        <button mat-mdc-button class="embed-btn" [ngClass]="{active: activeTab === 'embedimg'}"
+        <button mat-button class="embed-btn" [ngClass]="{active: activeTab === 'embedimg'}"
           (click)="activeTab = 'embedimg'">{{'embed_image' | translate}}</button>
-        <button mat-mdc-button class="embed-btn" [ngClass]="{active: activeTab === 'embedfullpage'}"
+        <button mat-button class="embed-btn" [ngClass]="{active: activeTab === 'embedfullpage'}"
           (click)="activeTab = 'embedfullpage'">{{'embed_fullpage' | translate}}</button>
       </div>
 
@@ -996,7 +996,7 @@
       </div>
 
       <div class="col-md-12 col-sm-12 linkedin-savebtn form-group"><br>
-        <a mat-mdc-button class="btn btn-form-save" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME"
+        <a mat-button class="btn btn-form-save" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME"
           rel="nofollow" target="_blank">{{'open_linkedin' | translate}}</a>
       </div>
     </div>

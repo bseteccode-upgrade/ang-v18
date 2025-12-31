@@ -8,7 +8,7 @@
       </div>
       <div class="pull-right">
         <div class="form-group">
-          <button *ngIf="apiService.userType !== '3'" id="back_to_team" mat-mdc-button class="add-course-btn"
+          <button *ngIf="apiService.userType !== '3'" id="back_to_team" mat-button class="add-course-btn"
             routerLink="/teamlist">
             <i class="fa fa-hand-o-left fa-1x" style="font-size:20px;"></i>
             {{'back_to_team' | translate}}
@@ -279,7 +279,7 @@
       <div class="col-md-4 col-sm-12">
         <div class="add-opt">
           <a (click)="addOptionsValues(myModal.getData().selectedIndex, optionval.value)" mat-mdc-button
-            href="javascript://" mat-mdc-button class="add_role">
+            href="javascript://" mat-button class="add_role">
             {{'add_options' | translate}} <i class="material-icons">add_circle</i>
           </a>
         </div>
@@ -306,7 +306,7 @@
   </div>
 
   <div class="dropdown-ok">
-    <button type="button" mat-mdc-button class="add-custom-ok"
+    <button type="button" mat-button class="add-custom-ok"
       (click)="ngxSmartModalService.getModal('myModal').close();">{{'ok' | translate}}</button>
   </div>
 </ngx-smart-modal>

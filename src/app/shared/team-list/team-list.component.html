@@ -9,7 +9,7 @@
       </div>
 
       <div class="pull-right">
-        <button *ngIf="loginuserType !== '3'" id="add_team_member" mat-mdc-button routerLink="/team">
+        <button *ngIf="loginuserType !== '3'" id="add_team_member" mat-button routerLink="/team">
           <i class="fa fa-user-plus"></i>
           {{'add_team_member' | translate}}</button>
       </div>
@@ -125,31 +125,31 @@
             <ng-container matColumnDef="actions">
               <th mat-header-cell *matHeaderCellDef> {{'actions' | translate}} </th>
               <td mat-cell *matCellDef="let element" class="edt_delt">                  
-                <button id="{{element.workflow_db_id}}" *ngIf="(loginuserType === '3' || loginuserType === '0') && element.send_mail_but" mat-mdc-button class="send_btn" (click) = "onStep1WfEmail(element.email, element.workflow_db_id)">{{'start' | translate}} <i class="material-icons" style="font-size:18px;" >send</i></button>
+                <button id="{{element.workflow_db_id}}" *ngIf="(loginuserType === '3' || loginuserType === '0') && element.send_mail_but" mat-button class="send_btn" (click) = "onStep1WfEmail(element.email, element.workflow_db_id)">{{'start' | translate}} <i class="material-icons" style="font-size:18px;" >send</i></button>
 
-                <button *ngIf="loginuserType === '3' || loginuserType === '0'" mat-mdc-button class="green"
+                <button *ngIf="loginuserType === '3' || loginuserType === '0'" mat-button class="green"
                   routerLink="/workflow/{{element.workflow_db_id}}">
                   <i class="material-icons">group</i>
                   {{'edit' | translate}}
                 </button>
-                <button *ngIf="(loginuserType === '3' || loginuserType === '0') && !element.profile_id" mat-mdc-button class="green"
+                <button *ngIf="(loginuserType === '3' || loginuserType === '0') && !element.profile_id" mat-button class="green"
                   (click) = "onWithOutIdRedirect(element.workflow, element.workflow_db_id, element.product_step, element.role)">{{'edit' | translate}}
                   <i class="fa fa-pencil-square-o" style="font-size:18px;"></i>
                 </button>
-                <button *ngIf="(loginuserType === '3' || loginuserType === '0') && element.profile_id" mat-mdc-button class="green"
+                <button *ngIf="(loginuserType === '3' || loginuserType === '0') && element.profile_id" mat-button class="green"
                   routerLink="/team/{{element.profile_id}}">{{'edit' | translate}}
                   <i class="fa fa-pencil-square-o" style="font-size:18px;"></i>
                 </button>
-                <button *ngIf="loginuserType !== '3'" mat-mdc-button class="green"
+                <button *ngIf="loginuserType !== '3'" mat-button class="green"
                   routerLink="/team/{{element.profile_id}}">{{'edit' | translate}}
                   <i class="fa fa-pencil-square-o" style="font-size:18px;"></i>
                 </button>
 
-                <button *ngIf="element.can_delete && (loginuserType === '3' || loginuserType === '0')" mat-mdc-button class="red"
+                <button *ngIf="element.can_delete && (loginuserType === '3' || loginuserType === '0')" mat-button class="red"
                   (click)="deleteWorkFlow(element.product_step, element.workflow);">{{'delete' | translate}}
                   <i class="fa fa-trash-o" style="font-size:18px;"></i>
                 </button>
-                <button *ngIf="element.can_delete && loginuserType !== '3'" mat-mdc-button class="red"
+                <button *ngIf="element.can_delete && loginuserType !== '3'" mat-button class="red"
                   (click)="setCertId(element.id);ngxSmartModalService.getModal('myModal').open();">{{'delete' | translate}}
                   <i class="fa fa-trash-o" style="font-size:18px;"></i>
                 </button>
@@ -206,9 +206,9 @@
           </div>
         </fieldset>
         <div class="form-group" style="float: right">
-          <button type="submit" [disabled]="checkSubmit" mat-mdc-button class="password-submit"
+          <button type="submit" [disabled]="checkSubmit" mat-button class="password-submit"
             style="margin-right:10px">{{'yes' | translate}}</button>
-          <button type="button" mat-mdc-button class="password-submit"
+          <button type="button" mat-button class="password-submit"
             (click)="myModal.close()">{{'no' | translate}}</button>
         </div>
       </form>

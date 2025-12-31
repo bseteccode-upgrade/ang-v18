@@ -267,7 +267,7 @@ body.dashboard #wrapper.main_sapper{background-color: #0d0d0d; padding: 0px 0px 
 .methoded > li:nth-child(2n+2) {width: 69%;}
 .ceratin_content .col-sm-6 {padding-right: 0;}
 .start_wrapper .standter .ceratin_content .col-sm-3:last-child {padding-left: 0;}
-.start_wrapper .hpanel {background-color:#fff; border: 1px solid #e3e3e3; border-radius: 4px; z-index: 10; position: relative;}
+.start_wrapper .hpanel {background-color:transparent;z-index: 10; position: relative;}
 .start_wrapper .panel-body {border: medium none; padding: 0;}
 .start_wrapper .table-striped > tbody > tr:nth-of-type(2n+1) {background-color:transparent;}
 .start_wrapper .table-striped > tbody > tr:nth-of-type(2n+2) {background-color: #f7f8f9;}
@@ -399,8 +399,7 @@ body .mat-checkbox-checked.mat-accent .mat-checkbox-background, body .mat-checkb
 .select_file { margin:10px 0px; top:10px; display: inline-block; position: relative; }
 .btn.btn-form-save.mat-mdc-button { background-color: #d0483e; color:#fff; font-size: 14px; font-weight: bold; text-transform: uppercase;}
 .mat-mdc-button[disabled][disabled] { color:#f4f4f4; }
-button.btn.btn-form-save.mat-mdc-button:hover { background-color: #f20; }
-button.btn.btn-form-save.mat-mdc-button:focus{outline:none}
+
 .btn.btn-form-save.add-evidence.mat-mdc-button { background-color: #29b6d8; color:#fff; font-size: 14px; font-weight: bold; text-transform: uppercase;}
 .btn.btn-form-save.add-evidence.mat-mdc-button:hover { background-color: #06c5f5; }
 .student-btn.mat-mdc-button { margin:5px 10px; background-color: #29b6d8; color:#fff; font-size: 14px; font-weight: bold; text-transform: uppercase;}

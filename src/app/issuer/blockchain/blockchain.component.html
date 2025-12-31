@@ -7,7 +7,7 @@
       </div>
       <div *ngIf="privilegeSearch.issue_certificate" class="pull-right">
 
-        <button *ngIf="selectedStudent.length == 0" style="margin: 5px" mat-mdc-button routerLink="/certificateissuer">
+        <button *ngIf="selectedStudent.length == 0" style="margin: 5px" mat-button routerLink="/certificateissuer">
           <i class="material-icons">cloud_upload</i> {{'upload' | translate}} </button>
         <button *ngIf="certificateList.length >= 1 && selectedStudent.length == 0" style="margin: 5px" mat-mdc-button
           routerLink="/achievement-export"> <i class="fa fa-cloud-download"></i> {{'achievement_export' | translate}}
@@ -15,7 +15,7 @@
 
         <button [disabled]="exportprocess"
           *ngIf="selectedStudent.length > 0 || (paramsString != '' && paramsString != 'page=1' && certificateList.length != 0)"
-          style="margin: 5px" mat-mdc-button (click)="confirmExport()"><span *ngIf="exportprocess">processing</span>
+          style="margin: 5px" mat-button (click)="confirmExport()"><span *ngIf="exportprocess">processing</span>
           <span *ngIf="!exportprocess">{{'export_pdf' | translate}}</span> <i
             class="material-icons">autorenew</i></button>
 
@@ -50,7 +50,7 @@
 
           <div class="col-lg-6 col-md-8 col-sm-12">
             <div class="user-btn-block">
-              <button type="submit" class="filter-btn search" mat-mdc-button [disabled]="process">{{'search' |
+              <button type="submit" class="filter-btn search" mat-button [disabled]="process">{{'search' |
                 translate}}</button>
               <button type="reset" class="filter-btn search" mat-mdc-button
                 (click)="advanceSearch = true; advancedSearchFun()">{{'advanced_search'
@@ -245,7 +245,7 @@
 
             <div class="col-lg-8 col-md-6 col-sm-12">
               <div class="achievement-btn achievements-group">
-                <button type="submit" class="filter-btn" mat-mdc-button [disabled]="process">{{'search' |
+                <button type="submit" class="filter-btn" mat-button [disabled]="process">{{'search' |
                   translate}}</button>
                 <button type="reset" [disabled]="process" class="filter-btn" mat-mdc-button
                   (click)="refreshDataAchievement([])">{{'reset' |
@@ -624,13 +624,13 @@
               </div>
             </div>
             <div>
-              <button *ngIf="!selectedCertificate.is_deleted" mat-mdc-button class="badge-delete"
+              <button *ngIf="!selectedCertificate.is_deleted" mat-button class="badge-delete"
                 matTooltip="{{'delete_achievement_details' | translate}}"
                 (click)="ngxSmartModalService.getModal('deletemyModal').open();ngxSmartModalService.setModalData({gdpr :selectedCertificate.is_gdpr}, 'deletemyModal');setCertId(selectedCertificate.id);">{{'delete'
                 | translate}}
                 <i class="fa fa-trash-o" style="font-size:18px;"></i>
               </button>
-              <button *ngIf="!selectedCertificate.is_deleted" mat-mdc-button class="badge-delete expired-revoke"
+              <button *ngIf="!selectedCertificate.is_deleted" mat-button class="badge-delete expired-revoke"
                 matTooltip="{{selectedCertificate.is_expired ? 'revoke' : 'experied' | translate}}"
                 (click)="experiedCertId(selectedCertificate.id, selectedCertificate.is_expired);">{{
                 selectedCertificate.is_expired ? 'revoke' : 'experied' | translate}}
@@ -1034,7 +1034,7 @@
       </div>
 
       <div class="student-btn">
-        <button mat-mdc-button class="btn-info btn-danger"
+        <button mat-button class="btn-info btn-danger"
           (click)="viewStudentAchievements(selectedStudents.email, selectedStudents.first_name, selectedStudents.last_name)">{{'view_achievement'
           | translate}} - {{selectedStudents.first_name}}</button>
       </div>
@@ -1089,10 +1089,10 @@
         </div>
       </fieldset>
       <div class="form-group" style="float: right">
-        <button type="submit" [disabled]="checkSubmit" mat-mdc-button class="password-submit"
+        <button type="submit" [disabled]="checkSubmit" mat-button class="password-submit"
           style="margin-right:10px">{{'yes'
           | translate}}</button>
-        <button type="button" mat-mdc-button class="password-submit" (click)="deletemyModal.close()">{{'no' |
+        <button type="button" mat-button class="password-submit" (click)="deletemyModal.close()">{{'no' |
           translate}}</button>
       </div>
     </form>
@@ -1135,7 +1135,7 @@
   <h4>{{'export_pdf' | translate}}</h4>
   <p>{{'export_pdf_warning_info' | translate}}</p>
   <div class="form-group" style="float: right">
-    <button type="button" mat-mdc-button class="password-submit" (click)="exportpdfwarning.close()">{{'cancel' |
+    <button type="button" mat-button class="password-submit" (click)="exportpdfwarning.close()">{{'cancel' |
       translate}}</button>
   </div>
 </ngx-smart-modal>
@@ -1148,12 +1148,12 @@
   <p *ngIf="coursesArray.length > 0">
     {{'count_of_selected_achievement' | translate}} : {{coursesArray.length}}</p>
   <div class="form-group" style="float: right">
-    <button *ngIf="!exportprocess" type="button" mat-mdc-button class="password-submit" style="margin-right:10px"
+    <button *ngIf="!exportprocess" type="button" mat-button class="password-submit" style="margin-right:10px"
       (click)="exportPdfFile()">{{'ok'
       | translate}}</button>
-    <button *ngIf="!exportprocess" type="button" mat-mdc-button class="password-submit"
+    <button *ngIf="!exportprocess" type="button" mat-button class="password-submit"
       (click)="exportConfirmation.close()">{{'cancel' | translate}}</button>
-    <button *ngIf="exportprocess" type="button" mat-mdc-button class="password-submit">{{'processing' | translate}}</button>
+    <button *ngIf="exportprocess" type="button" mat-button class="password-submit">{{'processing' | translate}}</button>
   </div>
 </ngx-smart-modal>
 
@@ -1168,12 +1168,12 @@
     {{'count_of_selected_achievement' | translate}} : {{resend.getData().countAchSelect}}</p>
 
   <div class="form-group" style="float: right">
-    <button *ngIf="!processResend" type="button" mat-mdc-button class="password-submit" style="margin-right:10px"
+    <button *ngIf="!processResend" type="button" mat-button class="password-submit" style="margin-right:10px"
       (click)="resendMailtoSearchUser(resend.getData().countAchSelect)">{{'ok'
       | translate}}</button>
-    <button *ngIf="!processResend" type="button" mat-mdc-button class="password-submit" (click)="resend.close()">{{'cancel'
+    <button *ngIf="!processResend" type="button" mat-button class="password-submit" (click)="resend.close()">{{'cancel'
       | translate}}</button>
-    <button *ngIf="processResend" type="button" mat-mdc-button class="password-submit">{{'processing' | translate}}</button>
+    <button *ngIf="processResend" type="button" mat-button class="password-submit">{{'processing' | translate}}</button>
   </div>
 </ngx-smart-modal>
 
@@ -1183,8 +1183,8 @@
   <p>{{'delete_all_descriptions' | translate}}</p>
 
   <div class="form-group" style="float: right">
-    <button type="button" mat-mdc-button class="password-submit" style="margin-right:10px">{{'yes'
+    <button type="button" mat-button class="password-submit" style="margin-right:10px">{{'yes'
       | translate}}</button>
-    <button type="button" mat-mdc-button class="password-submit" (click)="select_all.close()">{{'no' | translate}}</button>
+    <button type="button" mat-button class="password-submit" (click)="select_all.close()">{{'no' | translate}}</button>
   </div>
 </ngx-smart-modal> -->

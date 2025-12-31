@@ -19,7 +19,7 @@
                   <h5>{{'email_addresses' | translate}}</h5>
                 </div>
                 <div class="pull-right">
-                  <button class="green" mat-mdc-button (click)="ngxSmartModalService.getModal('deletemyModal').open();openDialogReset();">Add</button>
+                  <button class="green" mat-button (click)="ngxSmartModalService.getModal('deletemyModal').open();openDialogReset();">Add</button>
                 </div>
               </div>
 
@@ -88,7 +88,7 @@
             </div>
           </fieldset>
           <div class="form-group" style="float: right">
-            <button type="submit" mat-mdc-button class="password-submit" style="margin-right:10px">{{'Add' | translate}}</button>
+            <button type="submit" mat-button class="password-submit" style="margin-right:10px">{{'Add' | translate}}</button>
           </div>
           </form>
         </div>
@@ -104,8 +104,8 @@
               </div>
           </fieldset>
           <div class="form-group" style="float: right">
-              <button type="button" mat-mdc-button class="password-submit" (click)="deleteMailAddress()" style="margin-right:10px">{{'yes' | translate}}</button>
-              <button type="button" mat-mdc-button class="password-submit" (click)="ngxSmartModalService.getModal('myModal').close();" style="margin-right:10px">{{'no' | translate}}</button>
+              <button type="button" mat-button class="password-submit" (click)="deleteMailAddress()" style="margin-right:10px">{{'yes' | translate}}</button>
+              <button type="button" mat-button class="password-submit" (click)="ngxSmartModalService.getModal('myModal').close();" style="margin-right:10px">{{'no' | translate}}</button>
           </div>
         </div>
     </ngx-smart-modal>

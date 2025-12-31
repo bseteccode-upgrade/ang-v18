@@ -85,7 +85,7 @@
   <h4>{{'header_admin_user_login' | translate}}</h4>
   <p>{{'info_about_admin_backdoor_login' | translate}}</p>
   <div class="emailVerify_btn">
-    <button mat-mdc-button class="wrong_ok"
+    <button mat-button class="wrong_ok"
       (click)="ngxSmartModalService.getModal('fromadmin').close()">{{'login' | translate}}</button>
   </div>
 </ngx-smart-modal>
@@ -133,7 +133,7 @@
     </div>
 
     <div class="emailVerify_btn">
-      <button mat-mdc-button class="wrong_ok"
+      <button mat-button class="wrong_ok"
         (click)="ngxSmartModalService.getModal('workwrongurl').close()">{{'ok' | translate}}</button>
     </div>
   </ngx-smart-modal>

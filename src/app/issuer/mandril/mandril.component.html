@@ -104,7 +104,7 @@
             <ng-container matColumnDef="actions">
               <th mat-header-cell *matHeaderCellDef> {{'actions' | translate}} </th>
               <td mat-cell *matCellDef="let element" class="edt_delt">
-                <button *ngIf="element.state !== 'rejected'" mat-mdc-button class="green"
+                <button *ngIf="element.state !== 'rejected'" mat-button class="green"
                   (click)="setCertId(element._id);ngxSmartModalService.getModal('myModal').open();">{{'view' | translate}}
                 </button>
               </td>
@@ -154,7 +154,7 @@
           </div>
         </fieldset>
         <div *ngIf="!loaderMailcontent && resMandrilData.status != 'error'" class="form-group" style="float: right">
-          <button type="button" [disabled]="checkSubmit" mat-mdc-button class="password-submit" style="margin-right:10px"
+          <button type="button" [disabled]="checkSubmit" mat-button class="password-submit" style="margin-right:10px"
             (click)="reasonFormSubmit(resMandrilData._id)">{{'resend' | translate}}</button>
         </div>
       </div>

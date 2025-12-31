@@ -6,12 +6,12 @@
             class="headTooltip"><i class="material-icons"> help_outline</i></span></h3>
       </div>
       <div class="pull-right">
-        <a class="export-btn" mat-mdc-button (click)="downloadSampleExcel()">{{'download_csv_template' | translate}}
+        <a class="export-btn" mat-button (click)="downloadSampleExcel()">{{'download_csv_template' | translate}}
           <span>
             <i class="fa fa-share-square-o"></i>
           </span>
         </a>
-        <button mat-mdc-button routerLink="/issuecertificate" class="upload-back-btn">
+        <button mat-button routerLink="/issuecertificate" class="upload-back-btn">
           <i class="fa fa-hand-o-left fa-1x" style="font-size:20px;"></i>
           {{'back_to_achievements' | translate}}</button>
       </div>
@@ -28,13 +28,13 @@
                 <div class="upload-box">
                   <img src="assets/images/bulk-upload.png">
                 </div>
-                <button mat-mdc-button class="browse-file" (click)="fileinput.click()">{{'browse_file' |
+                <button mat-button class="browse-file" (click)="fileinput.click()">{{'browse_file' |
                   translate}}</button>
                 <input type="file" #fileinput accept=".csv" style="display: none;" (change)="upload($event)">
 
               </mat-form-field>
               <div>
-                <button mat-mdc-button class="green" matStepperNext>{{'next' | translate}}</button>
+                <button mat-button class="green" matStepperNext>{{'next' | translate}}</button>
               </div>
             </div>
           </div>
@@ -70,11 +70,11 @@
           <ng-template matStepLabel>{{'upload_certificates' | translate}}</ng-template>
 
           <div class="step-secound">
-            <button mat-mdc-button matStepperPrevious class="back" (click)="stepper.selectedIndex = 0;">{{'back' |
+            <button mat-button matStepperPrevious class="back" (click)="stepper.selectedIndex = 0;">{{'back' |
               translate}}</button>
-            <button mat-mdc-button class="red" (click)="stepper.selectedIndex = 0;deleteAll()">{{'clear_all' |
+            <button mat-button class="red" (click)="stepper.selectedIndex = 0;deleteAll()">{{'clear_all' |
               translate}}</button>
-            <button mat-mdc-button class="green" *ngIf="!process" [disabled]="secondFormProcess"
+            <button mat-button class="green" *ngIf="!process" [disabled]="secondFormProcess"
               (click)="secondButton(stepper)">{{'next' | translate}}</button>
           </div>
 
@@ -123,11 +123,11 @@
           </div>
 
           <div class="step-secound">
-            <button mat-mdc-button matStepperPrevious class="back" (click)="stepper.selectedIndex = 0;">{{'back' |
+            <button mat-button matStepperPrevious class="back" (click)="stepper.selectedIndex = 0;">{{'back' |
               translate}}</button>
-            <button mat-mdc-button class="red" (click)="stepper.selectedIndex = 0;deleteAll()">{{'clear_all' |
+            <button mat-button class="red" (click)="stepper.selectedIndex = 0;deleteAll()">{{'clear_all' |
               translate}}</button>
-            <button mat-mdc-button class="green" *ngIf="!process" [disabled]="secondFormProcess"
+            <button mat-button class="green" *ngIf="!process" [disabled]="secondFormProcess"
               (click)="secondButton(stepper)">{{'next' | translate}}</button>
           </div>
         </form>
@@ -138,9 +138,9 @@
           <i class="fa fa-check-circle-o fa-lg"></i>
           <h3>{{'upload_successful' | translate}}</h3>
           <div class="">
-            <button mat-mdc-button class="go-dash" routerLink="/issuecertificate">{{'go_to_achievements' |
+            <button mat-button class="go-dash" routerLink="/issuecertificate">{{'go_to_achievements' |
               translate}}</button>
-            <button mat-mdc-button class="add-more" (click)="stepper.selectedIndex = 0;reset();">{{'add_more' |
+            <button mat-button class="add-more" (click)="stepper.selectedIndex = 0;reset();">{{'add_more' |
               translate}}</button>
           </div>
         </div>
@@ -164,9 +164,9 @@
             </div>
           </div>
           <div class="button-container">
-            <button mat-mdc-button class="back go-dash" routerLink="/issuecertificate">{{'go_to_cert_list' |
+            <button mat-button class="back go-dash" routerLink="/issuecertificate">{{'go_to_cert_list' |
               translate}}</button>
-            <button mat-mdc-button class="back add-more" (click)="stepper.selectedIndex = 0;reset();">{{'add_more' |
+            <button mat-button class="back add-more" (click)="stepper.selectedIndex = 0;reset();">{{'add_more' |
               translate}}</button>
           </div>
         </div>
@@ -187,12 +187,12 @@
         </i>
 
         <h3>{{'achievement_bulk_upload_info' | translate}}</h3>
-        <button *ngIf="!process" mat-mdc-button (click)="submitBulkUpload(bulkUploadInfo.getData())"
+        <button *ngIf="!process" mat-button (click)="submitBulkUpload(bulkUploadInfo.getData())"
           class="view-evidence-btn green">
           {{'ok' | translate}}</button>
-        <button *ngIf="process" disabled mat-mdc-button class="view-evidence-btn green">
+        <button *ngIf="process" disabled mat-button class="view-evidence-btn green">
           {{'processing' | translate}}</button>
-        <button mat-mdc-button (click)="ngxSmartModalService.getModal('bulkUploadInfo').close();"
+        <button mat-button (click)="ngxSmartModalService.getModal('bulkUploadInfo').close();"
           class="view-evidence-btn green">
           {{'cancel' | translate}}</button>
       </div>

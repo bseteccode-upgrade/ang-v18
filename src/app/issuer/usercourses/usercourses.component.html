@@ -7,7 +7,7 @@
                 class="material-icons"> help_outline</i></span></h3>
         </div>
         <div class="pull-right">
-          <button id="add_course" mat-mdc-button routerLink="/courseadd">
+          <button id="add_course" mat-button routerLink="/courseadd">
             <i class="fa fa-hand-o-right fa-1x" style="font-size:20px;"></i> {{'add_course' | translate}}
           </button>
         </div>
@@ -183,9 +183,9 @@
           </div>
         </fieldset>
         <div class="form-group" style="float: right">
-          <button type="submit" [disabled]="checkSubmit" mat-mdc-button class="password-submit"
+          <button type="submit" [disabled]="checkSubmit" mat-button class="password-submit"
             style="margin-right:10px">{{'yes' | translate}}</button>
-          <button type="button" mat-mdc-button class="password-submit"
+          <button type="button" mat-button class="password-submit"
             (click)="myModal.close()">{{'no' | translate}}</button>
         </div>
       </form>

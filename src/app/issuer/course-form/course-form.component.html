@@ -400,9 +400,9 @@
         </div>
         <div class="form-group color-picker-btn">
           <button *ngIf="imageCreateProcess" class="btn btn-primary">{{'processing' | translate}}...</button>
-          <button *ngIf="!imageCreateProcess" type="button" mat-mdc-button class="password-submit" style="margin-right:10px"
+          <button *ngIf="!imageCreateProcess" type="button" mat-button class="password-submit" style="margin-right:10px"
             (click)="onColorPickImgCreate()">{{'submit' | translate}}</button>
-          <button *ngIf="!imageCreateProcess" mat-mdc-button class="password-submit" (click)="colorPickPopup.close()">{{'color_pic_cancel'
+          <button *ngIf="!imageCreateProcess" mat-button class="password-submit" (click)="colorPickPopup.close()">{{'color_pic_cancel'
             | translate}}</button>
         </div>
       </div>
