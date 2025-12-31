@@ -61,7 +61,7 @@ export class AppComponent implements OnInit, DoCheck {
       if (ev instanceof NavigationStart) {
         // if (ev.url === '/signin') {
         var res = ev.url.split('/');
-        console.log(res,"res");
+        console.log(res,"==============res");
         if (res[1] === '/signin' && (localStorage.getItem('fromqrscanned') !== null && typeof localStorage.getItem('fromqrscanned') !== 'undefined')) {
           // if (res[2] && res[2] != null && typeof res[2] !== 'undefined') {
           // localStorage.setItem('fromqrscanned', localStorage.getItem('fromqrscanned'));
