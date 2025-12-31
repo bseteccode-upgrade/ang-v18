@@ -16,7 +16,7 @@ export const environment = {
   // url: 'https://certtun.vottun.com/api/',
   // url : 'http://192.168.1.20:8000/api/',
   baseUrl : 'https://test.vottun.com',
-  stripkey : 'pk_test_51Hvg2pEg9gjRhj81caE9NMMlTYjm6O9KMdQGvJjFgiDuqb0w1WxtTwPbs0UWvb4Xevk3Z4nJu3e2OLtMDpLe6uuJ00WN78t7lV'
+   stripkey : 'pk_test_51Hvg2pEg9gjRhj81caE9NMMlTYjm6O9KMdQGvJjFgiDuqb0w1WxtTwPbs0UWvb4Xevk3Z4nJu3e2OLtMDpLe6uuJ00WN78t7lV'
 };
 
 // demo server
