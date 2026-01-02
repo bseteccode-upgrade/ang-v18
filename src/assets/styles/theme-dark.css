@@ -19,7 +19,7 @@ $header-text-color:#fff; */
 .sidebar-scroll #menu.menuslides{background-color:#0D0D0D;}
 .menuslides #side-menu li a{color:#fff;border-bottom:none}
 #side-menu li:first-child{border-top:none;border-bottom:none}
-.main_header_substream #logo.light-version {background-color:#0D0D0D;border-bottom:1px solid #0D0D0D; }
+.main_header_substream #logo.light-version {/*background-color:#0D0D0D;border-bottom:1px solid #0D0D0D; */}
 .menuslides #side-menu.nav > li > a:hover, .menuslides #side-menu.nav > li > a:focus {background-color:transparent;}
 .main_header_substream .header-link {height:82px;background:#0D0D0D; color:#CCCCCC;cursor:pointer;float:left;font-size:17px;margin-right:15px;padding:28px 17px 28px 16px;}
  /* Side Navigation End */
