@@ -130,6 +130,10 @@
 @font-face { font-family: 'icomoon'; src:  url('../fonts/icons/icomoon.eot?hl18jw'); src:  url('../fonts/icons/icomoon.eot?hl18jw#iefix') format('embedded-opentype'), url('../fonts/icons/icomoon.ttf?hl18jw') format('truetype'), url('../fonts/icons/icomoon.woff?hl18jw') format('woff'), url('../fonts/icons/icomoon.svg?hl18jw#icomoon') format('svg'); font-weight: normal; font-style: normal; }
 html { height: 100% !important; }
 body { font-family: 'Roboto-Regular';}
+.mb-10{margin-bottom:10px;}
+.pb-10{padding-bottom:10px;}
+
+.mat-mdc-paginator-range-label{padding:0 0 0 0;width:100px}
 body .main-timeline .profile h3,body .main-timeline .date,body .main-timeline .issued,.product_details .text-capitalize{text-transform:none!important}
 body pre{display:inline-block;white-space:normal;word-break:break-word}
 html.cdk-global-scrollblock{top:0 !important}
@@ -405,8 +409,14 @@ mat-form-field{width:100%;height:40px}
 mat-form-field .mat-mdc-text-field-wrapper{min-height:40px;max-height:40px}
 mat-form-field .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mat-mdc-notch-piece{border-color:#3d3d3d!important}
 mat-form-field input.mat-mdc-input-element{height:40px!important;color:#ffffff!important}
-mat-form-field input::placeholder{color:#3d3d3d!important}
+mat-form-field input::placeholder{color:#aaaaaa!important}
 mat-form-field .mat-mdc-form-field-infix {padding-top:0!important;padding-bottom:0!important}
+mat-form-field .mat-mdc-text-field-wrapper{background:#3d3d3d!important;border-radius:8px;}
+mat-form-field .mdc-text-field__input{caret-color:#ffffff!important;color:#ffffff}
+mat-form-field .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before,
+mat-form-field .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after{border-bottom:none!important}
+
+
 
 .btn.btn-form-save.add-evidence.mat-mdc-button{background-color:#109485;color:#fff;font-size:14px;font-weight:bold;text-transform:uppercase;}
 .btn.btn-form-save.add-evidence.mat-mdc-button:hover{background-color:#06c5f5;}
