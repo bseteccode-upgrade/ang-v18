@@ -144,15 +144,15 @@
             <div class="form-group">
               <div class="activity">
                 <ul class="button-list">
-                  <li><button type="submit" class="filter-btn search" mat-mdc-button
+                  <li><button type="submit" class="filter-btn search" mat-button
                       [disabled]="process">{{'search' | translate}}</button></li>
 
-                  <li><button type="reset" class="filter-btn reset" mat-mdc-button
+                  <li><button type="reset" class="filter-btn reset" mat-button
                       (click)="getProductList({},true);searchForm.reset();resetForm()"
                       [disabled]="process">{{'reset' | translate}}</button>
                   </li>
 
-                  <li><button type="reset" class="filter-btn reset" mat-mdc-button
+                  <li><button type="reset" class="filter-btn reset" mat-button
                       (click)="advanceSearch = false;getProductList({},true); searchForm.reset()">{{'close' | translate}}</button>
                   </li>
                 </ul>

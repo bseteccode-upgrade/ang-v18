@@ -623,13 +623,13 @@
       <div *ngFor="let evidencelist of myModal2.getData(); let i = index" class="model-view-evidence">
         <a *ngIf="evidencelist.evid && evidencelist.evid !== 'None' && i < (myModal2.getData().length - 1)"
           href="{{evidencelist.evid}}" class="view-evidence-btn"
-          matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-mdc-button
+          matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-button
           target="_blank">
           <i class="fa fa-eye"></i> {{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}
         </a>
         <a *ngIf="evidencelist.blockchainType !== 'oracle' && evidencelist.evid && evidencelist.evid !== 'None' && i === (myModal2.getData().length - 1)"
           href="{{evidencelist.evid}}" class="view-evidence-btn"
-          matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-mdc-button
+          matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-button
           target="_blank">
           <span *ngIf="evidencelist.transaction"><i class="fa fa-eye"></i> {{'view_blockchain' | translate}}</span>
           <span *ngIf="!evidencelist.transaction"><i class="fa fa-eye"></i>{{(evidencelist.label)? evidencelist.label :
@@ -1134,7 +1134,7 @@
       </div>
 
       <div class="col-md-12 col-sm-12 linkedin-savebtn form-group"><br>
-        <button class="social-share-linkedin" mat-mdc-button
+        <button class="social-share-linkedin" mat-button
           (click)="socialShare('linkedin', badgeDetail.linkedin_social_share_url, badgeDetail.linkedin_content )"
           type="button"> <i class="fa fa-linkedin"></i> {{'linkedin' | translate}}</button>
       </div>

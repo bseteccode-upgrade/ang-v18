@@ -211,7 +211,7 @@
         </i>
 
         <h3>{{'achievement_bulk_upload_info_error_msg' | translate}}</h3>
-        <button mat-mdc-button
+        <button mat-button
           (click)="ngxSmartModalService.getModal('bulkUploadInfoError').close();stepper.selectedIndex = 0;reset();"
           class="view-evidence-btn green">
           {{'close' | translate}}</button>

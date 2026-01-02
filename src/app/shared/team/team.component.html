@@ -250,7 +250,7 @@
             <div class="col-sm-12">
               <div class="form-group">
                 <button *ngIf="process" class="btn btn-primary">{{'processing' | translate}}...</button>
-                <button *ngIf="!process" [disabled]="disablebutton" mat-mdc-button
+                <button *ngIf="!process" [disabled]="disablebutton" mat-button
                   class="btn btn-form-save">{{'save_button' | translate}}</button>
               </div>
             </div>
@@ -278,7 +278,7 @@
 
       <div class="col-md-4 col-sm-12">
         <div class="add-opt">
-          <a (click)="addOptionsValues(myModal.getData().selectedIndex, optionval.value)" mat-mdc-button
+          <a (click)="addOptionsValues(myModal.getData().selectedIndex, optionval.value)" mat-button
             href="javascript://" mat-button class="add_role">
             {{'add_options' | translate}} <i class="material-icons">add_circle</i>
           </a>

@@ -30,7 +30,7 @@
                   </div>
 
                   <div class="col-sm-12">
-                    <button type="button" (click)="ngxSmartModalService.getModal('DescriptionPopup').close()" mat-mdc-button
+                    <button type="button" (click)="ngxSmartModalService.getModal('DescriptionPopup').close()" mat-button
                       class="btn btn-form-save">{{'ok' | translate}}</button>
                   </div>
                 </ngx-smart-modal>
@@ -46,7 +46,7 @@
                   </div>
 
                   <div class="col-sm-12">
-                    <button type="button" (click)="ngxSmartModalService.getModal('CriteriaPopup').close()" mat-mdc-button
+                    <button type="button" (click)="ngxSmartModalService.getModal('CriteriaPopup').close()" mat-button
                       class="btn btn-form-save">{{'ok' | translate}}</button>
                   </div>
                 </ngx-smart-modal>
@@ -246,11 +246,11 @@
 
                             <button
                               *ngIf="!process && apiService.matrixData.remaining_wallet >= 10 && certificateModel.is_active && apiService.pages.issue_certificate"
-                              type="submit" mat-button class="btn publish blue mat-mdc-button"
+                              type="submit" mat-button class="btn publish blue" mat-button
                               (click)="submitted = firstFormGroup.invalid; submitForm(certificateModel, true)">{{'publish'
                                 | translate}}</button>
 
-                            <button *ngIf="!emptyCourse && !process" type="submit" class="publish-btn" mat-mdc-button
+                            <button *ngIf="!emptyCourse && !process" type="submit" class="publish-btn" mat-button
                               matStepperNext class="step-next" (click)="submitted = firstFormGroup.invalid">
                               <span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span> {{'next' |
                                 translate}}
@@ -375,7 +375,7 @@
                       | translate}}</button>
                     <button
                       *ngIf="!process && apiService.matrixData.remaining_wallet >= 10 && certificateModel.is_active && apiService.pages.issue_certificate"
-                      type="submit" mat-button class="btn publish green mat-mdc-button"
+                      type="submit" mat-button class="btn publish green" mat-button
                       (click)="submitted = firstFormGroup.invalid; submitForm(certificateModel, true)">{{'publish'
                       | translate}}</button>
                     <button *ngIf="!process" type="submit" mat-button class="btn btn-form-save"

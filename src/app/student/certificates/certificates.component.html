@@ -247,13 +247,13 @@
     <div *ngFor="let evidencelist of myModal2.getData(); let i = index" class="model-view-evidence">
       <a *ngIf="evidencelist.evid && evidencelist.evid !== 'None' && i < (myModal2.getData().length - 1)"
         href="{{evidencelist.evid}}" class="view-evidence-btn"
-        matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-mdc-button
+        matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-button
         target="_blank">
         <i class="fa fa-eye"></i> {{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}
       </a>
       <a *ngIf="evidencelist.blockchainType !== 'oracle' && evidencelist.evid && evidencelist.evid !== 'None' && i === (myModal2.getData().length - 1)"
         href="{{evidencelist.evid}}" class="view-evidence-btn"
-        matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-mdc-button
+        matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-button
         target="_blank">
         <span *ngIf="evidencelist.transaction"><i class="fa fa-eye"></i> {{'view_blockchain' | translate}}</span>
         <!-- <span *ngIf="evidencelist.transaction"><i class="fa fa-eye"></i> {{apiService.blockchain_client === 'hyperledger' ? (evidencelist.label)? evidencelist.label : 'view_evidence' : 'view_blockchain' | translate}}</span> -->
@@ -693,13 +693,13 @@
       <div class="col-md-6 col-sm-12">
         <!-- <share-button (closed)="catchShare(2, $event)" button="facebook" [url]="ShareModal.getData()" [showIcon]="true" [showText]="true">
           </share-button> -->
-        <button class="social-share-facebook" mat-mdc-button
+        <button class="social-share-facebook" mat-button
           (click)="catchShare(2, $event);socialShare('facebook', selectedCertificate.social_share_url, selectedCertificate.facebook_content )"
           type="button"><i class="fa fa-facebook"></i> {{'facebook' | translate}}</button>
       </div>
 
       <div class="col-md-6 col-sm-12">
-        <button class="social-share-twitter" mat-mdc-button
+        <button class="social-share-twitter" mat-button
           (click)="catchShare(2, $event);socialShare('twitter', selectedCertificate.social_share_url, selectedCertificate.twitter_content )"
           type="button"><i class="fa fa-twitter"></i> {{'twitter' | translate}}</button>
         <!-- <share-button (closed)="catchShare(2)" button="twitter" [url]="ShareModal.getData()" [showIcon]="true" [showText]="true">
@@ -722,7 +722,7 @@
       </div>
 
       <div class="col-md-6 col-sm-12 linkedin-block">
-        <button class="social-share-whatsapp" mat-mdc-button
+        <button class="social-share-whatsapp" mat-button
           (click)="catchShare(2, $event);socialShare('whatsapp', selectedCertificate.social_share_url, selectedCertificate.whatsapp_content )"
           type="button"><i class="fa fa-whatsapp"></i> {{'whatsapp' | translate}}</button>
       </div>
@@ -1057,7 +1057,7 @@
       </div>
 
       <div class="col-md-12 col-sm-12 linkedin-savebtn form-group"><br />
-        <button class="social-share-linkedin" mat-mdc-button
+        <button class="social-share-linkedin" mat-button
           (click)="catchShare(2);socialShare('linkedin', selectedCertificate.linkedin_social_share_url, selectedCertificate.linkedin_content)"
           type="button"> <i class="fa fa-linkedin"></i> {{'linkedin' | translate}}</button>
       </div>
@@ -1258,7 +1258,7 @@
       <div class="infoTooltip-btn">
         <button type="button" (click)="callSharingSave(infoAboutShare.getData()?.id, infoAboutShare.getData()?.status);"
           mat-button class="btn btn-form-save">{{'ok' | translate}}</button>
-        <!-- <button type="button" (click)="cancelShare();" mat-mdc-button
+        <!-- <button type="button" (click)="cancelShare();" mat-button
           class="btn btn-form-save">{{'cancel' | translate}}</button> -->
       </div>
     </div>

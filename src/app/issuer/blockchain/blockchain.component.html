@@ -9,7 +9,7 @@
 
         <button *ngIf="selectedStudent.length == 0" style="margin: 5px" mat-button routerLink="/certificateissuer">
           <i class="material-icons">cloud_upload</i> {{'upload' | translate}} </button>
-        <button *ngIf="certificateList.length >= 1 && selectedStudent.length == 0" style="margin: 5px" mat-mdc-button
+        <button *ngIf="certificateList.length >= 1 && selectedStudent.length == 0" style="margin: 5px" mat-button
           routerLink="/achievement-export"> <i class="fa fa-cloud-download"></i> {{'achievement_export' | translate}}
         </button>
 
@@ -19,19 +19,19 @@
           <span *ngIf="!exportprocess">{{'export_pdf' | translate}}</span> <i
             class="material-icons">autorenew</i></button>
 
-        <button *ngIf="selectedStudent.length == 0" id="add_achievement" style="margin: 5px" mat-mdc-button
+        <button *ngIf="selectedStudent.length == 0" id="add_achievement" style="margin: 5px" mat-button
           (click)="onAddAchievement()">
           {{'add_achievement' | translate}}
           <i class="fa fa-plus-circle"></i></button>
 
-        <!-- <button *ngIf="resentButtonDisplay" style="margin: 5px" mat-mdc-button
+        <!-- <button *ngIf="resentButtonDisplay" style="margin: 5px" mat-button
           (click)="ngxSmartModalService.getModal('resend').open()">
           {{'resend' | translate}} <i class="material-icons">autorenew</i></button> -->
-        <button *ngIf="selectedStudent.length > 0" style="margin: 5px" mat-mdc-button
+        <button *ngIf="selectedStudent.length > 0" style="margin: 5px" mat-button
           (click)="ngxSmartModalService.getModal('resend').open();ngxSmartModalService.setModalData({is_check_all: checkall,total_count: totalAchCount,countAchSelect : coursesArray.length}, 'resend');">
           {{'resend' | translate}} <i class="material-icons">autorenew</i></button>
 
-        <button *ngIf="selectedStudent.length > 0" type="button" mat-mdc-button
+        <button *ngIf="selectedStudent.length > 0" type="button" mat-button
           (click)="ngxSmartModalService.getModal('deletemyModal').open();ngxSmartModalService.setModalData({is_check_all: checkall,total_count: totalAchCount,countAchSelect : coursesArray.length}, 'deletemyModal');">
           {{'delete' | translate}} <i aria-hidden="true" class="fa fa-trash-o"></i>
         </button>
@@ -52,10 +52,10 @@
             <div class="user-btn-block">
               <button type="submit" class="filter-btn search" mat-button [disabled]="process">{{'search' |
                 translate}}</button>
-              <button type="reset" class="filter-btn search" mat-mdc-button
+              <button type="reset" class="filter-btn search" mat-button
                 (click)="advanceSearch = true; advancedSearchFun()">{{'advanced_search'
                 | translate}}</button>
-              <button type="reset" [disabled]="process" class="filter-btn reset" mat-mdc-button
+              <button type="reset" [disabled]="process" class="filter-btn reset" mat-button
                 (click)="refreshDataAchievement([])">{{'reset'
                 | translate}}</button>
             </div>
@@ -247,10 +247,10 @@
               <div class="achievement-btn achievements-group">
                 <button type="submit" class="filter-btn" mat-button [disabled]="process">{{'search' |
                   translate}}</button>
-                <button type="reset" [disabled]="process" class="filter-btn" mat-mdc-button
+                <button type="reset" [disabled]="process" class="filter-btn" mat-button
                   (click)="refreshDataAchievement([])">{{'reset' |
                   translate}}</button>
-                <button type="reset" class="filter-btn" mat-mdc-button
+                <button type="reset" class="filter-btn" mat-button
                   (click)="advanceSearch = false; searchForm.reset()">{{'close' |
                   translate}}</button>
               </div>
@@ -262,7 +262,7 @@
       </fieldset>
     </div>
     <!-- <div>
-      <button *ngIf="resentButtonDisplay" class="resend-btn" mat-mdc-button
+      <button *ngIf="resentButtonDisplay" class="resend-btn" mat-button
           (click)="ngxSmartModalService.getModal('resend').open()">
           {{'resend' | translate}} <i class="material-icons">autorenew</i></button>
     </div> -->
@@ -429,13 +429,13 @@
     <div *ngFor="let evidencelist of myModal2.getData(); let i = index" class="model-view-evidence">
       <a *ngIf="evidencelist.evid && evidencelist.evid !== 'None' && i < (myModal2.getData().length - 1)"
         href="{{evidencelist.evid}}" class="view-evidence-btn"
-        matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-mdc-button
+        matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-button
         target="_blank">
         <i class="fa fa-eye"></i> {{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}
       </a>
       <a *ngIf="evidencelist.blockchainType !== 'oracle' && evidencelist.evid && evidencelist.evid !== 'None' && i === (myModal2.getData().length - 1)"
         href="{{evidencelist.evid}}" class="view-evidence-btn"
-        matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-mdc-button
+        matTooltip="{{(evidencelist.label)? evidencelist.label : 'view_evidence' | translate}}" mat-button
         target="_blank">
         <span *ngIf="evidencelist.transaction"><i class="fa fa-eye"></i>{{ 'view_blockchain' | translate}}</span>
         <span *ngIf="!evidencelist.transaction"><i class="fa fa-eye"></i>{{(evidencelist.label)? evidencelist.label :

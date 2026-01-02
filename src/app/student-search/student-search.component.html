@@ -54,7 +54,7 @@
               <div class="col-md-4 col-sm-12">
                 <div class="user-btn-block">
                   <button type="submit" class="filter-btn search"
-                    mat-mdc-button>{{'search' | translate}}</button>
+                    mat-button>{{'search' | translate}}</button>
                   <button type="reset" class="filter-btn search" 
                   mat-button (click)="advanceSearch = true; advancedSearchFun()">{{'advanced_search'
                 | translate}}</button>
@@ -168,7 +168,7 @@
               <div class="col-lg-3 col-md-4 col-sm-12">
                 <div class="achievement-btn achievements-group">
                   <button type="submit" class="filter-btn" mat-button [disabled]="loading">{{ loading ? 'loading' : 'search' | translate}}</button>
-                  <!-- <button type="reset" [disabled]="process" class="filter-btn" mat-mdc-button
+                  <!-- <button type="reset" [disabled]="process" class="filter-btn" mat-button
                       (click)="refreshDataAchievement([])">{{'reset' | translate}}</button>
                   <button type="reset" class="filter-btn" mat-button (click)="advanceSearch = false; searchForm.reset()">{{'close' |
                       translate}}</button> -->
