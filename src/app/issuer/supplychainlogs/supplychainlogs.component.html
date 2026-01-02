@@ -28,9 +28,9 @@
           <div class="col-lg-7 col-md-12 col-sm-12">
             <div class="user-btn-block">
               <ul class="button-list">
-                <li><button type="submit" class="filter-btn search" mat-mdc-button
+                <li><button type="submit" class="filter-btn search" mat-button
                     [disabled]="process">{{'search' | translate}}</button></li>
-                <li><button type="reset" class="filter-btn reset" mat-mdc-button
+                <li><button type="reset" class="filter-btn reset" mat-button
                     (click)="advanceSearch = true; getProductList({},true);searchForm.reset();resetForm()">{{'advanced_search' | translate}}</button>
                 </li>
                 <li><button type="reset" class="filter-btn reset" mat-button [disabled]="process"

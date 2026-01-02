@@ -7,13 +7,13 @@
 .plan_info h4 { font-size:16px; }
 .plan-title.alert_title{padding-bottom: 10px; position: relative; border-bottom: 1px solid #ccc;margin-bottom:20px} 
 .dropin-container.hidden {visibility: hidden;}
-.pricing_table .text-danger {  bottom: -20px; font-weight: normal; font-size: 12px;}
-ul.payment-list { margin-bottom:0; padding-left:0; }
-ul.payment-list li { display: inline-block;padding:0 20px 0 0;vertical-align: top; }
-ul.payment-list li:first-child { width:30%;}
-ul.payment-list li:last-child { width:70%;}
-ul.payment-list li:first-child label { padding-bottom:3px;}
-.currency-select .form-control { border-color: #29b6d8!important;color: #29b6d8;border-width: 2px;height:47px;}
+.pricing_table .text-danger{ bottom:-20px;font-weight:normal;font-size:12px;}
+ul.payment-list{margin-bottom:0;padding-left:0;}
+ul.payment-list li{display:inline-block;padding:0 20px 0 0;vertical-align:top;}
+ul.payment-list li:first-child{width:30%;}
+ul.payment-list li:last-child{width:70%;}
+ul.payment-list li:first-child label{padding-bottom:3px;}
+.currency-select .form-control{border-color:#3d3d3d!important;color:#cccccc;background:#1e232b;border-width:2px;height:47px;cursor:pointer;}
 table tr th .text-danger {bottom: -16px;left: 25px;display: inline-block;white-space: nowrap;}
 .make-payment-section { width:auto; display: inline-block; }
 .plan-btn { margin-right:10px; margin-top:10px; width:auto; min-width:auto; }
@@ -35,17 +35,17 @@ table tr th .text-danger {bottom: -16px;left: 25px;display: inline-block;white-s
 .payment_success .material-icons { color:#00af2e; font-size: 65px;}
 .table-responsive.pricing_table table tbody tr td, 
 .table-responsive.pricing_table table tbody tr th{background-color:#1e232b;}
-.table-responsive.pricing_table table tbody tr th label{font-size:14px;color:#cccccc;font-family: 'Roboto-Regular';font-weight: normal;}
+.table-responsive.pricing_table table tbody tr th mat-radio-group label{font-size:14px;color:#cccccc;font-family: 'Roboto-Regular';font-weight: normal;}
 .table-responsive.pricing_table table tbody tr th{font-size:14px;color:#cccccc;font-family: 'Roboto-Regular';font-weight: normal;}
 .table-responsive.pricing_table table tbody tr th span{font-size:12px;color:#cccccc;font-family: 'Roboto-Regular';font-weight: normal;}
 .table-responsive.pricing_table table thead tr th{font-size:16px;color:#cccccc; background-color: #1e232b; }
 .mat-radio-group.mat-radio-group{width:100%;position:relative;}
 .mat-radio-button{width:50%;}
 .buynow{width:100%;text-align:center;margin:15px 0;}
-.buynow .mat-mdc-button{background-color:#1e232b;color: #fff;font-weight: normal;text-transform: uppercase;}
+.buynow .mat-mdc-button{background-color:#1e232b;color:#fff;font-weight: normal;text-transform: uppercase;}
 ul.payment_list{padding-left:0;margin-bottom:0;}
 ul.payment_list li{width:100px;display:inline-block;vertical-align:top;}
-ul.payment_list li .discount{width:auto;margin:3px 5px;border:1px solid rgba(0,0,0,.12);}
+ul.payment_list li .discount{width:auto;margin:3px 5px;border:1px solid #3d3d3d;}
 ul.payment_list li .discount p{width:100%;text-align:center;margin-bottom:0;padding:8px 5px;position:relative;font-size:12px;display:inline-block;height:30px}
 ul.payment_list li mat-form-field{width:100px;}
 :host ::ng-deep ul.payment_list li .mat-select-arrow{position:relative;top:5px;}
@@ -53,15 +53,15 @@ ul.payment_list li mat-form-field{width:100px;}
 :host ::ng-deep ul.payment_list li .mat-form-field-appearance-outline .mat-form-field-outline-start, 
 :host ::ng-deep ul.payment_list li .mat-form-field-appearance-outline .mat-form-field-outline-end{border-radius:0 0 0 0;}
 .mat-option {text-transform:capitalize;}
-.payment-error { top:50px;}
+.payment-error{top:50px;}
 ul.payment_list.total_price li{vertical-align:middle;}
-ul.total_price { padding-left:0;margin-bottom:0;}
-ul.total_price li { display:inline-block;}
+ul.total_price{padding-left:0;margin-bottom:0;}
+ul.total_price li{display:inline-block;}
 ul.total_price li:first-child p{font-size:16px;font-weight:bold;color:#1e232b;margin-bottom:0;}
-ul.payment_list select.form-control{border-color:#d5d5d5!important;background-color:transparent;border-radius:0;margin-top:3px;height:32px}
+ul.payment_list select.form-control{border-color:#3d3d3d!important;background-color:transparent;border-radius:0;margin-top:3px;height:32px}
 ul.payment_list select.form-control:hover{cursor:pointer;}
-.discount-price{width:auto;margin:3px 5px;border:1px solid rgba(0,0,0,.12);}
-.discount-price p{width:100%;text-align:center;margin-bottom:0;padding:8px 5px;position:relative;font-size:12px;display:inline-block;height:30px}
+.discount-price{width:auto;margin:3px 5px;border:1px solid #3d3d3d;}
+.discount-price p{color:#cccccc;width:100%;text-align:center;margin-bottom:0;padding:8px 5px;position:relative;font-size:12px;display:inline-block;height:30px}
 
 
 /* Spin Buttons modified */

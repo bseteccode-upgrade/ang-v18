@@ -513,7 +513,7 @@
                               <h4>{{ selectedCertificate.first_name}} {{ selectedCertificate.last_name}}</h4>
                             </div>
                             <div class="right-side-btn">
-                              <a class="contact-email-btn mat-mdc-button"
+                              <a class="contact-email-btn" mat-button
                                 href="mailto:{{selectedCertificate.student_email}}">{{'Email'| translate}}</a>
                             </div>
                           </div>
@@ -530,7 +530,7 @@
                               </a>
                             </div>
                             <div class="right-side-btn">
-                              <a class="contact-email-btn mat-mdc-button"
+                              <a class="contact-email-btn" mat-button
                                 href="mailto:{{selectedCertificate.issuer_email}}">{{'Email'| translate}}</a>
                             </div>
                           </div>
@@ -660,13 +660,13 @@
         <div class="col-md-6 col-sm-12">
           <!-- <share-button (closed)="catchShare(2, $event)" button="facebook" [url]="ShareModal.getData()" [showIcon]="true" [showText]="true">
               </share-button> -->
-          <button class="social-share-facebook" mat-mdc-button
+          <button class="social-share-facebook" mat-button
             (click)="socialShare('facebook', selectedCertificate.social_share_url, selectedCertificate.facebook_content )"
             type="button"><i class="fa fa-facebook"></i> {{'facebook' | translate}}</button>
         </div>
 
         <div class="col-md-6 col-sm-12">
-          <button class="social-share-twitter" mat-mdc-button
+          <button class="social-share-twitter" mat-button
             (click)="socialShare('twitter', selectedCertificate.social_share_url, selectedCertificate.twitter_content )"
             type="button"><i class="fa fa-twitter"></i> {{'twitter' | translate}}</button>
           <!-- <share-button (closed)="catchShare(2)" button="twitter" [url]="ShareModal.getData()" [showIcon]="true" [showText]="true">
@@ -689,13 +689,13 @@
         </div>
 
         <!-- <div class="col-md-6 col-sm-12 linkedin-block">
-              <button class="social-share-linkedin" mat-mdc-button
+              <button class="social-share-linkedin" mat-button
                 (click)="catchShare(2, $event);socialShare('linkedin', selectedCertificate.social_share_url, selectedCertificate.linkedin_content )"
                 type="button"> <i class="fa fa-linkedin"></i> {{'linkedin' | translate}}</button>
             </div> -->
 
         <div class="col-md-6 col-sm-12 linkedin-block">
-          <button class="social-share-whatsapp" mat-mdc-button
+          <button class="social-share-whatsapp" mat-button
             (click)="socialShare('whatsapp', selectedCertificate.social_share_url, selectedCertificate.whatsapp_content )"
             type="button"><i class="fa fa-whatsapp"></i> {{'whatsapp' | translate}}</button>
           <!-- <share-button (closed)="catchShare(2)" *ngIf="selectedCertificate.uploads" button="whatsapp" [showText]="true" theme="modern-dark"
@@ -1026,7 +1026,7 @@
       </div>
 
       <div class="col-md-12 col-sm-12 linkedin-savebtn form-group"><br>
-        <button class="social-share-linkedin" mat-mdc-button
+        <button class="social-share-linkedin" mat-button
           (click)="socialShare('linkedin', selectedCertificate.linkedin_social_share_url, selectedCertificate.linkedin_content )"
           type="button"> <i class="fa fa-linkedin"></i> {{'linkedin' | translate}}</button>
       </div>
