@@ -399,7 +399,7 @@ body .mat-checkbox-checked.mat-accent .mat-checkbox-background, body .mat-checkb
 .add-student { border-radius:6px; display: inline-block; position: relative; border:1px solid #cecfd0; width:100%;  }
 .add-student-title h3 { font-size: 16px; color:#fff; background-color: #109485; width:100%; border-top-left-radius: 5px; border-top-right-radius: 5px; padding:15px; margin-top:0px; margin-bottom:0px;}
 .add-student-form { padding:0px 40px; }
-.add-student-form .form-horizontal .control-label { font-weight: normal; color:#1e232b; font-size:15px; text-align: left; font-family: 'Roboto-Regular'; }
+.add-student-form .form-horizontal .control-label { font-weight: normal; color:#cccccc; font-size:15px; text-align: left; font-family: 'Roboto-Regular'; }
 .add-student-form h4 { font-weight: normal; font-family: 'Roboto-Regular'; padding:0px 10px; }
 .select_file { margin:10px 0px; top:10px; display: inline-block; position: relative; }
 .btn.btn-form-save.mat-mdc-button { background-color: #d0483e; color:#fff; font-size: 14px; font-weight: bold; text-transform: uppercase;}
@@ -415,7 +415,10 @@ mat-form-field .mat-mdc-text-field-wrapper{background:#3d3d3d!important;border-r
 mat-form-field .mdc-text-field__input{caret-color:#ffffff!important;color:#ffffff}
 mat-form-field .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before,
 mat-form-field .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after{border-bottom:none!important}
-
+mat-datepicker-toggle button.mdc-icon-button {
+    bottom: 7px;
+}
+.mat-datepicker-toggle{color:#cccccc}
 
 
 .btn.btn-form-save.add-evidence.mat-mdc-button{background-color:#109485;color:#fff;font-size:14px;font-weight:bold;text-transform:uppercase;}
@@ -463,22 +466,22 @@ ul.vottun-footer-list li a:hover { color:#109485; } */
 .signin-forgot a:hover { color:#000000}
 .forgot-password a.back-login { font-size: 16px; font-family: 'Roboto-Medium'; }
 .forgot-password a.back-login:hover { color:#109485; }
-.signup-form input::-webkit-input-placeholder { color: #c8c8c8; }
-.signup-form input::-moz-placeholder { color: #c8c8c8; }
-.signup-form input::-ms-input-placeholder { color: #c8c8c8; }
-.signup-form input::-moz-placeholder { color: #c8c8c8; }
-.add-student-form input::-webkit-input-placeholder { color: #c8c8c8; }
-.add-student-form input::-moz-placeholder { color: #c8c8c8; }
-.add-student-form input::-ms-input-placeholder { color: #c8c8c8; }
-.add-student-form input::-moz-placeholder { color: #c8c8c8; }
-.add-student-form textarea::-webkit-input-placeholder { color: #c8c8c8; }
-.add-student-form textarea::-moz-placeholder { color: #c8c8c8; }
-.add-student-form textarea::-ms-input-placeholder { color: #c8c8c8; }
-.add-student-form textarea::-moz-placeholder { color: #c8c8c8; }
-.add-student-form input, .add-student-form select {    margin-right: 10px; font-family: 'Roboto-Regular'; font-size: 16px; height: 43px; display: inline-block; }
+.signup-form input::-webkit-input-placeholder{color: #c8c8c8; }
+.signup-form input::-moz-placeholder{color:#c8c8c8; }
+.signup-form input::-ms-input-placeholder{color:#c8c8c8; }
+.signup-form input::-moz-placeholder{color:#c8c8c8; }
+.add-student-form input::-webkit-input-placeholder{color: #c8c8c8; }
+.add-student-form input::-moz-placeholder{color:#c8c8c8; }
+.add-student-form input::-ms-input-placeholder{color:#c8c8c8; }
+.add-student-form input::-moz-placeholder{color: #c8c8c8; }
+.add-student-form textarea::-webkit-input-placeholder{color:#c8c8c8;}
+.add-student-form textarea::-moz-placeholder{color:#c8c8c8;}
+.add-student-form textarea::-ms-input-placeholder{color:#c8c8c8;}
+.add-student-form textarea::-moz-placeholder{color:#c8c8c8;}
+.add-student-form input, .add-student-form select{background-color:#3d3d3d;color:#cccccc;margin-right:10px; font-family:'Roboto-Regular';font-size:16px;height:40px;display:inline-block;border-color:#3d3d3d!important;}
 .add-student-form angular-editor-toolbar input, .add-student-form angular-editor-toolbar select{height:auto}
-.add-student-form textarea { font-family: 'Roboto-Regular'; font-size: 16px; height: 130px !important; }
-.add-student-form .form-horizontal .form-group { margin-left:5px; margin-right:5px; }
+.add-student-form textarea{font-family:'Roboto-Regular';font-size:16px;height:130px!important;}
+.add-student-form .form-horizontal .form-group{margin-left:5px;margin-right:5px;}
 .issue-certificate-select { margin:0px 10px; }
 .issue-certificate-block { display: inline-block; position: relative; width:100%; text-align: center; }
 .issue-certificate-block img { display: inline-block; padding:40px 10px;}
@@ -519,7 +522,7 @@ body .mat-elevation-z8 { box-shadow: none;}
 .mandatory { color:#f20; font-family: 'Roboto-Regular';}
 .mat-mdc-form-field { width:100%; }
 .angular-datepicker .mat-datepicker-toggle-active { color:#109485; }
-.angular-datepicker .mat-mdc-form-field-flex { border:1px solid #eaeaea;}
+.angular-datepicker .mat-mdc-form-field-flex {/*border:1px solid #eaeaea;*/}
 .angular-datepicker.field-datepicker input { height:38px; }
 .angular-datepicker.field-datepicker .mat-mdc-button-wrapper { bottom: 10px; position: relative; }
 .angular-datepicker.field-datepicker .mat-mdc-form-field-flex { border-radius: 5px; }

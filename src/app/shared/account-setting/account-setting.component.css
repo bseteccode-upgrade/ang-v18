@@ -27,7 +27,7 @@ button.certificate-btn.mat-mini-fab.mat-accent{
 .select-file { position: relative; height:100%;margin-top:10%}
 :host ::ng-deep .btn-primary { background-color: #1e232b; border-color: #1e232b;color: #fff}
 :host ::ng-deep .start_wrapper .panel-body { margin-top:20px; }
-:host ::ng-deep .add-student-form .form-horizontal .control-label{color: #1e232b;margin-bottom:10px;text-transform:capitalize}
+:host ::ng-deep .add-student-form .form-horizontal .control-label{color: #cccccc;margin-bottom:10px;text-transform:capitalize}
 :host ::ng-deep .add-student-form .form-horizontal .form-group { height:75px; }
 :host ::ng-deep .add-student-form .form-horizontal .form-group.textarea { height:auto;}
 :host ::ng-deep .add-student-form .form-horizontal .form-group.textarea textarea { height:155px !important;}
