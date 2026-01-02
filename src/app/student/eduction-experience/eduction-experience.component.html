@@ -82,7 +82,7 @@
 
           <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="form-group">
-              <mat-form-field appearance="outline">
+              <mat-form-field >
                 <mat-label>{{'title' | translate}}</mat-label>
                 <input matInput formControlName="experience_title"
                   [readonly]="!expForm.controls['external_certificate'].value">
@@ -94,7 +94,7 @@
 
           <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="form-group">
-              <mat-form-field appearance="outline">
+              <mat-form-field >
                 <mat-label>{{'organization' | translate}}</mat-label>
                 <input matInput formControlName="organization"
                   [readonly]="!expForm.controls['external_certificate'].value">
@@ -106,7 +106,7 @@
 
           <div class="col-lg-6 col-md-4 col-sm-12">
             <div class="form-group">
-              <mat-form-field appearance="outline">
+              <mat-form-field >
                 <mat-label>{{'from' | translate}}</mat-label>
                 <input matInput placeholder="year" (keydown)="onlyNumber($event)" formControlName="from_year"
                   [readonly]="!expForm.controls['external_certificate'].value">
@@ -116,7 +116,7 @@
             </div>
 
             <div class="form-group">
-              <mat-form-field appearance="outline">
+              <mat-form-field >
                 <mat-select [disabled]="!expForm.controls['external_certificate'].value" formControlName="from_month"
                   placeholder="{{'select' | translate}} {{'from_month' | translate}}">
                   <mat-option *ngFor="let data of monthArr" [value]='data.index'>
@@ -132,7 +132,7 @@
 
           <div class="col-lg-6 col-md-4 col-sm-12">
             <div class="form-group">
-              <mat-form-field appearance="outline">
+              <mat-form-field >
                 <mat-label>{{'to' | translate}}</mat-label>
                 <input matInput placeholder="Year" (keydown)="onlyNumber($event)" formControlName="to_year"
                   [readonly]="!expForm.controls['external_certificate'].value">
@@ -141,7 +141,7 @@
                 {{getErrorMessage('to_year') || errorMsgArr['to_year'] | translate}}</div> -->
             </div>
             <div class="form-group">
-              <mat-form-field appearance="outline">
+              <mat-form-field >
                 <mat-select [disabled]="!expForm.controls['external_certificate'].value" formControlName="to_month"
                   placeholder="{{'select' | translate}} {{'to_month' | translate}}">
                   <mat-option *ngFor="let data of monthArr" [value]='data.index'>
@@ -157,7 +157,7 @@
 
           <div class="col-lg-6 col-md-4 col-sm-12" *ngIf="expForm.controls['external_certificate'].value">
             <div class="form-group">
-              <mat-form-field appearance="outline">
+              <mat-form-field >
                 <mat-label>{{'external_url' | translate}}</mat-label>
                 <input matInput formControlName="external_url">
               </mat-form-field>

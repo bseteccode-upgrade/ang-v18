@@ -49,9 +49,9 @@ ul.payment_list li .discount{width:auto;margin:3px 5px;border:1px solid #3d3d3d;
 ul.payment_list li .discount p{width:100%;text-align:center;margin-bottom:0;padding:8px 5px;position:relative;font-size:12px;display:inline-block;height:30px}
 ul.payment_list li mat-form-field{width:100px;}
 :host ::ng-deep ul.payment_list li .mat-select-arrow{position:relative;top:5px;}
-:host ::ng-deep ul.payment_list li .mat-form-field-appearance-outline .mat-form-field-infix{padding:0 0 10px 0;}
-:host ::ng-deep ul.payment_list li .mat-form-field-appearance-outline .mat-form-field-outline-start, 
-:host ::ng-deep ul.payment_list li .mat-form-field-appearance-outline .mat-form-field-outline-end{border-radius:0 0 0 0;}
+:host ::ng-deep ul.payment_list li .mat-mdc-form-field-appearance-outline .mat-mdc-form-field-infix{padding:0 0 10px 0;}
+:host ::ng-deep ul.payment_list li .mat-mdc-form-field-appearance-outline .mat-mdc-form-field-outline-start, 
+:host ::ng-deep ul.payment_list li .mat-mdc-form-field-appearance-outline .mat-mdc-form-field-outline-end{border-radius:0 0 0 0;}
 .mat-option {text-transform:capitalize;}
 .payment-error{top:50px;}
 ul.payment_list.total_price li{vertical-align:middle;}

@@ -301,7 +301,7 @@
 
           <div class="row">
             <div class="col-sm-6">
-              <mat-form-field appearance="outline">
+              <mat-form-field >
                 <mat-select formControlName="reason_type" placeholder="{{'pls_select_reason_type' | translate}}">
                   <mat-option (click)="getReasonType(1)" value='1'>{{'misspelling' | translate}}</mat-option>
                   <mat-option (click)="getReasonType(2)" value='2'>{{'issued_by_mistake' | translate}}</mat-option>
@@ -315,7 +315,7 @@
             </div>
 
             <div *ngIf="hideOtherField" class="col-sm-6 delete-input">
-              <mat-form-field appearance="outline">
+              <mat-form-field >
                 <input #otherTxt formControlName="reason" matInput class="form-control">
               </mat-form-field>
               <div class="text-danger text-left small" *ngIf="reasonErrorMsg">{{getreasonErrorMsg('reason') |

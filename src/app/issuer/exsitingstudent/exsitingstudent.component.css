@@ -13,7 +13,7 @@ ul.student-list li span { color:#262d37;font-size: 16px;font-family: 'Roboto-Reg
 .panel-body .certificate-img { width:100%; border-radius: 4px; border: 2px solid #ccc; padding:15px; display: inline-block; position: relative; text-align: center;}
 .panel-body .certificate-img img { width:100%; height:180px; object-fit: contain; display:inline-block; }
 .existing-fields { position: relative;}
-:host ::ng-deep .existing-fields .mat-form-field-appearance-outline .mat-form-field-infix { padding: 0em 0 0em 0; }
+:host ::ng-deep .existing-fields .mat-mdc-form-field-appearance-outline .mat-mdc-form-field-infix { padding: 0em 0 0em 0; }
 .add-btn-block { position: relative; top:5px; width:100%; text-align: right; display: inline-block; }
 .existing-fields .pull-right { float:right; }
 

@@ -43,12 +43,12 @@
                       <form [formGroup]="onSearchCertCourse">
                         <div class="">
                           <div class="col-lg-8 col-md-6 col-sm-12">
-                            <!-- <mat-form-field appearance="outline">
+                            <!-- <mat-form-field >
                               <mat-label>{{'search' | translate}}</mat-label>
                               <input matInput formControlName="searchCertCourse"
                                 class="form-control acheivement-search">
                             </mat-form-field> -->
-                            <mat-form-field appearance="outline" class="autocomplete">
+                            <mat-form-field  class="autocomplete">
                               <input formControlName="searchCertCourse" [(ngModel)]="certBadgeSearch"
                                 [formControl]="certBadgeMycontrol" placeholder="{{'search' | translate}}" matInput
                                 [matAutocomplete]="certBadge">
@@ -238,7 +238,7 @@
                       <form [formGroup]="searchStudForm">
                         <ul class="search-box">
                           <li>
-                            <mat-form-field appearance="outline" class="autocomplete search_autocomplete">
+                            <mat-form-field  class="autocomplete search_autocomplete">
                               <input formControlName="student_name" [(ngModel)]="studentNameSearch"
                                 [formControl]="studentNameMycontrol" placeholder="{{'search' | translate}}" matInput
                                 [matAutocomplete]="studentName">
@@ -278,13 +278,13 @@
                       <form [formGroup]="searchGroupStud">
                         <div class="">
                           <div class="col-lg-8 col-md-6 col-sm-12">
-                            <!-- <mat-form-field appearance="outline">
+                            <!-- <mat-form-field >
                               <mat-label>{{'group' | translate}}</mat-label>
                               <input matInput (input)="assignGroupName($event.target.value)"
                                 formControlName="group_name" class="form-control acheivement-search">
                             </mat-form-field> -->
 
-                            <mat-form-field appearance="outline" class="autocomplete">
+                            <mat-form-field  class="autocomplete">
                               <input (input)="getinputgroupname($event.target.value)" formControlName="group_name"
                                 [(ngModel)]="search" [formControl]="myControl" placeholder="{{'group' | translate}}"
                                 matInput [matAutocomplete]="auto">

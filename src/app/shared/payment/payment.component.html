@@ -36,7 +36,7 @@
                                     <div class="form-group select-group" *ngIf="initialPay && apiService.blockchain_client == ''">
                                         <label class="control-label"
                                             for="tinNumber">{{'select_blockchain' | translate}}</label>
-                                        <mat-form-field appearance="outline">
+                                        <mat-form-field >
                                             <mat-select formControlName="blockchainselect"
                                                 (change)="resetSelectFieldError()"
                                                 placeholder="{{ 'select_blockchain' | translate}}">

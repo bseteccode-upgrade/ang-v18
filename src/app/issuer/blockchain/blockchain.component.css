@@ -47,7 +47,7 @@ button.resend-btn.mat-mdc-button {color: #fff;background-color: #29b6d8;border-c
 :host ::ng-deep .certify_name { width:100%;word-break: break-word;height:43px}
 .badge-delete.expired-revoke.mat-mdc-button { background-color:#262d37; }
 :host ::ng-deep .badge-delete.mat-mdc-button { margin:10px 5px;}
-:host ::ng-deep .delete-input .mat-form-field-appearance-outline .mat-form-field-infix { padding:3px 0px;}
+:host ::ng-deep .delete-input .mat-mdc-form-field-appearance-outline .mat-mdc-form-field-infix { padding:3px 0px;}
 :host ::ng-deep .view-evidence-btn.mat-mdc-button { margin:10px 0px;text-transform: capitalize;}
 :host ::ng-deep a.view-evidence-btn.mat-mdc-button {width:auto;min-width:auto;margin:10px;text-transform: capitalize}
 .delete-input .text-danger.text-left.small { position: absolute; bottom: 2px; }
@@ -154,7 +154,7 @@ ul.student-list li span { color:#262d37;font-size: 14px;word-break: break-word}
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
 {
-:host ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-prefix .mat-icon-button, :host ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon-button {position:relative;top:10px;}
+:host ::ng-deep .mat-mdc-form-field-appearance-legacy .mat-mdc-form-field-prefix .mat-icon-button, :host ::ng-deep .mat-mdc-form-field-appearance-legacy .mat-mdc-form-field-suffix .mat-icon-button {position:relative;top:10px;}
 .refresh-icon { bottom:auto; top:10px;} 
 }
 

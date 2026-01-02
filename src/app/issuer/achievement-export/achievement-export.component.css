@@ -12,7 +12,7 @@ mat-select { border: none;}
 :host ::ng-deep .eng_group .blockchain-main a img { padding:0px 10px;}
 :host ::ng-deep .certify_name { width:85px;}
 :host ::ng-deep .badge-delete.mat-mdc-button { margin:10px 0px;}
-:host ::ng-deep .delete-input .mat-form-field-appearance-outline .mat-form-field-infix { padding:3px 0px;}
+:host ::ng-deep .delete-input .mat-mdc-form-field-appearance-outline .mat-mdc-form-field-infix { padding:3px 0px;}
 :host ::ng-deep .achievement-btn { margin-bottom:20px; }
 :host ::ng-deep .user-btn-block { margin-bottom:20px; }
 .scheduler-border .achievement-btn .filter-btn.mat-mdc-button { margin:5px; }

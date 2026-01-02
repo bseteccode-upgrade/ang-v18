@@ -3,7 +3,7 @@
 .multiple-email-header { position: relative; width:100%;  display: inline-block; }
 ul.email-list { width:1000px; overflow: auto; position: relative; }
 ul.email-list li { display: inline-block; }
-:host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix { padding: 0em 0 0em 0; border-top:0.2em solid transparent; }
+:host ::ng-deep .mat-mdc-form-field-appearance-outline .mat-mdc-form-field-infix { padding: 0em 0 0em 0; border-top:0.2em solid transparent; }
 :host ::ng-deep .start_wrapper .table > tbody > tr > td {text-align: left; border-bottom: 1px solid #e3e3e3; }
 :host ::ng-deep .start_wrapper .table > tbody > tr > td:first-child { min-width:400px;}
 :host ::ng-deep .start_wrapper .table > tbody > tr > td p.primary { font-weight: bold; color:rgb(45, 46, 46); text-transform: capitalize; }

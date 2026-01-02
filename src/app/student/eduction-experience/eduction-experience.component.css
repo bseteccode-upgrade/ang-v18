@@ -15,7 +15,7 @@
 .eng_group img{max-width:60px;width:auto;height:50px}
 .block-left{width:100%}
 .blockchain-details{padding:0 0 10px}
-.mat-form-field,mat-label{
+.mat-mdc-form-field,mat-label{
     text-transform: capitalize;
 }
 .badge-certificate-section{margin-bottom:0}

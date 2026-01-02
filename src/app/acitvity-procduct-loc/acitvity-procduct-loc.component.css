@@ -2,8 +2,8 @@
 .form-section.hpanel { width:100%; display: inline-block; position: relative; margin-bottom:20px; padding: 5px 0; }
 .form-section.hpanel .text-danger { bottom:0;}
 .alert-info{ text-align: center;}
-:host ::ng-deep .filter-search-box .mat-form-field-appearance-outline.mat-form-field-hide-placeholder .mat-form-field-label { top: 19px; margin-top: -0.25em; }
-:host ::ng-deep .filter-search-box .mat-form-field-appearance-outline.mat-focused .mat-form-field-label { top:1.84375em; margin-top: -0.25em; }
+:host ::ng-deep .filter-search-box .mat-mdc-form-field-appearance-outline.mat-mdc-form-field-hide-placeholder .mat-mdc-form-field-label { top: 19px; margin-top: -0.25em; }
+:host ::ng-deep .filter-search-box .mat-mdc-form-field-appearance-outline.mat-focused .mat-mdc-form-field-label { top:1.84375em; margin-top: -0.25em; }
 .product_details { font-family: Georgia,Times,Times New Roman,serif; width: 100%; display: inline-block; color:#000; padding: 20px; font-size: 18px; margin-bottom:0; margin-top: 0; text-transform: capitalize; }
 :host ::ng-deep .product_details h1 { font-size: 36px;margin-top: 0;margin-bottom:0; text-transform: capitalize;}
 :host ::ng-deep .product_details h2 { font-size: 30px;margin-top: 0; margin-bottom:0;text-transform: capitalize;}

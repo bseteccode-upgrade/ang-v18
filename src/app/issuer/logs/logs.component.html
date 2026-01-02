@@ -12,12 +12,12 @@
         <fieldset class="scheduler-border">
           <form [formGroup]="searchForm" (ngSubmit)="searchFormSubmit(searchForm.value)">
             <div class="col-md-4 col-sm-12">
-              <!-- <mat-form-field appearance="outline">
+              <!-- <mat-form-field >
                 <mat-label>{{'search' | translate}}</mat-label>
                 <input #searchVal formControlName="search" matInput class="form-control">
               </mat-form-field> -->
 
-              <mat-form-field appearance="outline" class="autocomplete">
+              <mat-form-field  class="autocomplete">
                 <input formControlName="search" [formControl]="searchControl" autocomplete="off" (input)="getinputsearch($event.target.value)" placeholder="{{'search' | translate}}"
                   matInput [matAutocomplete]="auto_search">
                 <mat-autocomplete #auto_search="matAutocomplete" (optionSelected)="searchInput = $event.option.value">
@@ -29,7 +29,7 @@
             </div>
 
             <div class="col-md-4 col-sm-12">
-              <mat-form-field appearance="outline">
+              <mat-form-field >
                 <mat-select formControlName="reason_type" placeholder="{{'pls_select_reason_type' | translate}}">
                   <mat-option (click)="getReasonType(1)" value='1'>{{'misspelling' | translate}}</mat-option>
                   <mat-option (click)="getReasonType(2)" value='2'>{{'issued_by_mistake' | translate}}</mat-option>
@@ -39,12 +39,12 @@
                 </mat-select>
               </mat-form-field>
               </div>
-              <!-- <mat-form-field *ngIf="otherFieldDisplay" appearance="outline">
+              <!-- <mat-form-field *ngIf="otherFieldDisplay" >
                 <mat-label>{{'other_reason' | translate}}</mat-label>
                 <input #reasonOther formControlName="reason" matInput class="form-control" name="reason">
               </mat-form-field> -->
               <div class="col-md-4 col-sm-12">
-                <mat-form-field appearance="outline" class="autocomplete" *ngIf="otherFieldDisplay">
+                <mat-form-field  class="autocomplete" *ngIf="otherFieldDisplay">
                 <input formControlName="reason" [formControl]="reasonControl" autocomplete="off" (input)="getinputreason($event.target.value)" placeholder="{{'other_reason' | translate}}"
                   matInput [matAutocomplete]="auto_reason">
                 <mat-autocomplete #auto_reason="matAutocomplete" (optionSelected)="reasonInput = $event.option.value">

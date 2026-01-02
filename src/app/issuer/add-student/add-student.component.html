@@ -79,7 +79,7 @@
             <div class="group-field-block">
               <label class="control-label" for="group">{{'group' | translate}}</label>
               <div class="group-field">
-                <mat-form-field appearance="outline" class="autocomplete">
+                <mat-form-field  class="autocomplete">
                   <input (input)="getinputgroupname($event.target.value)" formControlName="group_id"
                     [(ngModel)]="search" [formControl]="myControl" placeholder="{{'group' | translate}}" matInput
                     [matAutocomplete]="auto" class="group_field">

@@ -33,6 +33,6 @@ ul.box-list li:nth-child(2){border-right:1px solid #ccc}
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
 {
-:host ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-prefix .mat-icon-button, :host ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon-button {position:relative;top:10px;}
+:host ::ng-deep .mat-mdc-form-field-appearance-legacy .mat-mdc-form-field-prefix .mat-icon-button, :host ::ng-deep .mat-mdc-form-field-appearance-legacy .mat-mdc-form-field-suffix .mat-icon-button {position:relative;top:10px;}
 .refresh-icon { bottom:auto; top:10px;} 
 }

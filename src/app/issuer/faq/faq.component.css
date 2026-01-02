@@ -9,7 +9,7 @@ mat-accordion  mat-panel-title { font-family: 'Roboto-Regular'; color:#206ab5; f
 mat-accordion p {font-family: 'Roboto-Regular'; color:#636472;font-size: 14px;text-align: left;line-height: 25px;}
 :host ::ng-deep .mat-expanded .mat-expansion-panel-body { padding:15px 25px;}
 .separate_btn.mat-mdc-button {width: 40%;color: #fff;background-color: #29b6d8;border-color: #29b6d8;font-size: 14px;padding: 5px 15px;margin: 5px;}
-:host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {padding: 0em 0 0.5em 0;}
+:host ::ng-deep .mat-mdc-form-field-appearance-outline .mat-mdc-form-field-infix {padding: 0em 0 0.5em 0;}
 .spinner { width:100%; display:inline-block; text-align: center; }
 .spinner mat-spinner { display: inline-block;}
 .form-section{display: inline-block;width: 100%;padding: 20px 0 0;border: 1px solid #ccc;margin-bottom: 20px;}

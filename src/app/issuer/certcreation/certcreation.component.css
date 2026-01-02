@@ -211,7 +211,7 @@
 :host ::ng-deep .certificate-add-form .mat-horizontal-stepper-header-container { display: none; }
 :host ::ng-deep .mat-horizontal-content-container { padding: 0 0px 24px 0px; }
 :host ::ng-deep .add-student-form { padding:0px 0px; }
-:host ::ng-deep .delete-input .mat-form-field-appearance-outline .mat-form-field-infix { padding:3px 0px;}
+:host ::ng-deep .delete-input .mat-mdc-form-field-appearance-outline .mat-mdc-form-field-infix { padding:3px 0px;}
 :host ::ng-deep .upload-container .drop-zone { margin: 15px;padding: 15px 0px;height: auto; border-radius: 4px; border:2px dashed #b8b7b7;}
 :host ::ng-deep .upload-container .content{ padding:20px; min-width:100%; }
 :host ::ng-deep .onload-message { width:55%; margin:0 0;margin-right:0;position: relative;background-color: rgba(255, 0, 0, 1);}

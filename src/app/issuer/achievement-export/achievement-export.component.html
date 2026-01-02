@@ -18,7 +18,7 @@
       <fieldset class="scheduler-border" *ngIf="!advanceSearch && allowSearch">
         <form [formGroup]="searchForm" (ngSubmit)="getIssuersCertificateListsExport(searchForm.value)">
           <div class="col-lg-6 col-md-12 col-sm-12">
-            <mat-form-field appearance="outline">
+            <mat-form-field >
               <mat-label>{{'search' | translate}}</mat-label>
               <input matInput class="form-control" formControlName="search" name="search">
             </mat-form-field>
@@ -65,56 +65,56 @@
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <mat-form-field appearance="outline">
+            <mat-form-field >
               <mat-label>{{'title' | translate}}</mat-label>
               <input matInput class="form-control" formControlName="title">
             </mat-form-field>
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <mat-form-field appearance="outline">
+            <mat-form-field >
               <mat-label>{{'certificate_number' | translate}}</mat-label>
               <input matInput class="form-control" formControlName="certificate_number">
             </mat-form-field>
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <mat-form-field appearance="outline">
+            <mat-form-field >
               <mat-label>{{'certificate_code' | translate}}</mat-label>
               <input matInput class="form-control" formControlName="code">
             </mat-form-field>
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <mat-form-field appearance="outline">
+            <mat-form-field >
               <mat-label>{{'student_id' | translate}}</mat-label>
               <input matInput class="form-control" formControlName="student_id">
             </mat-form-field>
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <mat-form-field appearance="outline">
+            <mat-form-field >
               <mat-label>{{'email' | translate}}</mat-label>
               <input matInput class="form-control" formControlName="email">
             </mat-form-field>
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <mat-form-field appearance="outline">
+            <mat-form-field >
               <mat-label>{{'first_name' | translate}}</mat-label>
               <input matInput class="form-control" formControlName="first_name">
             </mat-form-field>
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <mat-form-field appearance="outline">
+            <mat-form-field >
               <mat-label>{{'last_name' | translate}}</mat-label>
               <input matInput class="form-control" formControlName="last_name">
             </mat-form-field>
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <mat-form-field appearance="outline">
+            <mat-form-field >
               <mat-label>{{'select' | translate}}</mat-label>
               <mat-select placeholder="Select" class="form-control" formControlName="block_chain">
                 <mat-option [value]="true">Blockchain</mat-option>
@@ -124,7 +124,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <mat-form-field appearance="outline">
+            <mat-form-field >
               <mat-label>{{'achievement_type' | translate}}</mat-label>
               <mat-select placeholder="Select" class="form-control" formControlName="achievement_type">
                 <mat-option [value]="1"> Blockchain Certificate </mat-option>
@@ -135,7 +135,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <mat-form-field appearance="outline">
+            <mat-form-field >
               <mat-label>{{'group' | translate}}</mat-label>
               <input matInput class="form-control" formControlName="group_name">
             </mat-form-field>

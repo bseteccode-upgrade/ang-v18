@@ -110,7 +110,7 @@ a.cerificate-click { position: relative; display: inline-block; width: 100%; hei
 .block-right p { margin-bottom:0px; }
 .block-right .icon { font-size:28px; padding:0px; }
 :host ::ng-deep .badge-delete.mat-mdc-button { margin:10px 0px; }
-:host ::ng-deep .delete-input .mat-form-field-appearance-outline .mat-form-field-infix { padding:3px 0px;}
+:host ::ng-deep .delete-input .mat-mdc-form-field-appearance-outline .mat-mdc-form-field-infix { padding:3px 0px;}
 .delete-input .text-danger.text-left.small { position: absolute; bottom: 2px; }
 :host ::ng-deep .certificate-view-model.badgewindow .nsm-dialog-animation-fade.nsm-dialog.nsm-dialog-open { min-width: 38%; width: 25%; }
 :host ::ng-deep .certificate-view-model.badgewindow .nsm-dialog-animation-fade.nsm-dialog.nsm-dialog-open .nsm-dialog-btn-close { right: 0px; top: 0px; }

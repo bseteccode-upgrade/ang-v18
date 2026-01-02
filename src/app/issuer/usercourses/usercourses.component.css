@@ -4,7 +4,7 @@
 :host ::ng-deep .block-left { padding: 5px 10px; }
 :host ::ng-deep .eng_group img { padding:0 10px;height:155px}
 :host ::ng-deep .block-right { right:0px;}
-:host ::ng-deep .delete-input .mat-form-field-appearance-outline .mat-form-field-infix { padding:3px 0px;}
+:host ::ng-deep .delete-input .mat-mdc-form-field-appearance-outline .mat-mdc-form-field-infix { padding:3px 0px;}
 :host ::ng-deep .eng_group:hover .blockchain-submain { height:188px;}
 :host ::ng-deep .eng_group { min-height:220px;margin-bottom:0;height:100%}
 :host ::ng-deep .eng_group .blockchain-submain a { top:5px; }
