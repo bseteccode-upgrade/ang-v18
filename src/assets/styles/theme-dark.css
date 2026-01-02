@@ -8,7 +8,7 @@ $header-border-color:#262d37;
 $header-text-color:#fff; */
 
  /* Header Start */
-#header.main_header_substream { background-color:#0D0D0D; border-bottom: 1px solid #0D0D0D; }
+#header.main_header_substream { background-color:#0D0D0D; border-bottom: 1px solid #3D3D3D; }
 .theme-palette .material-icons { color:#fff; }
 .logodash h1 a span.vottun-image { background-image: url('../images/logo.png');background-size: contain; background-position:right; background-repeat: no-repeat;}
  /* Header End */

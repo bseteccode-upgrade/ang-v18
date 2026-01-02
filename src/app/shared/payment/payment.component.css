@@ -23,6 +23,7 @@ table tr th .text-danger {bottom: -16px;left: 25px;display: inline-block;white-s
 .stripe-payment h3 { padding-bottom:10px; position: relative; border-bottom:1px solid #ccc;}
 .payment-box { border:2px solid #1e232b; position: relative; padding: 0 10px; }
 .payment-btn { width:100%; text-align: center; padding:10px 0; margin-top:10px; }
+.pricing-details{color:#cccccc}
 .pricing-details h5 { font-size: 16px; font-weight: bold; color:#1e232b;margin-bottom:15px;}
 .pricing-details p { font-size: 14px; text-align: justify; }
 .table-responsive.pricing_table table { width:100%; margin-bottom:20px; }

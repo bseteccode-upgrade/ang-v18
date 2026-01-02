@@ -1,15 +1,15 @@
-nav{display:flex;}
+nav{display:flex;justify-content: space-between;}
 .mat-select-value { color: #fff !important; }
 .lang { position: relative; right: 0; display: inline-block; margin:0 5px;}
 .theme-palette .mat-mdc-button { min-width:54px; }
 .lang .dropdown-menu { min-width:57px;transform: translate3d(-8px, 34px, 0) !important;top: 8px !important;left: 3px!important;}
 .header_default_avatar{display: inline-block;width: 45px;height: 45px;border-radius:45px;vertical-align: middle;margin-left:10px;}
 .lang button.mat-mdc-button { color:#fff; font-size:14px; font-family: 'Roboto-Regular';background-color: #34495e;border-color: #34495e; line-height: 32px; padding: 0 12px; width:auto; } 
-:host ::ng-deep .main_header_substream #logo.light-version span { max-width:70%; width:155px; font-size: 14px; padding-left: 5px;display: inline-block ;line-height: 45px;}
+:host ::ng-deep .main_header_substream #logo.light-version span { font-size: 14px; padding-left: 5px;display: inline-block ;line-height: 45px;}
 :host ::ng-deep .main_header_substream #logo.light-version{padding:18px 5px 18px 10px;background:transparent;border:none;}
 .main_header_substream a .eduvot-logo img{width:145px}
 .head_left{display:flex;align-items:center;}
-.logodash{display:flex;}
+.logodash{display:flex;justify-content:end;}
 
 
 @media(min-width: 768px) and (max-width: 979px)

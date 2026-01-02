@@ -25,9 +25,8 @@
               <img *ngIf="apiService.user.profile_details.avatar" src="{{apiService.user.profile_details.avatar}}"
                 class="header_default_avatar">
       </div>
-      <ul class="nav-right">
-        <li *ngIf="apiService.userType !== '6' && !this.apiService.user.restrict_language_code">
-          <div class="theme-palette">
+
+      <div class="theme-palette" *ngIf="apiService.userType !== '6' && !this.apiService.user.restrict_language_code">
             <div class="lang">
               <button mat-button [matMenuTriggerFor]="menulang">
                 {{selectedLang}}
@@ -39,8 +38,6 @@
               </mat-menu>
             </div>
           </div>
-        </li>
-      </ul>
     </div>
   </nav>
 </div>
