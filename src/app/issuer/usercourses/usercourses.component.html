@@ -17,9 +17,8 @@
         <fieldset class="scheduler-border" *ngIf="!advanceSearch">
           <form [formGroup]="searchForm" (ngSubmit)="searchFormSubmit(searchForm.value)">
             <div class="col-lg-6 col-md-4 col-sm-12">
-              <mat-form-field >
-                <mat-label>{{'search' | translate}}</mat-label>
-                <input matInput class="form-control" name="search" formControlName="search">
+              <mat-form-field>
+                <input matInput placeholder="{{'search' | translate}}" class="form-control" name="search" formControlName="search">
               </mat-form-field>
             </div>
 
@@ -37,13 +36,7 @@
 
         <fieldset class="scheduler-border" *ngIf="advanceSearch">
           <form [formGroup]="searchForm" (ngSubmit)="searchFormSubmit(searchForm.value)">
-            <div class="col-md-6 col-sm-12">
-              <!-- <mat-form-field >
-                <mat-label>{{'title' | translate}}</mat-label>
-                <input matInput class="form-control" formControlName="title">
-              </mat-form-field> -->
-
-
+            <div class="col-md-6 col-sm-12 mb-10">
               <mat-form-field  class="autocomplete">
                 <input formControlName="title" (input)="getinputTitle($event.target.value)" [formControl]="titleControl" autocomplete="off" placeholder="{{'title' | translate}}"
                   matInput [matAutocomplete]="auto_title">
@@ -55,12 +48,7 @@
               </mat-form-field>
             </div>
 
-            <div class="col-md-6 col-sm-12">
-              <!-- <mat-form-field >
-                <mat-label>{{'code' | translate}}</mat-label>
-                <input matInput class="form-control" formControlName="code">
-              </mat-form-field> -->
-
+            <div class="col-md-6 col-sm-12 mb-10">
               <mat-form-field  class="autocomplete">
                 <input formControlName="code" (input)="getinputCode($event.target.value)" [formControl]="codeControl" autocomplete="off" placeholder="{{'code' | translate}}"
                   matInput [matAutocomplete]="auto_code">

@@ -7,7 +7,7 @@
 .select-file { padding:30px 0; }
 .btn-primary { background-color: #1e232b; border-color: #1e232b; color: #fff;}
 .note-text{font-size:12px;margin:11px 4px;color: #3498db; float: left;}
-.text-info.text-left { position: relative; padding-bottom:10px;}
+.text-info.text-left { position: relative; padding-bottom:10px;color:var(--blue-color);}
 :host ::ng-deep .delete-input .mat-mdc-form-field-appearance-outline .mat-mdc-form-field-infix { padding:3px 0px;}
 .delete-input .text-danger.text-left.small { position: absolute; bottom: 2px}
 .access_notify_label { font-size: 11px; color:#f20} 

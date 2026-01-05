@@ -36,25 +36,25 @@ ul.color-themes li img { width:85px; margin:0px 5px; box-shadow: 2px 2px 2px 0px
 .form-group.select_dropdown span .material-icons{font-size:28px;}
 .form-control[readonly] { background-color:#fff;}
 .upload-content{width:100%;position:relative;text-align:center}
-.upload-container .btn-container.savebtnContainer{padding:5px 0px}
+.upload-container .btn-container.savebtnContainer{padding:5px 0}
 .upload-badgeLogo .text-danger{position:relative;margin:10px 0}
 :host ::ng-deep .form-group .text-danger{bottom:auto !important;position: relative}
-.save-btn { border-radius: 4px; margin:10px 0px; font-size: 14px; text-transform: uppercase; color:#fff; padding:8px 15px; background: rgba(152,187,100,1); background: -moz-linear-gradient(left, rgba(152,187,100,1) 0%, rgba(152,187,100,1) 20%, rgba(98,138,49,1) 70%, rgba(98,138,49,1) 100%); background: -webkit-gradient(left top, right top, color-stop(0%, rgba(152,187,100,1)), color-stop(20%, rgba(152,187,100,1)), color-stop(70%, rgba(98,138,49,1)), color-stop(100%, rgba(98,138,49,1))); background: -webkit-linear-gradient(left, rgba(152,187,100,1) 0%, rgba(152,187,100,1) 20%, rgba(98,138,49,1) 70%, rgba(98,138,49,1) 100%); background: -o-linear-gradient(left, rgba(152,187,100,1) 0%, rgba(152,187,100,1) 20%, rgba(98,138,49,1) 70%, rgba(98,138,49,1) 100%); background: -ms-linear-gradient(left, rgba(152,187,100,1) 0%, rgba(152,187,100,1) 20%, rgba(98,138,49,1) 70%, rgba(98,138,49,1) 100%); background: linear-gradient(to right, rgba(152,187,100,1) 0%, rgba(152,187,100,1) 20%, rgba(98,138,49,1) 70%, rgba(98,138,49,1) 100%); width:100%; display: inline-block;min-width:80px;}
-.upload-container .btn-container.cancelbtnContainer { padding:5px 0px; }
-.cancel-btn { width:100%;display: inline-block;border-radius: 4px; margin:10px 0px; font-size: 14px; text-transform: uppercase; color:#fff; padding:8px 15px; background: rgb(238, 89, 66); min-width:80px;}
+.save-btn { border-radius: 4px; margin:10px 0;font-size: 14px; text-transform: uppercase;color:#fff;padding:8px 15px;background:var(--primary-color);width:100%; display: inline-block;min-width:80px;}
+.upload-container .btn-container.cancelbtnContainer { padding:5px 0; }
+.cancel-btn { width:100%;display: inline-block;border-radius: 4px; margin:10px 0; font-size:14px; text-transform:uppercase;color:#fff; padding:8px 15px; background:var(--primary-color); min-width:80px;}
 .badge-templates { position: relative; width: 100%; overflow: auto; }
 .badge-templates img { margin:auto; }
-.upload-container .btn-container.publishbtnContainer { padding:5px 0px; }
-.publish-btn { width:100%;display: inline-block;border-radius: 4px; margin:10px 0px; font-size: 14px; text-transform: uppercase; color:#fff; padding:8px 15px; background: #097896;-webkit-box-shadow: 2px 2px 7px 3px rgba(135,189,203,1); -moz-box-shadow: 2px 2px 7px 3px rgba(135,189,203,1); box-shadow: 2px 2px 7px 3px rgba(135,189,203,1);min-width:80px;} 
+.upload-container .btn-container.publishbtnContainer { padding:5px 0;}
+.publish-btn { width:100%;display: inline-block;border-radius: 4px; margin:10px 0; font-size: 14px; text-transform:uppercase;color:#fff; padding:8px 15px; background:var(--primary-color);min-width:80px;} 
 .publish-btn .fa { font-size: 18px; }
-.bottom-btnContainer { width:100%; position: relative; margin:20px 0px; }
-.select-file { text-align: center;  margin: 10px 0px; }
-.upload-btn { border-radius: 0px; display: inline-block; font-size: 15px; color:#fff; text-transform: uppercase; position: relative; padding:6px 10px 10px 10px; background: rgba(219,38,41,1); background: -moz-linear-gradient(left, rgba(219,38,41,1) 0%, rgba(240,47,23,1) 0%, rgba(237,105,48,1) 49%, rgba(219,38,41,1) 100%); background: -webkit-gradient(left top, right top, color-stop(0%, rgba(219,38,41,1)), color-stop(0%, rgba(240,47,23,1)), color-stop(49%, rgba(237,105,48,1)), color-stop(100%, rgba(219,38,41,1))); background: -webkit-linear-gradient(left, rgba(219,38,41,1) 0%, rgba(240,47,23,1) 0%, rgba(237,105,48,1) 49%, rgba(219,38,41,1) 100%); background: -o-linear-gradient(left, rgba(219,38,41,1) 0%, rgba(240,47,23,1) 0%, rgba(237,105,48,1) 49%, rgba(219,38,41,1) 100%); background: -ms-linear-gradient(left, rgba(219,38,41,1) 0%, rgba(240,47,23,1) 0%, rgba(237,105,48,1) 49%, rgba(219,38,41,1) 100%); background: linear-gradient(to right, rgba(219,38,41,1) 0%, rgba(240,47,23,1) 0%, rgba(237,105,48,1) 49%, rgba(219,38,41,1) 100%);}
+.bottom-btnContainer { width:100%; position: relative; margin:20px 0; }
+.select-file { text-align: center;  margin: 10px 0; }
+.upload-btn { border-radius: 0px; display: inline-block; font-size: 15px; color:#fff; text-transform: uppercase; position: relative; padding:6px 10px 10px 10px; background:var(--primary-color);}
 :host ::ng-deep .color-picker  { margin:0 auto; }
 .form-group.color-picker-btn { text-align: center; }
 :host ::ng-deep .color-box {width: 50px !important;height: 50px !important;margin: 16px 10px !important; display: inline-block; border-radius: 50%;     border: 1px solid #a9a9a9;}
 .multi-color { text-align: center; }
-:host ::ng-deep .onload-message { width: 200px; padding: 0px 12px; margin: 0 15px; display: table; border-radius: 4px;position: relative; background-color: rgba(255, 0, 0, 1);float: left; }
+:host ::ng-deep .onload-message { width: 200px; padding: 0px 12px; margin: 0 15px; display: table; border-radius: 4px;position: relative; background-color:var(--primary-color);float: left; }
 :host ::ng-deep .onload-message h4 { font-size: 10px; }
 :host ::ng-deep .onload-message h4::before { border-left: 10px solid rgba(255, 0, 0, 1);     border-bottom: 10px solid rgba(0, 0, 0, 0) ; border-top: 10px solid rgba(0, 0, 0, 0);     right: -20px; top: auto; left:auto; width: 0; bottom: 10px;}
 .onload-message .fa { cursor: pointer; position: absolute; right:5px; top:5px; }

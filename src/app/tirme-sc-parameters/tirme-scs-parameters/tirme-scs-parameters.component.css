@@ -18,10 +18,10 @@
 {
 .barcode-note{font-size:8px;height:28px;width:100%}
 .refresh-icon{margin:0 2px}
-.avatar-image{width:200px;height:200px;border:none}
+.avatar-image{width:150px;height:150px;border:none}
 }
 
 @media (max-width: 480px)
 {
-.avatar-image{width:200px;height:200px}
+.avatar-image{width:150px;height:150px}
 }

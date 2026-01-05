@@ -42,7 +42,7 @@ table tr th .text-danger {bottom: -16px;left: 25px;display: inline-block;white-s
 .mat-radio-group.mat-radio-group{width:100%;position:relative;}
 .mat-radio-button{width:50%;}
 .buynow{width:100%;text-align:center;margin:15px 0;}
-.buynow .mat-mdc-button{background-color:#1e232b;color:#fff;font-weight: normal;text-transform: uppercase;}
+.buynow .mat-mdc-button{text-transform: uppercase;}
 ul.payment_list{padding-left:0;margin-bottom:0;}
 ul.payment_list li{width:100px;display:inline-block;vertical-align:top;}
 ul.payment_list li .discount{width:auto;margin:3px 5px;border:1px solid #3d3d3d;}

@@ -1,7 +1,7 @@
 .signin_modal legend{font-size:18px;}
 .login_actions{position:absolute;z-index:999;top:28%;left:-111px;margin:auto;display:block}
-.login_actions a{display:block;font-size:14px;padding:10px 30px;margin:10px 0;border-top-left-radius:20px;border-bottom-left-radius:20px;color:#109485;background:#ffffff;}
-.login_actions a:hover{color:#ffffff;background-color:#109485;}
+.login_actions a{display:block;font-size:14px;padding:10px 30px;margin:10px 0;border-top-left-radius:20px;border-bottom-left-radius:20px;color:var(--primary-color);background:#ffffff;}
+.login_actions a:hover{color:#ffffff;background-color:var(--primary-color);}
 .login_btns{margin:20px 0;display:inline-block;}
 .img-container{margin:60px 0}
 .alert{ padding: 5px; }
@@ -9,7 +9,7 @@
 .email-verify-warning { width:100%;  text-align: center; display:inline-block}
 .email-verify-warning .material-icons { font-size: 50px; color:orange;margin-top:10px}
 .emailVerify_btn { width:100%; text-align: center; display: inline-block}
-button.mat-mdc-button.wrong_ok{background-color: #109485; color:#fff}
+button.mat-mdc-button.wrong_ok{background-color:var(--primary-color); color:#fff}
 .signup-form .form-group{margin-bottom:20px}
 .text-danger{bottom:unset}
 .signup-block .signin-container{background:none;display:inline-block;position:relative;height:100%;padding:0;box-shadow:none;margin-top:0%;margin-bottom:0%;}
@@ -71,4 +71,4 @@ ul.sign-container li{width:60%}
 
 .help_icon { float: right; cursor: pointer;}
 .help_icon .material-icons { color:#4c4c4c; }
-.signin-popup-btn.mat-mdc-button{ min-width: 100%;height: 40px;margin: 5px 3px;color: #fff;background-color: #109485;border-color: #109485;font-size: 12px;padding: 0px 15px;display: inline-block;text-transform: capitalize; }
+.signin-popup-btn.mat-mdc-button{ min-width: 100%;height: 40px;margin: 5px 3px;color: #fff;background-color:var(--primary-color);border-color:var(--primary-color);font-size: 12px;padding: 0px 15px;display: inline-block;text-transform: capitalize; }

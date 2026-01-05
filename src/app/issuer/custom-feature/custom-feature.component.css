@@ -13,7 +13,7 @@
 :host ::ng-deep .avatar-image { text-align: center; margin:0px 0px; }
 .group-field-block { position: relative; padding-top:0px; bottom:5px;}
 .avatar-image label.btn.btn-primary.select-file-btn { margin-top:10px; }
-.avatar-upload .text-info.text-left { font-size: 12px;position: relative;margin: 5px 0px; }
+.avatar-upload .text-info.text-left{font-size: 12px;position: relative;margin: 5px 0;color:var(--blue-color);}
 :host ::ng-deep .avatar-upload { margin:10px 0px; }
 .avatar-info { position: relative; margin:20px 0px;}
 

@@ -88,7 +88,7 @@ fieldset .smtp_fields{position:relative;margin-bottom:20px;}
 ul.cred-list { width:100%; padding-left:0; margin-bottom:0;}
 ul.cred-list li { display: inline-block; width:50%;}
 ul.cred-list li:nth-child(2) { text-align: right;}
-.cred_btn.mat-mdc-button {background-color: #109485;border-color: #109485;color: #fff; }
+.cred_btn.mat-mdc-button {background-color:var(--primary-color);border-color:var(--primary-color);color: #fff; }
 :host ::ng-deep fieldset.scheduler-border.rwd-block {margin-top:0!important;}
 :host ::ng-deep .rwd-table .mat-checkbox { display: block;padding:2px 0;}
 :host ::ng-deep .mat-checkbox-layout .mat-checkbox-label{font-weight:normal;}

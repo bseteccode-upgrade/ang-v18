@@ -5,7 +5,7 @@
 .scroll-window{color:#6a6c6f}
 button.mat-menu-item{text-transform:capitalize}
 ul.button-list{padding-left:0; margin-bottom:0;text-align:center }
-ul.button-list li{min-width:25%;padding: 0 3px;display:inline-block}
+ul.button-list li{min-width:33%;padding: 0 3px;display:inline-block}
 .student_notify { width:100%; text-align: center; display: inline-block; }
 .student_notify p {font-size: 16px;}
 .student_notify .password-submit.mat-mdc-button { text-transform: capitalize; }
