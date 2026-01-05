@@ -1,5 +1,6 @@
 .signup-logo  { padding:0px;}
-.signup-block .signup-container { background-color: #1e232b; display: inline-block; position: relative; height: 100%; padding: 0px; box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); margin-top: 0%; margin-bottom:0%; }
+.signin-logo{padding:8% 0 4% 0}
+.signup-block .signup-container{display: inline-block; position: relative; height: 100%; padding: 0px; box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); margin-top: 0%; margin-bottom:0%; }
 .signup-logo img { vertical-align: middle; display: inline-block; width:200px; height:auto; object-fit: contain; }
 .signup-block .container {width: 100%;display: table-cell;text-align: center;vertical-align: middle;}
 ul.sign-container {width:100%;position: relative;padding-left:0px;margin-bottom:0px;}

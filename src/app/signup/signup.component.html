@@ -8,7 +8,7 @@
           <li>
             <div class="signup-block-two">
             <div class="login_actions">
-                <a>Login</a>
+                <a routerLink="/signin">Login</a>
                 <a routerLink="/signup">Register</a>
             </div>
           <div class="signup-form">
@@ -16,7 +16,7 @@
               <img src="../../assets/images/logo.png">
             </div>
               <div class="signup-form">
-                <h3>{{'registration_form' | translate}}</h3>
+                <!-- <h3>{{'registration_form' | translate}}</h3> -->
                 <form class="form-horizontal" [formGroup]="regForm" (ngSubmit)="userRegistration(regForm.value)">
                   <div class="form-group" *ngIf="regForm.controls['register_type'].value === '6'">
                     <div class="col-sm-12">
@@ -32,16 +32,14 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <input type="text" class="form-control" id="firstname" formControlName="first_name"
                         placeholder="{{'first_name' | translate}}">
                       <div class="text-danger text-left small" *ngIf="errorMsg">
                         {{geterrorMsg('first_name') || this.errorMsgArr['first_name'] | translate}}</div>
                     </div>
-                  </div>
 
-                  <div class="form-group">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <input type="text" class="form-control" id="lastname" formControlName="last_name"
                         placeholder="{{'last_name' | translate}}">
                       <div class="text-danger text-left small" *ngIf="errorMsg">

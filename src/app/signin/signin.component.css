@@ -2,7 +2,7 @@
 .login_actions{position:absolute;z-index:999;top:28%;left:-111px;margin:auto;display:block}
 .login_actions a{display:block;font-size:14px;padding:10px 30px;margin:10px 0;border-top-left-radius:20px;border-bottom-left-radius:20px;color:var(--primary-color);background:#ffffff;}
 .login_actions a:hover{color:#ffffff;background-color:var(--primary-color);}
-.login_btns{margin:20px 0;display:inline-block;}
+.login_btns{margin:10px 0;display:inline-block;}
 .img-container{margin:60px 0}
 .alert{ padding: 5px; }
 .password-enter.delete-container { padding:0 20px; }

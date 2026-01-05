@@ -5,8 +5,10 @@
 
         
           <ul class="sign-container">
-              <li>
+        <li>
+        <div class="signup-block-two">
 
+          
         <div class="signup-block-one">
           <div class="signin-logo forgot-pwd">
             <a routerLink="/">
@@ -14,10 +16,7 @@
             </a>
           </div>
         </div>
-        </li>
 
-        <li>
-        <div class="signup-block-two">
           <div class="signup-form">
             <h3>{{'forgot_password' | translate}}</h3>
             <div *ngIf="linkSent" class="text-success" style="padding: 60px">
@@ -48,13 +47,13 @@
                 </div>
               </form>
             </div>
-          </div>
-          <div class="col-md-12 sign-footer">
+                      <div class="col-md-12 sign-footer">
             <div class="col-md-12">
               <div class="vottun-footer">
                 <p><a [href]="siteName" target="_blank">{{'blockchained_by' | translate}} {{appName}}</a></p>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </li>
